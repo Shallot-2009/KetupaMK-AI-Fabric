@@ -3,7 +3,7 @@
 ##  [Date]  Aug 14, 2025
 ##  [Source] From Asenjo.HB.L design model at Beijing.
 ##  [Author's Email]  3405802009@qq.com
-##  [Copyright]  Copyright Asenjo.HB.L . All rights reserved.
+##  [Copyright]  Copyright 2025-2026 Asenjo.HB.L.
 
 ![Teaser image](./assets/wifi_patch_antenna.bmp)
 ![Teaser image1](./assets/Elliptical_Patch_Antenna.bmp)
@@ -30,18 +30,16 @@
 
 # Disclaimer  
 
-The simulation part of Ketupa project uses Ansys HFSS , which uses an Open Source (BSD license) python wrapper interface to the Ansys HFSS Windows COM API, enabling you to control HFSS from python. Ketupa simplifies control of HFSS from Python for RF, signal integrity, microwave, and antenna design analysis.
+The simulation part of this project controls Ansys HFSS through its Windows COM interface. Ketupa simplifies automation from Python for RF, signal integrity, microwave, and antenna design analysis.
 
 - This project is an open-source Python wrapper for Ansys HFSS and is not an official Ansys product.
 - The software is provided "as is" with no guarantee of functional completeness or compatibility.
 - We are not responsible for any losses incurred by using the Ansys COM API.
 - When including third-party components, you must verify their license compliance.
  
-[License] This Ketupa project uses the BSD license. Users must ensure:
-1. Legally hold an Ansys HFSS license
-2. The secondary development script is independent of the commercial software binary/SDK
-3. Do not use the Ansys or contributors' names for promotional purposes
-4. Legally hold a Polar SI9000 license if using this software for impedance calculation
+[License] Original project code is available under [Apache-2.0](LICENSE); see [NOTICE](NOTICE) for attribution and scope. Previously published BSD-2-Clause copies remain available under their original terms. This license does not grant rights in third-party software, trademarks, or externally sourced data and engineering artifacts.
+
+Users must hold their own Ansys HFSS license, and a Polar SI9000 license when using that product. Product names belong to their respective owners; no vendor endorsement is implied. Check the rights to any bundled or generated PDF, AEDT, COMSOL, measurement, or other engineering file before redistributing it.
 
 
 
