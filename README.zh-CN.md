@@ -2,7 +2,7 @@
 
 简体中文 · [English](README.md) · [项目历史](history/README.md) · [版本下载](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases)
 
-本仓库延续 Ketupa 项目：最初的 **Ketupa v0.0.3** 研究代码完整保存在 [`history/0.0.3/`](history/0.0.3/)，现行 **KetupaMK** 安装包、运行环境发行版、授权资料和必要第三方源码统一在此维护。
+本仓库延续 Ketupa 项目：原 **Ketupa_v0.0.3** 项目整体归档于 [`history/Ketupa_v0.0.3/`](history/Ketupa_v0.0.3/)，完整保留其源码、文档、资源及工程文件；现行 **KetupaMK** 安装包、运行环境发行版、授权资料和必要第三方源码统一在此维护。
 
 本仓库由原 `Shallot-2009/Ketupa_v0.0.3` 直接更名为 `KetupaMK-AI-Fabric`，保留原仓库身份、star、fork 关系和既有 Issues；原 `Ketupa-AI-Fabric` 发行仓库内容已整合至此。后者的 1 个 star 不会转入或叠加到本仓库。详见[迁移记录](docs/MIGRATION.md)。
 
@@ -44,7 +44,7 @@ Ketupa v0.0.3 是本项目的起源。原始 README 记载初始发行日期为 
 
 | 资料范围 | 适用条款 |
 | --- | --- |
-| `history/0.0.3/` 中原作者有权许可的 v0.0.3 源代码 | [归档 Apache-2.0 LICENSE](history/0.0.3/LICENSE) 与[原始 NOTICE](history/0.0.3/NOTICE)；此前 BSD-2-Clause 副本保留原有授权 |
+| `history/Ketupa_v0.0.3/` 中原作者有权许可的 v0.0.3 源代码 | [归档 Apache-2.0 LICENSE](history/Ketupa_v0.0.3/LICENSE) 与[原始 NOTICE](history/Ketupa_v0.0.3/NOTICE)；此前 BSD-2-Clause 副本保留原有授权 |
 | 现行第一方专有产品与产品资料 | [LICENSE.txt](LICENSE.txt)、[EULA.md](EULA.md)及适用的有效书面协议 |
 | 第三方组件、许可与源码归档 | 各自独立许可，见 [third-party/README.md](third-party/README.md) |
 | 历史归档内的第三方工程文件、文档、数据及生成资料 | 保留各自独立适用的权利；项目源码许可不自动覆盖它们 |

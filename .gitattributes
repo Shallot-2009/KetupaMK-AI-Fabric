@@ -5,6 +5,6 @@
 *.rpm binary
 
 # Preserve archived source and third-party notices byte for byte.
-history/0.0.3/** -text
+history/Ketupa_v0.0.3/** -text
 third-party/licenses/** -text
 docs/provenance/Ketupa-AI-Fabric-README.before-migration.md -text

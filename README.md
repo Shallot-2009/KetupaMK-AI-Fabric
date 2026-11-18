@@ -2,7 +2,7 @@
 
 [简体中文](README.zh-CN.md) · English · [Project history](history/README.md) · [Releases](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases)
 
-The continuing Ketupa project: the original **Ketupa v0.0.3** research code is preserved in [`history/0.0.3/`](history/0.0.3/), while the current **KetupaMK** installers, runtime distributions, licensing materials, and required third-party sources are maintained here.
+The continuing Ketupa project: the complete original **Ketupa_v0.0.3** project is preserved in [`history/Ketupa_v0.0.3/`](history/Ketupa_v0.0.3/), including its source code, documentation, assets, and engineering files, while the current **KetupaMK** installers, runtime distributions, licensing materials, and required third-party sources are maintained here.
 
 This is the original `Shallot-2009/Ketupa_v0.0.3` repository renamed to `KetupaMK-AI-Fabric`, with repository identity, stars, fork relationships, and existing issues retained. The former `Ketupa-AI-Fabric` distribution repository has been integrated into this repository. Its one star is not transferred or added to the original repository's stars. See the [migration record](docs/MIGRATION.md).
 
@@ -44,7 +44,7 @@ Start with the [archive guide](history/README.md). Historical setup commands, pa
 
 | Material | Applicable terms |
 | --- | --- |
-| Original first-party v0.0.3 source in `history/0.0.3/` | [Archived Apache-2.0 LICENSE](history/0.0.3/LICENSE) and [original NOTICE](history/0.0.3/NOTICE); earlier BSD-2-Clause copies retain their original grants |
+| Original first-party v0.0.3 source in `history/Ketupa_v0.0.3/` | [Archived Apache-2.0 LICENSE](history/Ketupa_v0.0.3/LICENSE) and [original NOTICE](history/Ketupa_v0.0.3/NOTICE); earlier BSD-2-Clause copies retain their original grants |
 | Current proprietary first-party product and product materials | [LICENSE.txt](LICENSE.txt), [EULA.md](EULA.md), and any applicable valid written agreement |
 | Third-party notices, source archives, and components | Their respective licenses; see [third-party/README.md](third-party/README.md) |
 | Third-party engineering files, documentation, data, and generated artifacts in the archive | Any separately applicable rights; the archive's source-code license does not automatically cover them |
