@@ -13,7 +13,7 @@ From a full Git checkout with its original history and tags, run:
 python3 tools/check_repository.py
 ```
 
-The checker uses the Python standard library. It verifies the complete 111-file foundation, 17 preserved distribution records, two public entitlements, installer/tag metadata, third-party hashes, same-page language sections, links/anchors, and known secret patterns. It does not execute archived code, installers, licensing operations, or EDA workflows.
+The checker uses the Python standard library. It verifies the complete 111-file foundation, 17 preserved distribution records, two public entitlements, installer/tag metadata, third-party hashes, separate product READMEs, same-page guide sections, links/anchors, and known secret patterns. It does not execute archived code, installers, licensing operations, or EDA workflows.
 
 GitHub Actions runs the same command. A shallow clone must fetch the original history and tags before validation. Changes to published artifact baselines require explicit review; editing a manifest alone must not redefine the preserved foundation.
 
@@ -28,7 +28,7 @@ GitHub Actions runs the same command. A shallow clone must fetch the original hi
 python3 tools/check_repository.py
 ```
 
-脚本仅使用 Python 标准库，核对完整的 111 文件基础项目、17 个发行保全记录、两个公开授权、安装包/标签元数据、第三方哈希、同页语言区域、链接/锚点及已知凭据特征。它不执行归档代码、安装器、授权操作或 EDA 工作流。
+脚本仅使用 Python 标准库，核对完整的 111 文件基础项目、17 个发行保全记录、两个公开授权、安装包/标签元数据、第三方哈希、产品主页双文件、指南同页语言区域、链接/锚点及已知凭据特征。它不执行归档代码、安装器、授权操作或 EDA 工作流。
 
 GitHub Actions 执行相同命令。浅克隆需先取得原始历史和标签。已发布文件基准的变更需要明确审核，不应只修改清单就重新定义基础项目的保全依据。
 

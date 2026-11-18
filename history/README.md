@@ -86,6 +86,6 @@ git clone --branch legacy-v0.0.3 https://github.com/Shallot-2009/KetupaMK-AI-Fab
 
 原克隆地址、`./Ketupa/` 路径、依赖名称及脚本拼写可能过时。例如依赖文件写作 `pytorch==2.2.2`，README 引用 `Auto_desk.py`，实际文件是 `Auto_desktop.py`。这些原始记录保持不变。Windows COM、HFSS、SI9000、MATLAB 及工程文件需要兼容环境和独立适用的使用权。
 
-原作者有权许可的历史源码继续依归档许可处理，此前 BSD-2-Clause 授权保留；第三方资料仍依其自身权利使用。现行发行请使用[产品下载入口](../README.md#downloads-zh)。
+原作者有权许可的历史源码继续依归档许可处理，此前 BSD-2-Clause 授权保留；第三方资料仍依其自身权利使用。现行发行请使用[产品下载入口](../README.zh-CN.md#downloads-zh)。
 
 </details>

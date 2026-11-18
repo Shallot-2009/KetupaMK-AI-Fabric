@@ -40,7 +40,7 @@ The original five release groups and their fifteen assets remain preserved. Orig
 
 Keep operative LICENSE/EULA text and its revision traceable. A new website document does not retroactively change accepted agreements or previously granted historical rights. Commercial delivery needs a verified legal identity, entitlement evidence, actual data-processing disclosures, support terms, and version-specific dependency/source coverage. Do not label unverified items as completed.
 
-Public issues accept sanitized product/documentation reports. Rights, private entitlements, and security reports use the [private contact](../../SECURITY.md). Contributed changes follow the [contribution guide](../../CONTRIBUTING.md).
+Public issues accept sanitized product/documentation reports. Rights, private entitlements, and security reports use the [private contact](../../SECURITY.md).
 
 ## Structure references
 
@@ -86,7 +86,7 @@ Platform references: [GitHub licensing](https://docs.github.com/en/repositories/
 
 正式 LICENSE/EULA 文本和修订应可追溯。网站更新不追溯改变已接受的协议或历史已授予权利。商业交付需要核实法律主体、授权依据、实际数据处理告知、支持条款，以及逐版本依赖/源码覆盖。未核实事项不标记为完成。
 
-公开 Issue 接收脱敏产品和文档反馈。权利、私有授权和安全报告使用[私密联系渠道](../../SECURITY.md)，提交变更遵循[贡献说明](../../CONTRIBUTING.md)。
+公开 Issue 接收脱敏产品和文档反馈。权利、私有授权和安全报告使用[私密联系渠道](../../SECURITY.md)。
 
 ## 架构参考
 

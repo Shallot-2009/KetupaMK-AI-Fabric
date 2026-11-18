@@ -159,7 +159,8 @@ def verify_releases():
         tag = release['tag']
         require(bool(release['assets']), 'Release has no installers: ' + tag)
         notes = language_sections((ROOT / f'docs/releases/{tag}.md').read_text())
-        homes = language_sections((ROOT / 'README.md').read_text())
+        homes = {'English': (ROOT / 'README.md').read_text(),
+                 '简体中文': (ROOT / 'README.zh-CN.md').read_text()}
         for language in ['English', '简体中文']:
             note, home = notes[language], homes[language]
             for asset in release['assets']:
@@ -242,7 +243,12 @@ def verify_markdown(all_files):
             continue
         file = ROOT / name
         text = file.read_text(encoding='utf-8')
-        if name not in {'EULA.md', '.github/PULL_REQUEST_TEMPLATE.md'}:
+        if name in {'README.md', 'README.zh-CN.md'}:
+            top = '\n'.join(text.splitlines()[:6])
+            require('](README.md)' in top and '](README.zh-CN.md)' in top,
+                    'Keep both product README language links at the top: ' + name)
+            require('<details' not in text, 'Product READMEs must be separate full pages: ' + name)
+        elif name not in {'EULA.md', '.github/PULL_REQUEST_TEMPLATE.md'}:
             require(not name.endswith('.zh-CN.md'), 'Keep maintained languages on one page: ' + name)
             language_sections(text)
             bilingual += 1
@@ -295,6 +301,7 @@ def main():
         'third_party_files_verified': verify_third_party(),
     }
     result['markdown_links_verified'], result['same_page_bilingual_documents_verified'] = verify_markdown(all_files)
+    result['separate_product_readmes_verified'] = 2
     check_sensitive_patterns(all_files)
     result['tracked_or_pending_files_reviewed'] = len(all_files)
     result['known_secret_patterns_found'] = 0

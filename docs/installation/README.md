@@ -65,7 +65,7 @@ Include the product version, operating system, package filename, checksum result
 
 ## 选择并下载
 
-在[下载表](../../README.md#downloads-zh)中选择版本和平台，点击 EXE、TAR.GZ 或 DEB 直接下载安装包。Linux 的 TAR.GZ 与 DEB 二选一。Runtime 1.0.0 为独立发行组；1.0.2、1.0.1 与 Beta 保留预发布状态。
+在[下载表](../../README.zh-CN.md#downloads-zh)中选择版本和平台，点击 EXE、TAR.GZ 或 DEB 直接下载安装包。Linux 的 TAR.GZ 与 DEB 二选一。Runtime 1.0.0 为独立发行组；1.0.2、1.0.1 与 Beta 保留预发布状态。
 
 将 [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) 下载到安装包所在目录。准确文件名、大小和哈希见[发行清单](../../releases/manifest.json)。
 
