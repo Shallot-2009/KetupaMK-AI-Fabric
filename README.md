@@ -30,6 +30,8 @@ Installers provide the version's packaged software/runtime; they do not grant An
 
 The existing author-published [internal-test license and instructions](licenses/internal-test/README.md) are retained unchanged. Its signed scope, version applicability, and validity govern its use; migration does not renew or broaden it.
 
+The maintainer-published [offline test LIC](licenses/offline-test/README.md) is also available. See the [license index](licenses/README.md) for both files and their scope.
+
 ## Origins and archive
 
 Ketupa v0.0.3 is the origin of this project. Its original README records an initial-release date of **August 14, 2025**, the author name **Asenjo.HB.L.**, and work on HFSS patch antennas, transmission lines, measurement correlation, MATLAB/CNN exploration, LLM interaction, and desktop automation. These are historical descriptions, not acceptance claims for the current product. The retained Git history begins on **June 20, 2025**; that Git date and the release date recorded in the README describe different events.

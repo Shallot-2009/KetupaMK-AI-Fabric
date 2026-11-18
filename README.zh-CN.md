@@ -30,6 +30,8 @@ Linux 的 TAR.GZ 和 DEB 二选一，无需重复安装。安装包位于本仓�
 
 已有、经作者公开的[内测许可证及说明](licenses/internal-test/README.md)原样保留。其签名范围、版本适用性和有效期仍以原文件为准；迁移不会续期或扩大授权。
 
+维护者公开的[离线测试 LIC](licenses/offline-test/README.md)现已同步；两类文件的入口与范围见[许可证目录](licenses/README.md)。
+
 ## 项目起源与历史归档
 
 Ketupa v0.0.3 是本项目的起源。原始 README 记载初始发行日期为 **2025 年 8 月 14 日**，作者署名为 **Asenjo.HB.L.**，研究内容涉及 HFSS 贴片天线、传输线、测量相关性、MATLAB/CNN 探索、LLM 交互及桌面自动化。这些属于历史描述，不构成当前产品的验收声明。保留的 Git 历史起于 **2025 年 6 月 20 日**；Git 首次提交日期与 README 记载的发行日期分别描述不同事件。
