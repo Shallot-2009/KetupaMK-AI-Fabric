@@ -1,0 +1,125 @@
+{
+  "source_commit": "67d7ffd815fea925f0fc50ece3cb8dfc53424aae",
+  "unchanged_file_count": 17,
+  "files": [
+    {
+      "path": "EULA.md",
+      "git_blob": "e2ea3f4bdf9e338aeeecea53537c8b81eb907a43",
+      "mode": "100644",
+      "size_bytes": 21854,
+      "sha256": "2880dc6962a6d90e715bd1acd8a3b72e4bf52ad23d2388ca3eddb8556f207408"
+    },
+    {
+      "path": "LICENSE.txt",
+      "git_blob": "45f0bf8e0c8f4d19f69e42084afe56322b898996",
+      "mode": "100644",
+      "size_bytes": 3098,
+      "sha256": "50b5e0fda885edbf3e8064aff9e79a505f1e7fa4a9330f863e55e2ec5ac7a852"
+    },
+    {
+      "path": "licenses/internal-test/README.md",
+      "git_blob": "c8e844ac9b4b33055f6e31f395fb31dd051269a7",
+      "mode": "100644",
+      "size_bytes": 385,
+      "sha256": "412e5b6212d260e031edbb15c275c3865ae0540e10473402571e467d9acd8cd4"
+    },
+    {
+      "path": "licenses/internal-test/openketupamk-internal-test-12w.lic",
+      "git_blob": "b464cca71de9cb8daf4a8977c90cf8d8ca18395f",
+      "mode": "100644",
+      "size_bytes": 4836,
+      "sha256": "37ee8efa33d74c5197092a2678bda1daa0e6f074c3a04cc378873396c266db01"
+    },
+    {
+      "path": "third-party/README.md",
+      "git_blob": "0a6918f68b4dbd55d21f57e5b6c8d8898c4c8a78",
+      "mode": "100644",
+      "size_bytes": 5274,
+      "sha256": "6cf678e2c9fde019459022c8cb97e9c31e5deb9cef7ddfba1623e578ac5fb264"
+    },
+    {
+      "path": "third-party/licenses/7zip-LGPL-2.1.txt",
+      "git_blob": "3394995abc5463238286bc53ce7608839b5d0ba7",
+      "mode": "100644",
+      "size_bytes": 27032,
+      "sha256": "1e7e6bae5a5bde32f1ae5a7c37a082d1ab03cf89354f7f936ac40be9e39a6531"
+    },
+    {
+      "path": "third-party/licenses/7zip-License.txt",
+      "git_blob": "9c301dc1da14f342438a5cbb2a2ee14baf7b8d81",
+      "mode": "100644",
+      "size_bytes": 6341,
+      "sha256": "9ac2b4a97ab5d523965534d8b2d5868e511b39096d51fff458ab72c38b80fccc"
+    },
+    {
+      "path": "third-party/licenses/7zip-unRAR-License.txt",
+      "git_blob": "5f78b728da550062cf7d14efc7f6b51d68314238",
+      "mode": "100644",
+      "size_bytes": 1921,
+      "sha256": "17bd9fa4399092c777536fff045b41df76ec9d2ac4c9b8e7345d3b8b6ccc7976"
+    },
+    {
+      "path": "third-party/licenses/FFmpeg-LGPL-2.1.txt",
+      "git_blob": "58af0d3787aec7d6f8d833535d64879156e7ec23",
+      "mode": "100644",
+      "size_bytes": 26526,
+      "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe"
+    },
+    {
+      "path": "third-party/licenses/OpenCV-Python-4.11.0.86-Third-Party.txt",
+      "git_blob": "0462eee383c3d7d24ad85bf75c4024caa4634e34",
+      "mode": "100644",
+      "size_bytes": 152360,
+      "sha256": "4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363"
+    },
+    {
+      "path": "third-party/licenses/OpenCV-Python-Packaging-License.txt",
+      "git_blob": "328bf50632a988cf1cc494d557936d84fec16335",
+      "mode": "100644",
+      "size_bytes": 1070,
+      "sha256": "09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c"
+    },
+    {
+      "path": "third-party/licenses/SciPy-1.17.1-Third-Party.txt",
+      "git_blob": "189ca4227f9abe0cebe5e64e163f8df4a9a2240c",
+      "mode": "100644",
+      "size_bytes": 46838,
+      "sha256": "4daf14e37432e7026165979ecb7a39930707a3e89bef4876cfaf9dad36ed364a"
+    },
+    {
+      "path": "third-party/sources/7z2604-src.tar.xz",
+      "git_blob": "54801afa51e5ab84b8276fa7c45fa980fec7c8a6",
+      "mode": "100644",
+      "size_bytes": 1560440,
+      "sha256": "9691944c0fe0d01bb49373a704fb983fd33bc98b1738695179dfbf99ac1734f6"
+    },
+    {
+      "path": "third-party/sources/ffmpeg-5.1.6.tar.xz",
+      "git_blob": "66eba390a7dde68629488b8b2a60dfed18433f92",
+      "mode": "100644",
+      "size_bytes": 10021428,
+      "sha256": "f4fa066278f7a47feab316fef905f4db0d5e9b589451949740f83972b30901bd"
+    },
+    {
+      "path": "third-party/sources/gcc-4.8.5-44.el7.src.rpm",
+      "git_blob": "18dc796516ea428cf3a832ae1c7c3399d53de5fe",
+      "mode": "100644",
+      "size_bytes": 79314655,
+      "sha256": "642c4085f6af9565e39583e54a9d7a5d9e6b93dd8c8e9474aec8a892d6c7aa36"
+    },
+    {
+      "path": "third-party/sources/gcc-8.5.0-26.el8_10.alma.1.src.rpm",
+      "git_blob": "83f8f2d307d5b81c4178ef9f79bb3439664090f7",
+      "mode": "100644",
+      "size_bytes": 65714006,
+      "sha256": "0911864c260a75ae030f3144616e7e5e1359e04ce1c9730ab83906486e3bc79f"
+    },
+    {
+      "path": "third-party/sources/opencv-python-headless-4.11.0.86.tar.gz",
+      "git_blob": "5829f61da1229c1c6c49b22e30899087749e8b3f",
+      "mode": "100644",
+      "size_bytes": 95177929,
+      "sha256": "996eb282ca4b43ec6a3972414de0e2331f5d9cda2b41091a49739c19fb843798"
+    }
+  ]
+}

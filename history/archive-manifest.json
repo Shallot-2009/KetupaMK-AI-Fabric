@@ -1,0 +1,899 @@
+{
+  "schema_version": 1,
+  "original_repository": "Shallot-2009/Ketupa_v0.0.3",
+  "repository_id": 1005327414,
+  "source_commit": "b5f44c111fef3d32b5cdeb3c18d4af40e5c81306",
+  "original_tree": "ea29d263d3a6c98b62ef9cb17c326523e5cc383b",
+  "archive_date": "2026-11-18",
+  "file_count": 111,
+  "files": [
+    {
+      "original_path": "Auto_desktop.py",
+      "archived_path": "history/0.0.3/Auto_desktop.py",
+      "git_blob": "130c46e22996df26dca4c56e18f2b07f6ef0caec",
+      "mode": "100644",
+      "size_bytes": 2339,
+      "sha256": "a89fd8ab1e28a12a2d0a56cea740746e85d6af1ac23819e9a76a026ef12d1330"
+    },
+    {
+      "original_path": "LICENSE",
+      "archived_path": "history/0.0.3/LICENSE",
+      "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "mode": "100644",
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "original_path": "LLMs/UI.html",
+      "archived_path": "history/0.0.3/LLMs/UI.html",
+      "git_blob": "a280a710bfdaee81555f6c5b4ed68dfdf8ce1861",
+      "mode": "100644",
+      "size_bytes": 7422,
+      "sha256": "94d77595574f79844e2b3bfa6f264688d0d1ee4527b243c14c5f26a0260f37b4"
+    },
+    {
+      "original_path": "LLMs/deepseek.py",
+      "archived_path": "history/0.0.3/LLMs/deepseek.py",
+      "git_blob": "30c5e565ff592333337163efce2269aa2a33899a",
+      "mode": "100644",
+      "size_bytes": 1022,
+      "sha256": "c05e3f1a95e820a2fbf20c0213302fe3da67178fe6fa19f01c2e0b5ee27e2158"
+    },
+    {
+      "original_path": "LLMs/test.py",
+      "archived_path": "history/0.0.3/LLMs/test.py",
+      "git_blob": "70199622fd714f42e32691bd5bfdb1c94ae3d057",
+      "mode": "100644",
+      "size_bytes": 1343,
+      "sha256": "9fbad29cc721bb23c78eb04e7c2d6b3464a1509e8d51da051ee938d8f948a0fc"
+    },
+    {
+      "original_path": "NOTICE",
+      "archived_path": "history/0.0.3/NOTICE",
+      "git_blob": "a9c124f84f42a46183175cf65cda90e49ec619ae",
+      "mode": "100644",
+      "size_bytes": 467,
+      "sha256": "931fc6f9193bd5e4756dd5b8051e12ed00f548d43d9c86068af8cde7a2ebb393"
+    },
+    {
+      "original_path": "README.md",
+      "archived_path": "history/0.0.3/README.md",
+      "git_blob": "66945d56193496fcd8ef11c4b4f841a8f866a022",
+      "mode": "100644",
+      "size_bytes": 5995,
+      "sha256": "0aa38f725f52c3989e52cad58eed7df7c93466bb1a476ebc76b87650d9fadecd"
+    },
+    {
+      "original_path": "assets/Edge-Coupled_Offset_Stripline_1B1A.bmp",
+      "archived_path": "history/0.0.3/assets/Edge-Coupled_Offset_Stripline_1B1A.bmp",
+      "git_blob": "35fa7366540bb91c741a6367fa72ba52ebeadad2",
+      "mode": "100644",
+      "size_bytes": 97083,
+      "sha256": "58084957e4973c0e1cfc1fff41cf33d25f045cb7f6552d60758c6bdbfe50f3a6"
+    },
+    {
+      "original_path": "assets/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm.bmp",
+      "archived_path": "history/0.0.3/assets/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm.bmp",
+      "git_blob": "c8d4d570999f27203f663b19779607051038375b",
+      "mode": "100644",
+      "size_bytes": 252713,
+      "sha256": "e9b556d70c8edc0b902ae585115be52e5a5bc065766c40cb8ec3456be36ee636"
+    },
+    {
+      "original_path": "assets/Edge-Coupled_Offset_Stripline_1B1A_99.615ohm.bmp",
+      "archived_path": "history/0.0.3/assets/Edge-Coupled_Offset_Stripline_1B1A_99.615ohm.bmp",
+      "git_blob": "c8d4d570999f27203f663b19779607051038375b",
+      "mode": "100644",
+      "size_bytes": 252713,
+      "sha256": "e9b556d70c8edc0b902ae585115be52e5a5bc065766c40cb8ec3456be36ee636"
+    },
+    {
+      "original_path": "assets/Elliptical_Patch_Antenna.bmp",
+      "archived_path": "history/0.0.3/assets/Elliptical_Patch_Antenna.bmp",
+      "git_blob": "70d9f3b76f09da47a74124e212f73552f2185926",
+      "mode": "100644",
+      "size_bytes": 183397,
+      "sha256": "6d760113b91174a9c7eee53c07d5e482f497ab22e3479edc4159c1d6933738d3"
+    },
+    {
+      "original_path": "assets/Matlab_CNN_test.bmp",
+      "archived_path": "history/0.0.3/assets/Matlab_CNN_test.bmp",
+      "git_blob": "c45b25071f0e01579e6affd638b8573e81548836",
+      "mode": "100644",
+      "size_bytes": 93579,
+      "sha256": "e2f1d851cd18bbb793858b83781bfcf1c78f3f9d43d25ace5381a7a0dcb10b73"
+    },
+    {
+      "original_path": "assets/Screen 2025-08-22 091140.png",
+      "archived_path": "history/0.0.3/assets/Screen 2025-08-22 091140.png",
+      "git_blob": "e19bd36d63e6f94ea47954e0a48f8bd5d2cd767e",
+      "mode": "100644",
+      "size_bytes": 5122198,
+      "sha256": "8dee4742baac756ef8d36ccb839daf02160ee017c9b9b38c84ee61511b900460"
+    },
+    {
+      "original_path": "assets/Surface_Microstrip_1B.bmp",
+      "archived_path": "history/0.0.3/assets/Surface_Microstrip_1B.bmp",
+      "git_blob": "917de36aed52edac0e8134a3e89abad0d46f0975",
+      "mode": "100644",
+      "size_bytes": 71270,
+      "sha256": "8c1ef6cb1d19d49598c2e59b3f37156dd14e373a1613188f3dc6a3848f6c2db7"
+    },
+    {
+      "original_path": "assets/Surface_Microstrip_1B_50.058ohm.bmp",
+      "archived_path": "history/0.0.3/assets/Surface_Microstrip_1B_50.058ohm.bmp",
+      "git_blob": "3021844d3936a37f4affe7540e6f8c4f63345d3d",
+      "mode": "100644",
+      "size_bytes": 430959,
+      "sha256": "7200e3c3e9d8b705e5f8608b283e0314ea782e846c21feb86423d5767e5f2bb8"
+    },
+    {
+      "original_path": "assets/wifi_patch_antenna.bmp",
+      "archived_path": "history/0.0.3/assets/wifi_patch_antenna.bmp",
+      "git_blob": "cc4a69fea253be1a8f132d8f71f0d0a8315703ea",
+      "mode": "100644",
+      "size_bytes": 222485,
+      "sha256": "0df73d9b68ff1d592687aec6ceed262c4700cd89198cced54bea67e68a4ab940"
+    },
+    {
+      "original_path": "assets/wifi_patch_antenna_(s_matlab).bmp",
+      "archived_path": "history/0.0.3/assets/wifi_patch_antenna_(s_matlab).bmp",
+      "git_blob": "b410db1abff25ed5a2f9725f3a39a3802a674c79",
+      "mode": "100644",
+      "size_bytes": 51255,
+      "sha256": "dfb5df219a566add85b62d1cd8f3dedbee97354dd07b969c77b6bba18a957695"
+    },
+    {
+      "original_path": "main.py",
+      "archived_path": "history/0.0.3/main.py",
+      "git_blob": "b73456470449a9ab8e4a30e97a442a4701cd8c6b",
+      "mode": "100644",
+      "size_bytes": 678,
+      "sha256": "866dec3c294d590db544ced8ec787faec49c4d6e62cda6ac28f12c73c6dd5f62"
+    },
+    {
+      "original_path": "matlab/CNN.m",
+      "archived_path": "history/0.0.3/matlab/CNN.m",
+      "git_blob": "a4f3b4e82f10ec27a64aed9b61b14688d0f43fb9",
+      "mode": "100644",
+      "size_bytes": 2125,
+      "sha256": "0d3f21283b908f4a84aa4e7de4792950e9732a18f85ab9e14f391d42b664769a"
+    },
+    {
+      "original_path": "matlab/HFSS_IncludePaths.m",
+      "archived_path": "history/0.0.3/matlab/HFSS_IncludePaths.m",
+      "git_blob": "8613e7e98b48264a9d9a154697894db3eafcf884",
+      "mode": "100644",
+      "size_bytes": 709,
+      "sha256": "fbc6e19c200f4d14581c0316935eb78ab16444273ccf34b9921d3ee0b5f94718"
+    },
+    {
+      "original_path": "matlab/HFSS_RemovePaths.m",
+      "archived_path": "history/0.0.3/matlab/HFSS_RemovePaths.m",
+      "git_blob": "b2b6a81313db7e928ac085f3f6e13377fa591358",
+      "mode": "100644",
+      "size_bytes": 694,
+      "sha256": "b6c287613d27cbf0bc76fb7a65e8adb438576296203f3da8cbaae76f260a4a51"
+    },
+    {
+      "original_path": "matlab/gcc.m",
+      "archived_path": "history/0.0.3/matlab/gcc.m",
+      "git_blob": "d59021345e8b67249a2eb9320bfb133bd91e1291",
+      "mode": "100644",
+      "size_bytes": 2596,
+      "sha256": "eea4a0bb50870fe741e87fd5fb325d5c10f6b0ff39ac8925440f5ac83bdf267e"
+    },
+    {
+      "original_path": "matlab/s_parameters_to_TDR.m",
+      "archived_path": "history/0.0.3/matlab/s_parameters_to_TDR.m",
+      "git_blob": "d27be74c583d5b1bfb3ec533c5c03646a46a3373",
+      "mode": "100644",
+      "size_bytes": 681,
+      "sha256": "a03f05c09e15cd85172bbca8170c6e7d4fd88bfd8afb55f3263e016e270ba449"
+    },
+    {
+      "original_path": "matlab/s_read_files.m",
+      "archived_path": "history/0.0.3/matlab/s_read_files.m",
+      "git_blob": "f7626e472fc2ffc008f43b3d8fa3c796a30e7681",
+      "mode": "100644",
+      "size_bytes": 283,
+      "sha256": "bb79c45a02f45b5927f1a4bafaafeb72a8472dec5773b5487b055734cba0fcd3"
+    },
+    {
+      "original_path": "requirements.txt",
+      "archived_path": "history/0.0.3/requirements.txt",
+      "git_blob": "f917188b99fdf10664c579ccb81a2abe61931546",
+      "mode": "100644",
+      "size_bytes": 197,
+      "sha256": "faa1f6774776f9a2bada7025221939d2b2987bbc5f3e0dfd70d4c864f0f93a7e"
+    },
+    {
+      "original_path": "scripts/data_preprocessing.py",
+      "archived_path": "history/0.0.3/scripts/data_preprocessing.py",
+      "git_blob": "68220503e26daeee035e9886d6c943faba41e65a",
+      "mode": "100644",
+      "size_bytes": 363,
+      "sha256": "e27467b8a0a7ede13c6581df84ead48bef80c23065c69a66fbd29e3cd50b114d"
+    },
+    {
+      "original_path": "scripts/train.py",
+      "archived_path": "history/0.0.3/scripts/train.py",
+      "git_blob": "68220503e26daeee035e9886d6c943faba41e65a",
+      "mode": "100644",
+      "size_bytes": 363,
+      "sha256": "e27467b8a0a7ede13c6581df84ead48bef80c23065c69a66fbd29e3cd50b114d"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/HFSS_Projects/Edge_Fed_Rectangular_Patch_Antenna.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/HFSS_Projects/Edge_Fed_Rectangular_Patch_Antenna.aedt",
+      "git_blob": "1f05d3523e22c1b5cb124e0d8b96216b8aaa7acb",
+      "mode": "100644",
+      "size_bytes": 283307,
+      "sha256": "0fd730c6be0365163c9c35af1006601460c21bcba319bd11b75f5753c3007eef"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/HFSS_Projects/Inset_Fed_Elliptical_Patch_Antenna.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/HFSS_Projects/Inset_Fed_Elliptical_Patch_Antenna.aedt",
+      "git_blob": "a711c55c9f2fd0bba0ac1c928cb2938f61280532",
+      "mode": "100644",
+      "size_bytes": 287044,
+      "sha256": "65e40e2e8a5bc5867ca2ed0eade179d56c1812ca9f7544236696f5514ffe6105"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/HFSS_Projects/Inset_Fed_Rectangular_Patch_Antenna.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/HFSS_Projects/Inset_Fed_Rectangular_Patch_Antenna.aedt",
+      "git_blob": "0b1f3821e274ababc7ffce3f6c50a3ddc9547f09",
+      "mode": "100644",
+      "size_bytes": 288052,
+      "sha256": "8a945270d2e09d5b36726fcb61106b811e19172a22c680dbe02ac08f5fd823cf"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/HFSS_Projects/Planar_InvertedF_Antenna.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/HFSS_Projects/Planar_InvertedF_Antenna.aedt",
+      "git_blob": "3f9907202d0d90ed04b6444c83fd1cc7e551ccdd",
+      "mode": "100644",
+      "size_bytes": 292899,
+      "sha256": "bdf20826d1e8f22fa37ddcea8cd33accf4e2f1ebf7de9138141ff304368c28ae"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/HFSS_Projects/Wifi_patch_antenna.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/HFSS_Projects/Wifi_patch_antenna.aedt",
+      "git_blob": "a16ce681acf8d0be5c9e3061d8cfc1ff430f2e08",
+      "mode": "100644",
+      "size_bytes": 210448,
+      "sha256": "74adf722fb555363f22f5ceff811804dafb5127ec233240be6ac06068473eb80"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/input_files/Properties.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/input_files/Properties.csv",
+      "git_blob": "4453517a83e2cd99ccba12477e3156ddcf7b9b89",
+      "mode": "100644",
+      "size_bytes": 420,
+      "sha256": "a283a128b034911135c8a255a0761e049a07eca5fac940950c7225e2ce2241d6"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/models/Edge_Fed_Rectangular_Patch_Antenna.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/models/Edge_Fed_Rectangular_Patch_Antenna.py",
+      "git_blob": "07a0c3c47537643abe222754082e527300782e6e",
+      "mode": "100644",
+      "size_bytes": 19171,
+      "sha256": "08cc0496c2334a4416708ba8106825f3c0909f79ac39b8c4ae3feb731abc4403"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/models/Inset_Fed_Elliptical_Patch_Antenna.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/models/Inset_Fed_Elliptical_Patch_Antenna.py",
+      "git_blob": "d699d82ed121ff7988de4e70f5c05112b6b06183",
+      "mode": "100644",
+      "size_bytes": 19411,
+      "sha256": "b9af614a3119d49cde2a1dd775b1bfc3b4804cee23e5dfa0714fcf017a4312b5"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/models/Inset_Fed_Rectangular_Patch_Antenna.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/models/Inset_Fed_Rectangular_Patch_Antenna.py",
+      "git_blob": "95e20e863619e3816a19d03adfdbfa0b7e501080",
+      "mode": "100644",
+      "size_bytes": 19388,
+      "sha256": "2340d12e53d708e0c95d9dfb07abf4c8c56aa18d6c9728ebd5f04ee2d02e5649"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/models/Planar_InvertedF_Antenna.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/models/Planar_InvertedF_Antenna.py",
+      "git_blob": "a1cc120faa5ea855ba213f9eecd9e5e0991b4044",
+      "mode": "100644",
+      "size_bytes": 21585,
+      "sha256": "93f522b20e8ea00d78898301c6ed3a13fdaa8ed6f6e9654eb5271c464e00450a"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/models/Wifi_patch_antenna.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/models/Wifi_patch_antenna.py",
+      "git_blob": "a4173ebd75b0b2705eba9d097bc0173e71f5056f",
+      "mode": "100644",
+      "size_bytes": 21366,
+      "sha256": "7efb4220984f1b6d475f547ebc76729f1dd7106c26b5319c57fc97be56f1c23b"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Edge_Fed_Rectangular_Patch_Antenna.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Edge_Fed_Rectangular_Patch_Antenna.bmp",
+      "git_blob": "59c13a5c2ac9687f1fb5f40174521371b696f765",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "99934ce2a27e4b7c98968a327639ee66fbe4187e967cd3dee68fa255a0fe93ea"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Edge_Fed_Rectangular_Patch_Antenna.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Edge_Fed_Rectangular_Patch_Antenna.csv",
+      "git_blob": "ec43f1288ab0e838f3a1c1580674c734c86da8bc",
+      "mode": "100644",
+      "size_bytes": 19054,
+      "sha256": "7b1ddd5267d5116fdcc0ac8bec0aefc88a35d4de28c37fcfff3270a4bf858cc2"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Edge_Fed_Rectangular_Patch_Antenna.s1p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Edge_Fed_Rectangular_Patch_Antenna.s1p",
+      "git_blob": "cbc297f98a72e123d82d6c72f36dc1f2f8c3e58f",
+      "mode": "100644",
+      "size_bytes": 119482,
+      "sha256": "d006c2e9a05bd777d99eea18b97e62e126d6aa9271ee06c086e3204b4203017e"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Inset_Fed_Elliptical_Patch_Antenna.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Inset_Fed_Elliptical_Patch_Antenna.bmp",
+      "git_blob": "f26c70c6f751c4bd17def4750c09d10b6e6fa10d",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "692054bfcf6ec7ba14294a55f4ecb646ec7c53fd39218169e7dbe1222a725591"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Inset_Fed_Elliptical_Patch_Antenna.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Inset_Fed_Elliptical_Patch_Antenna.csv",
+      "git_blob": "5e52394d439fd9dc204daf6a68ae7ebdb7c01534",
+      "mode": "100644",
+      "size_bytes": 26444,
+      "sha256": "5efa314f97e2dc48718534296594b6b0baae0a1e23164fa16df7d067799aa3c1"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Inset_Fed_Elliptical_Patch_Antenna.s1p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Inset_Fed_Elliptical_Patch_Antenna.s1p",
+      "git_blob": "08e3a8cc4470169c5a215e9ba668db44ea5110f8",
+      "mode": "100644",
+      "size_bytes": 174000,
+      "sha256": "dd2dac0a34bb1ba50c55e2dd15b72db6c86dc14a8faf1c1d4ffac0191a9be641"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Inset_Fed_Rectangular_Patch_Antenna.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Inset_Fed_Rectangular_Patch_Antenna.bmp",
+      "git_blob": "1c72bbd48bd329b2056ee40d540d5fc54a775c7f",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "c0de8dd74c3d39c76268ae66270ead6fad6de9bb8e426e7710e4d747d69a6fc0"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Inset_Fed_Rectangular_Patch_Antenna.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Inset_Fed_Rectangular_Patch_Antenna.csv",
+      "git_blob": "bc6b48002bab2cdc9dc2f61fc8542a090c06e6d0",
+      "mode": "100644",
+      "size_bytes": 19078,
+      "sha256": "858272c8e1f207c4cc63737ad0f0336f78cea612e29bd23353476af2ef953868"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Inset_Fed_Rectangular_Patch_Antenna.s1p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Inset_Fed_Rectangular_Patch_Antenna.s1p",
+      "git_blob": "bdda5f8b6ddcc63c14a6eaf04fece303750dfda0",
+      "mode": "100644",
+      "size_bytes": 119507,
+      "sha256": "3a9702150c25a84bab5b0c92f7a6797bea23f8b61020143e9ca3e4a92ce81978"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Planar_InvertedF_Antenna.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Planar_InvertedF_Antenna.bmp",
+      "git_blob": "95e6cbdc7f6209b4770227ae3d70bf128788ca2b",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "01542403450ad4988fa33463fe6d0da16260c8365f05560ea808d0a430b71112"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Planar_InvertedF_Antenna.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Planar_InvertedF_Antenna.csv",
+      "git_blob": "20d679ecd169fe82c1223ca54a7d5b79ca0d263b",
+      "mode": "100644",
+      "size_bytes": 19101,
+      "sha256": "a6d047f186934b1ffac235fe0d33fde087bee89a85b9b4e800e388f239e84186"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Planar_InvertedF_Antenna.s1p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Planar_InvertedF_Antenna.s1p",
+      "git_blob": "ebe282b2d8b5c78005b184056441ee679c41b572",
+      "mode": "100644",
+      "size_bytes": 118873,
+      "sha256": "d89c55725921f0e25a2f08d6e83d25787e7f199295715b0c41d2c9ce42e0641a"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.bmp",
+      "git_blob": "8895ab3ffd7b50b7471208c29ef4afb48624bf4c",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "7fbe356a50b011a0dfe9233bac61e9f657886fa2ee13412f517b8027a2708a4f"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.csv",
+      "git_blob": "2f2beaad742108ef6272ca18caa5b9031ae2d358",
+      "mode": "100644",
+      "size_bytes": 19025,
+      "sha256": "bfdbc8d3462efc7ef9a24752133b283c5106579d02fd47ec9f99ee8025ad74e6"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.s1p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS/sim_results/Wifi_patch_antenna.s1p",
+      "git_blob": "4d5cdd2e190fd3d54773150546d6ad1065e875b3",
+      "mode": "100644",
+      "size_bytes": 119380,
+      "sha256": "5ad2d2ac24feffd35734bc0b58cd79e9d8bfd235ac31f02d9a6b7e2922fa2c5e"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/HFSS_Projects/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/HFSS_Projects/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.aedt",
+      "git_blob": "4773bd494dad7fdb49c10d9ade03daa5df6516d6",
+      "mode": "100644",
+      "size_bytes": 349597,
+      "sha256": "f14ce352886a476c9f6816cfeed3cd669cff8ce3fa37e65b37025f9f4222e630"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/HFSS_Projects/Surface_Microstrip_1B_50.058 ohm_20250814_010711.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/HFSS_Projects/Surface_Microstrip_1B_50.058 ohm_20250814_010711.aedt",
+      "git_blob": "82f2c1a1309444b2225fa11400f1ab844ea4a00d",
+      "mode": "100644",
+      "size_bytes": 253256,
+      "sha256": "c172dde0d23a261e2aede794ee6b2cc120dbf080efaff4a2130e40d1875ac94d"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Coated_Microstrip_1B.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Coated_Microstrip_1B.pdf",
+      "git_blob": "c02bd2a5c9c4be7af856a06feed2e069a96aac2e",
+      "mode": "100644",
+      "size_bytes": 186160,
+      "sha256": "52acb9fe2b049d604538e35528644d9f7001ea63216ebceb229335f15661c7e7"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Diff_Offset_Coplanar_Strips_1B1A-page-1-table-1.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Diff_Offset_Coplanar_Strips_1B1A-page-1-table-1.csv",
+      "git_blob": "5e1b3613bedd8214deb446f5a2dda575db6f209f",
+      "mode": "100644",
+      "size_bytes": 1406,
+      "sha256": "99ee05d5f7f455d4e925867eadc58489378597f73422fdbf61e521d112fad36f"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Diff_Offset_Coplanar_Strips_1B1A.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Diff_Offset_Coplanar_Strips_1B1A.pdf",
+      "git_blob": "e930f1095fb65f8117c1ef74b71ac9f19cbcc4b9",
+      "mode": "100644",
+      "size_bytes": 188273,
+      "sha256": "7b0cdf31788f6fb8ae8e3a52cc067fbeec70cb761c0102798671ec6242afe28f"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Edge-Coupled_Offset_Stripline_1B1A-page-1-table-1.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Edge-Coupled_Offset_Stripline_1B1A-page-1-table-1.csv",
+      "git_blob": "da36cd11c6d456a10b294df6bbb75d3e480afc04",
+      "mode": "100644",
+      "size_bytes": 1158,
+      "sha256": "c9554e90abbdf7ad6717f468fa07dd810c418be408637430df67ab854be57e61"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Edge-Coupled_Offset_Stripline_1B1A.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Edge-Coupled_Offset_Stripline_1B1A.pdf",
+      "git_blob": "02a4d2383fe1c8c05be9164418f823ca547bef43",
+      "mode": "100644",
+      "size_bytes": 187018,
+      "sha256": "cb8f14765543b545cf618a05c1dff03df251eb2536a5ec88ba2dc0ef54f4b6f2"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Offset_Coplanar_Strips_1B1A.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Offset_Coplanar_Strips_1B1A.pdf",
+      "git_blob": "2768d83950fbf78695181488ea07d72f8c5aa795",
+      "mode": "100644",
+      "size_bytes": 187654,
+      "sha256": "b0a2177d306c287cbc7e5f94f932b35f7d23dc5c1139cccf194a4cca7991e2be"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Offset_Stripline_1B1A.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Offset_Stripline_1B1A.pdf",
+      "git_blob": "47e8d7ea7a83c541a74fb125678ee212831744c1",
+      "mode": "100644",
+      "size_bytes": 186247,
+      "sha256": "e185bf2f9e572ff272d2a35447568a1a4d7f0bcd81aa9a467ab03afe74cfcfe7"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Surface_Microstrip_1B-page-1-table-1.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Surface_Microstrip_1B-page-1-table-1.csv",
+      "git_blob": "2d63e3e037684a948fee741f353912f20c63267f",
+      "mode": "100644",
+      "size_bytes": 830,
+      "sha256": "7e43bd9ebcffabc7dd9267258c64454c94055c5baeb2a6a986c2fa5fd2191655"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/input_files/Surface_Microstrip_1B.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/input_files/Surface_Microstrip_1B.pdf",
+      "git_blob": "af410405dc51f1faf5d5b9bdd3abf29bd51a4cc0",
+      "mode": "100644",
+      "size_bytes": 185461,
+      "sha256": "131dfcdb1d1dda403c11751e1aa2f180e464ff0ca30023bc92cd92dc9e2d47db"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/logs/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.log",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/logs/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.log",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/logs/Surface_Microstrip_1B_50.058 ohm_20250814_010711.log",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/logs/Surface_Microstrip_1B_50.058 ohm_20250814_010711.log",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/Coated_Microstrip_1B.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/Coated_Microstrip_1B.py",
+      "git_blob": "2b0cd4c415a6727f57610919f401032c7cad31eb",
+      "mode": "100644",
+      "size_bytes": 27002,
+      "sha256": "15b1908e6a1c2e1809646cf05bf6951b126342f88e2bc0ea0be37b2db2005085"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/Diff_Offset_Coplanar_Strips_1B1A.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/Diff_Offset_Coplanar_Strips_1B1A.py",
+      "git_blob": "78cefe7c0fdccfa781499bc6e979ca82ce904489",
+      "mode": "100644",
+      "size_bytes": 34562,
+      "sha256": "5af76773fe964cfc02e585f04a038b114c809fe7fd61fa84683bbdd6f794c433"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/Edge-Coupled_Offset_Stripline_1B1A.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/Edge-Coupled_Offset_Stripline_1B1A.py",
+      "git_blob": "6c369d4a48acfa3e790b113549d64bf40be65b5b",
+      "mode": "100644",
+      "size_bytes": 28490,
+      "sha256": "8982e520c49b86027bb7bedacbedb8dc9447f1de5b3af65189bef3d73c51b1b7"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/Offset_Coplanar_Strips_1B1A.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/Offset_Coplanar_Strips_1B1A.py",
+      "git_blob": "5b62cf43e3b3bc6e53b824089497c366596b0010",
+      "mode": "100644",
+      "size_bytes": 33347,
+      "sha256": "641613906137e036d31b80f0f00c95e14f41902343ffdf0b7c74e28668fb8442"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/Offset_Stripline_1B1A.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/Offset_Stripline_1B1A.py",
+      "git_blob": "79fc4b3cfe6c5936bce0a2522d018b9df78836b9",
+      "mode": "100644",
+      "size_bytes": 26554,
+      "sha256": "b97bb2d96320cf132638bc6929d6f0fafc97d20b4e3e399f7e096f02050ee3ff"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/Surface_Microstrip_1B.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/Surface_Microstrip_1B.py",
+      "git_blob": "53a3123753352d99e94834c4eae072bf00896aba",
+      "mode": "100644",
+      "size_bytes": 21783,
+      "sha256": "426fdd50aec6e125acc4e20a4459fc5def0d8a76ce5bba6dd4c57095b16e8069"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/models/models_backup.7z",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/models/models_backup.7z",
+      "git_blob": "3581ed898bc31e4310beb1774b49929355789b2a",
+      "mode": "100644",
+      "size_bytes": 7048,
+      "sha256": "c6bf6b6503b02097763eba854f608200e0928917ac518524b803c7c7cc45a7ed"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.bmp",
+      "git_blob": "9c6019ee28feae6cf04d28596765e46ba15c6d75",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "52215fe8a28b0018daf8c93fe5077b6e943a8e755c79034875c1924cc385bc48"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.csv",
+      "git_blob": "3c7a2fc5b161466b68d596cfa65fe76ab6409145",
+      "mode": "100644",
+      "size_bytes": 77942,
+      "sha256": "f4b2d7f6485ce68e802337bf5626d38a78a9c447ccdb61bb17bd8aa3ca91ca7e"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.s4p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334.s4p",
+      "git_blob": "3fc968d060bfaa4d29cd30a06c900bd8834077a2",
+      "mode": "100644",
+      "size_bytes": 1826983,
+      "sha256": "84b87fa8de401da90c1326cf8d3f47987193bb58c6ae24819582cc54f2cb5315"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334_mark.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Edge-Coupled_Offset_Stripline_1B1A_99.615 ohm_20250814_010334_mark.bmp",
+      "git_blob": "045fa2edc6eb7a4f4add18c2b6a53d07c9bc5ae9",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "e982c1230ff9dba18912105d500b0fdddce525eb14372601a794baea116b66fe"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Surface_Microstrip_1B_50.058 ohm_20250814_010711.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Surface_Microstrip_1B_50.058 ohm_20250814_010711.bmp",
+      "git_blob": "6c8165167087905b24ff66ad50860794bff60363",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "06360301bdde1bde915a738db1852e918ea934b89595b5d36329ed350003fd63"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Surface_Microstrip_1B_50.058 ohm_20250814_010711.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Surface_Microstrip_1B_50.058 ohm_20250814_010711.csv",
+      "git_blob": "b061c0f6b5b33695dd27435a43b761890e65100d",
+      "mode": "100644",
+      "size_bytes": 78429,
+      "sha256": "c5058950e6b097054669c6aafc3f841bc79cbf972213ab95cbd1074c7faf6481"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_from_si9000/sim_results/Surface_Microstrip_1B_50.058 ohm_20250814_010711.s4p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_from_si9000/sim_results/Surface_Microstrip_1B_50.058 ohm_20250814_010711.s4p",
+      "git_blob": "685bed0b9e40340a0d95aced1770ac8e2324b9be",
+      "mode": "100644",
+      "size_bytes": 631310,
+      "sha256": "d4ce762828e9a350be4581dd0d40ad6a833e40c794b8dc6b8e85862adbe51f3e"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/HFSS_Projects/Via_Surface_Microstrip_1B_50.058 ohm_20250822_092539.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/HFSS_Projects/Via_Surface_Microstrip_1B_50.058 ohm_20250822_092539.aedt",
+      "git_blob": "60a906eea4036fd2c6b7cbe68eecd13b79e60dd4",
+      "mode": "100644",
+      "size_bytes": 190750,
+      "sha256": "ae92157366c3c0615bd6f34c73bf171c834259d1b0a0192335f58cf0fbdd62d0"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/HFSS_Projects/Via_Surface_Microstrip_1B_53.249 ohm_20250822_102116.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/HFSS_Projects/Via_Surface_Microstrip_1B_53.249 ohm_20250822_102116.aedt",
+      "git_blob": "ceb19cac49bf872b5fd23b781c9d63dcd6e5db8f",
+      "mode": "100644",
+      "size_bytes": 190584,
+      "sha256": "c4f3ff74af732784066b2fc3969f62c118a6b1c6aa43a538e74663782d053c83"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/input_files/Surface_Microstrip_1B_Top&Bottom-page-1-table-1.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/input_files/Surface_Microstrip_1B_Top&Bottom-page-1-table-1.csv",
+      "git_blob": "002d746e0cabcf2b6cf6f73ce8ce1909395782f6",
+      "mode": "100644",
+      "size_bytes": 830,
+      "sha256": "56e091a7675a7d51e2ca266617b3f4c94d3ee9150d7ab0185af4ede591bc5488"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/input_files/Surface_Microstrip_1B_Top&Bottom.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/input_files/Surface_Microstrip_1B_Top&Bottom.pdf",
+      "git_blob": "4c851ba31b2589c7cf626a9f6ab37a35a569f7c0",
+      "mode": "100644",
+      "size_bytes": 69633,
+      "sha256": "5ace94d253a839fe7dc28811721ae62d935f33a5968a16a8d18f5b09e7202be9"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/models/Via_Surface_Microstrip_1B.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/models/Via_Surface_Microstrip_1B.py",
+      "git_blob": "096e3a1f27f8934535654cf1cb16dbad7a0146bc",
+      "mode": "100644",
+      "size_bytes": 32617,
+      "sha256": "fe9eda4f9f3801b5ade8b94c9b105794e88cd584fe429e98dd43731e317e7fb4"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/sim_results/S_para.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/sim_results/S_para.bmp",
+      "git_blob": "beef20d28bc0359639b149e9b12f70e96bceb079",
+      "mode": "100644",
+      "size_bytes": 207249,
+      "sha256": "6ed1764eeece79cc3a2114a17852919cebd69fe7e6a96a60848024aaa80722b7"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/sim_results/TDR.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/sim_results/TDR.bmp",
+      "git_blob": "8087832d5dd060db74c7b5012858507b131d1463",
+      "mode": "100644",
+      "size_bytes": 138323,
+      "sha256": "63495c891eba3c5f2e8221ac9c718f3f6eb56a7b8c4ecedaf2fa3ef6b0cc04b9"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/sim_results/Terminal S Parameter Plot1.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/sim_results/Terminal S Parameter Plot1.csv",
+      "git_blob": "606df25a7d6911391e5118f2be08340141bee45a",
+      "mode": "100644",
+      "size_bytes": 590829,
+      "sha256": "619d8d49389df22ac52d3b8c00e4f191d9f993af735ee9150ac94fc89bf4a736"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_via/sim_results/Via_Surface_Microstrip_1B_50.058 ohm_20250822_092539_Via_Surface_Microstrip_1B_(1).s2p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_via/sim_results/Via_Surface_Microstrip_1B_50.058 ohm_20250822_092539_Via_Surface_Microstrip_1B_(1).s2p",
+      "git_blob": "e21c87fbd23e8da1b016d2d8842cdf0bf181a671",
+      "mode": "100644",
+      "size_bytes": 629752,
+      "sha256": "40c38f24ca27ed10ff1919e5985dd2982c4f1c420f764c7894fc29a61b5639ef"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/Comsol_Projects/sma_connectorized_cpw.mph",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/Comsol_Projects/sma_connectorized_cpw.mph",
+      "git_blob": "d377076db75f4a2e6dbd260a5cb2da0dfe27aa69",
+      "mode": "100644",
+      "size_bytes": 20560756,
+      "sha256": "55f8cf2037b0e3bc409350c40541b9dde6697197e955d4f14bcd41e61244937f"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/HFSS_Projects/sma_connectorized_cpw.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/HFSS_Projects/sma_connectorized_cpw.aedt",
+      "git_blob": "56b69d3634a1b0a7bb2c22c84e914c863557909c",
+      "mode": "100644",
+      "size_bytes": 551712,
+      "sha256": "1a137cb2501b9e83c4f2ddbb1fb8ebb1c176107a073e117615e89dbc0ae98756"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/dxf/sma_cpw.sab",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/dxf/sma_cpw.sab",
+      "git_blob": "d52deddfa22192aaf856494e37132a25c368f142",
+      "mode": "100644",
+      "size_bytes": 511308,
+      "sha256": "bc4ac4911a97d4380274e7f83f068c769d83ec78d4d07cb64b76964efe225c39"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/sim_results/sma_connectorized_cpw.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/sim_results/sma_connectorized_cpw.bmp",
+      "git_blob": "7b072a640fa7e2f63906a8bf0d3a32e2b126a475",
+      "mode": "100644",
+      "size_bytes": 6577158,
+      "sha256": "cc354b13937fba2dc4bb4d74162b3f874772118203ac1b51e553de10ae1d5dfd"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/sim_results/sma_connectorized_cpw.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/sim_results/sma_connectorized_cpw.csv",
+      "git_blob": "92b9c3ea5a08813e38f2aef7f50b83b1af19e76b",
+      "mode": "100644",
+      "size_bytes": 43139,
+      "sha256": "b2afda92209005a419179e10bd1e0c7873b5ed42e74f6afe86f36ffe826579c0"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/sim_results/sma_connectorized_cpw.s2p",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/sim_results/sma_connectorized_cpw.s2p",
+      "git_blob": "564462985962c215dcb140fa1f6431f248a25534",
+      "mode": "100644",
+      "size_bytes": 341254,
+      "sha256": "dedf13951b0dc741a9b5bff5eebc74a8beb5db251bb1f10690c8818e0a37b7ed"
+    },
+    {
+      "original_path": "simulation/Ansys_HFSS_waveguide/CPW/sma_cpw_auto_tools.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_HFSS_waveguide/CPW/sma_cpw_auto_tools.py",
+      "git_blob": "ab0d6c2371c9bffb1e2d9ad6d8430aec61c01597",
+      "mode": "100644",
+      "size_bytes": 15235,
+      "sha256": "704e007e192999ed0cbe4c87493dbfbf62dbc2cf847628a50e49717f6e0a079d"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/HFSS_Projects/Surface_Microstrip_1B_51.160 ohm_20250816_100927.aedt",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/HFSS_Projects/Surface_Microstrip_1B_51.160 ohm_20250816_100927.aedt",
+      "git_blob": "9479f84fd209abef4ca39c6477bce4adeec3a200",
+      "mode": "100644",
+      "size_bytes": 305032,
+      "sha256": "b87c893ce445302228a7251e587a712c013f2e77b6d07cf6944b4bf5936a7e61"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/input_files/Surface_Microstrip_1B-page-1-table-1.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/input_files/Surface_Microstrip_1B-page-1-table-1.csv",
+      "git_blob": "003376d2d3185d8c0492df6eec62a83452c543b9",
+      "mode": "100644",
+      "size_bytes": 821,
+      "sha256": "89ee4f533933c1dee26abffdbc81a665f953544ec1380c08c957b1a34a4285b1"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/input_files/Surface_Microstrip_1B.pdf",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/input_files/Surface_Microstrip_1B.pdf",
+      "git_blob": "1b18c9c68eb17ce1943609b57ffe9cbe76803312",
+      "mode": "100644",
+      "size_bytes": 185429,
+      "sha256": "53ac6e8d6cb2f599b9278d7620803937e5d1b4d3d888d9818666649749fc51d3"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/logs/Surface_Microstrip_1B_51.160 ohm_20250816_100927.log",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/logs/Surface_Microstrip_1B_51.160 ohm_20250816_100927.log",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/models_q2d/Surface_Microstrip_1B_Q2D.py",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/models_q2d/Surface_Microstrip_1B_Q2D.py",
+      "git_blob": "5cb4a40e04aee1ab76de0e2d8bb756a09ab7e3e7",
+      "mode": "100644",
+      "size_bytes": 25276,
+      "sha256": "0a5691e566ed6b8832a60448ecfb2e0cc306f5cb6af58766ee1912ab3a2909c7"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927.bmp",
+      "git_blob": "aa15178a53e696408686221971c6d10992c868c4",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "39f39b73b8ab8eb969074b7731d4e42b3f18844e8d55fbe787eca8582da1e6e3"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927.csv",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927.csv",
+      "git_blob": "883744ee64577bc81c737f51f1418e991b95922e",
+      "mode": "100644",
+      "size_bytes": 77826,
+      "sha256": "bcaa6e3ea65d09356a84041950a2a6f04419512b28f0e2af39caffbe8e83e7e4"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927.s4p",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927.s4p",
+      "git_blob": "9c3ce4f9f139e0a21ed92a2b54d11920b5584fad",
+      "mode": "100644",
+      "size_bytes": 630644,
+      "sha256": "bba05528996d22d8f27367ee409b358597d0b8ce7b3c5a2c7c6431017b1c71dd"
+    },
+    {
+      "original_path": "simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927_TDR.bmp",
+      "archived_path": "history/0.0.3/simulation/Ansys_Q2D_from_si9000/sim_results/Surface_Microstrip_1B_51.160 ohm_20250816_100927_TDR.bmp",
+      "git_blob": "80ae32e7af528a6348075984feec49407bfebd3b",
+      "mode": "100644",
+      "size_bytes": 6713438,
+      "sha256": "e0fef787abeb11c0c7692c3e06954ea3ea06571cc99ee2ab31c0f4d667c34962"
+    },
+    {
+      "original_path": "simulation/HFSS_ANT_Tools_test/VBS_cripts/patch.vbs",
+      "archived_path": "history/0.0.3/simulation/HFSS_ANT_Tools_test/VBS_cripts/patch.vbs",
+      "git_blob": "d04b84857d47f00ff5b90ea17e84108af49601c7",
+      "mode": "100644",
+      "size_bytes": 13614,
+      "sha256": "7d9050470aa7ef7aacff4f6988fd14a6ce4c209fb9e59f3ae601bc4606bf6369"
+    },
+    {
+      "original_path": "ssh/__init__.py",
+      "archived_path": "history/0.0.3/ssh/__init__.py",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "ssh/ssh.py",
+      "archived_path": "history/0.0.3/ssh/ssh.py",
+      "git_blob": "f267a4a7a7891f713ea9699fdff7d8b20ca20e00",
+      "mode": "100644",
+      "size_bytes": 4151,
+      "sha256": "2b41dd64060e0f5d5095fd3d6238a429eff2f426109fd18d6a08d7f7cab82b5c"
+    },
+    {
+      "original_path": "ssh/ssh_2.py",
+      "archived_path": "history/0.0.3/ssh/ssh_2.py",
+      "git_blob": "f43b3651459948343aa103cb3338f2d5b6af1296",
+      "mode": "100644",
+      "size_bytes": 1485,
+      "sha256": "6144b23b6302e036520cfdaf90b3f2b6706cef03334e02c5c892c0099f8f8c39"
+    },
+    {
+      "original_path": "tools/auto_desktop.py",
+      "archived_path": "history/0.0.3/tools/auto_desktop.py",
+      "git_blob": "4509496a14cd714cf5a9d23694a7e8c2d6a04fc4",
+      "mode": "100644",
+      "size_bytes": 2694,
+      "sha256": "0cc45e1c6dd39626dfc678af48e889aca9faece3e08f8024834fb4b9f474161f"
+    },
+    {
+      "original_path": "tools/pdf_excel.py",
+      "archived_path": "history/0.0.3/tools/pdf_excel.py",
+      "git_blob": "bceec146d11422900d1d338898130e91c927584f",
+      "mode": "100644",
+      "size_bytes": 136,
+      "sha256": "d52e70caf4b0b9ad99565e727f104cf6387d4e40ff87bfa3af82b0e89c53a81b"
+    }
+  ]
+}

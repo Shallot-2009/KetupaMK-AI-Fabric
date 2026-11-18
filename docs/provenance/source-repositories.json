@@ -1,0 +1,31 @@
+{
+  "captured_on": "2026-11-18",
+  "repositories": [
+    {
+      "id": 1005327414,
+      "full_name": "Shallot-2009/Ketupa_v0.0.3",
+      "html_url": "https://github.com/Shallot-2009/Ketupa_v0.0.3",
+      "description": "This is a deep learning project applied to signal integrity and RF analysis. Automated modeling, simulation, and data storage of HFSS for patch antennas , transmission lines vias and connectors.  By simulating and testing a large amount of S-parameter and TDR data, the S-parameter model is trained. ",
+      "default_branch": "main",
+      "stargazers_count": 90,
+      "forks_count": 10,
+      "open_issues_count": 1,
+      "created_at": "2025-06-20T04:02:56Z",
+      "updated_at": "2026-11-08T09:42:43Z",
+      "pushed_at": "2026-10-18T18:26:21Z"
+    },
+    {
+      "id": 1424671956,
+      "full_name": "Shallot-2009/Ketupa-AI-Fabric",
+      "html_url": "https://github.com/Shallot-2009/Ketupa-AI-Fabric",
+      "description": "Ketupa product downloads: four releases, three Windows/Linux installers each. Proprietary licensed software.",
+      "default_branch": "main",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "created_at": "2026-10-18T18:09:45Z",
+      "updated_at": "2026-10-19T08:52:59Z",
+      "pushed_at": "2026-11-13T00:48:25Z"
+    }
+  ]
+}
