@@ -1,6 +1,6 @@
 # KetupaMK-AI-Fabric
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [文档](docs/README.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · [文档](docs/README.md) · [版本](docs/releases/README.md) · [标签](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
 KetupaMK 面向 PCB、封装与互连建模，使用 CIR 配置文件组织工程输入、调用兼容的 EDA 工具并归集可追溯结果。1.0.2 同时提供 DDR Touchstone 延迟与偏斜报告，以及 AI 辅助的网络数据准备功能。
 
@@ -30,7 +30,7 @@ KetupaMK 面向 PCB、封装与互连建模，使用 CIR 配置文件组织工�
 
 **当前预览版：KetupaMK 1.0.2** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb)
 
-点击上述链接直接下载安装包。Linux 的 TAR.GZ 与 DEB 二选一。1.0.2 仍为预发布版，请按实际工作流选择版本并验证。
+点击上述链接直接下载安装包。标准 Linux 的 TAR.GZ 与 DEB 二选一；Rocky/RHEL 8、Ubuntu 20.04 等环境见下方兼容版。1.0.2 仍为预发布版，请按实际工作流选择版本并验证。
 
 | 发行版本 | 状态 | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
@@ -40,9 +40,26 @@ KetupaMK 面向 PCB、封装与互连建模，使用 CIR 配置文件组织工�
 | [Runtime 1.0.0](docs/releases/openketupamk-runtime-v1.0.0.md) | 历史正式发行 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-installer_1.0.0_amd64.deb) |
 | [Beta](docs/releases/openketupamk-beta.md) | 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-amd64.deb) |
 
+<a id="legacy-linux"></a>
+
+### 旧版 Linux 兼容环境 · 1.0.2
+
+适用于 Rocky/RHEL 8、Ubuntu 20.04 等较旧用户空间，要求 **x86_64、glibc ≥ 2.28**。四种格式任选一种，均为 Linux 应用与运行环境安装包。
+
+| 目标平台 / 安装方式 | 直接下载 |
+| --- | --- |
+| Rocky / RHEL 8 | [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) |
+| Ubuntu 20.04 / Debian | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) |
+| 自解压安装 | [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) |
+| 独立目录安装 | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) |
+
+[兼容版说明与验证范围](docs/releases/openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [标签页](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
+
+本组保持预发布状态。已有验收为 EL8.1 与 Ubuntu 20.04 隔离用户空间测试，未覆盖 Rocky 真机内核或 EDA 求解。兼容构建与标准构建不要混装到同一目录。
+
 [安装说明](docs/installation/README.md) · [下载 SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [发行说明](docs/releases/README.md)
 
-Runtime 1.0.0 是独立发行组。安装包保留原始名称、字节与发行状态。GitHub 自动生成的 **Source code** ZIP/TAR 是仓库快照；产品安装包为上表中的 EXE、DEB 和 TAR.GZ 附件。
+Runtime 1.0.0 是独立发行组。安装包保留原始名称、字节与发行状态。GitHub 自动生成的 **Source code** ZIP/TAR 是仓库快照；产品安装包为上表中的 EXE、DEB、RPM、RUN 和 TAR.GZ 附件。
 
 <a id="licenses"></a>
 <a id="licenses-zh"></a>
@@ -74,7 +91,7 @@ KetupaMK-AI-Fabric/
 └── .github/       自动检查与问题模板
 ```
 
-`main` 维护当前文档与发行导航。标签固定历史快照：`legacy-v0.0.3` 保存原项目，`openketupamk-v*` 对应产品发行，`openketupamk-runtime-v*` 对应 Runtime。标签是固定引用，不是分支。详见[分支与发行规范](docs/governance/README.md)。
+`main` 维护当前文档与发行导航。标签固定历史快照：`legacy-v0.0.3` 保存原项目，`openketupamk-v*` 对应产品发行，`openketupamk-runtime-v*` 对应 Runtime，`openketupamk-kernel-legacy-v*` 对应旧版 Linux 兼容环境。标签是固定引用，不是分支。详见[分支与发行规范](docs/governance/README.md)。
 
 ## 文档与联系
 

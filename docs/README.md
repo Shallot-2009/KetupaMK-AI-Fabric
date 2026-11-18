@@ -14,6 +14,7 @@ Choose a topic below. Guides in this documentation index contain English and Sim
 | Product purpose and features | [Product scope](product/README.md) |
 | Download and install | [Installation](installation/README.md) |
 | Version selection | [Release notes](releases/README.md) |
+| Rocky/RHEL 8 and Ubuntu 20.04 | [Legacy Linux 1.0.2 environment](releases/openketupamk-kernel-legacy-v1.0.2.md) |
 | Test entitlement files | [LIC downloads and scope](../licenses/README.md) |
 | Software terms | [License scope](../LICENSE.md), [original EULA](../EULA.md#english) |
 | Third-party rights and source | [Component materials](../third-party/README.md) |
@@ -37,6 +38,7 @@ The root README is the product entry point. `docs/` explains use and maintenance
 | 产品用途与功能 | [产品说明](product/README.md) |
 | 下载与安装 | [安装说明](installation/README.md) |
 | 版本选择 | [发行说明](releases/README.md) |
+| Rocky/RHEL 8 与 Ubuntu 20.04 | [旧版 Linux 1.0.2 兼容环境](releases/openketupamk-kernel-legacy-v1.0.2.md) |
 | 测试授权文件 | [LIC 下载与范围](../licenses/README.md) |
 | 软件条款 | [许可范围](../LICENSE.md)、[原始 EULA](../EULA.md#中文) |
 | 第三方权利与源码 | [第三方材料](../third-party/README.md) |

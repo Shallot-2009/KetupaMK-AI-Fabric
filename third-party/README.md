@@ -34,6 +34,10 @@ Each source link downloads the archive directly. GCC source RPMs include distrib
 
 Keep notices and source-access rights intact when redistributing or modifying covered components. The first-party EULA does not override independent LGPL/GPL or other component rights, including applicable replacement and debugging rights.
 
+## Legacy Linux 1.0.2 inventory
+
+The [compatibility distribution](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md) contains `dependency-inventory.json` with 72 declared Python distributions, private CPython 3.12.15, dependency license files and `notices/` materials, including 7-Zip notices. The inventory states no commercial EDA software is bundled. Its wheel compatibility/hash statements are supplied build records, not independently repeated upstream verification in this publication. Extract the selected installer to inspect its exact shipped materials; these records do not establish complete corresponding-source coverage for native libraries or a complete SBOM. The existing source table above retains its original version mappings; it is not automatically extended to the compatibility build.
+
 ## Coverage and delivery
 
 The two historical 1.0.0 distributions contain encrypted payloads that were not fully decoded in the earlier review. A complete package-level dependency inventory and license/source coverage for every distribution, including 1.0.2, have not been established by these records. Do not treat this directory as a complete SBOM or a full compliance certification.
@@ -82,6 +86,10 @@ Installer assets remain on Releases; source archives stay accessible in this rep
 - [SciPy-1.17.1-Third-Party.txt](licenses/SciPy-1.17.1-Third-Party.txt)
 
 再分发或修改相关组件时，应保留声明与源码获取权利。第一方 EULA 不覆盖 LGPL/GPL 等组件独立许可，包括适用的替换与调试权利。
+
+## 旧版 Linux 1.0.2 组件记录
+
+[兼容发行组](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md)包含 `dependency-inventory.json`，声明 72 个 Python 发行包、私有 CPython 3.12.15、依赖许可文件及含 7-Zip 声明的 `notices/` 材料；清单声明未捆绑商业 EDA 软件。wheel 兼容性/上游哈希说明属于提供的构建记录，本次未重新进行上游验证。可解包查看准确随包资料；这些记录不能建立原生库的完整对应源码覆盖，也不等于完整 SBOM。上方源码表保留原有版本映射，不自动扩大到兼容构建。
 
 ## 覆盖范围与交付要求
 

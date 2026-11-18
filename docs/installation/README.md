@@ -9,7 +9,7 @@
 
 ## Select and download
 
-Use the [download table](../../README.md#downloads-en) to select a version and platform. Click EXE, TAR.GZ, or DEB to download the actual installer. Linux TAR.GZ and DEB are alternatives. Runtime 1.0.0 is a separate distribution; 1.0.2, 1.0.1, and Beta retain their pre-release status.
+Use the [download table](../../README.md#downloads-en) to select a version and platform. Click a format link to download the actual installer. Standard Linux TAR.GZ/DEB and compatibility Linux RPM/DEB/RUN/TAR.GZ are alternative formats within their respective distributions. Runtime 1.0.0 is a separate distribution; 1.0.2, 1.0.1, and Beta retain their pre-release status.
 
 Download [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) into the installer directory. Exact names, sizes, and digests are recorded in the [release manifest](../../releases/manifest.json).
 
@@ -46,6 +46,50 @@ ketupa license status
 ketupa license-service status
 ```
 
+<a id="legacy-linux-en"></a>
+
+## Legacy Linux 1.0.2: Rocky / RHEL 8 and Ubuntu 20.04
+
+Use the [compatibility release](../releases/openketupamk-kernel-legacy-v1.0.2.md), tag `openketupamk-kernel-legacy-v1.0.2`. All four formats target **Linux x86_64 with glibc 2.28 or later**. They install the application and bundled runtime, not a Linux kernel. Choose one format:
+
+| Format | Recommended selection | Installation after SHA-256 verification |
+| --- | --- | --- |
+| RPM | Rocky / RHEL-compatible 8+ | `sudo dnf install ./ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm` |
+| DEB | Ubuntu 20.04 / compatible Debian | `sudo apt install ./ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb` |
+| RUN | Self-extracting installer, bundled TAR payload | Commands below |
+| TAR.GZ | Inspect/extract before installation; explicit prefix | Commands below |
+
+For RUN, first check the embedded archive, then install into a dedicated prefix:
+
+```bash
+sh ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run --check
+sudo sh ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run --prefix /opt/ketupa-ai-fabric-kernel-legacy-1.0.2 --command ketupa-legacy
+```
+
+For TAR.GZ:
+
+```bash
+tar -xzf ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+cd ketupa-ai-fabric-kernel-legacy-1.0.2-x64
+sudo ./ketupa-setup --prefix /opt/ketupa-ai-fabric-kernel-legacy-1.0.2 --command ketupa-legacy
+```
+
+The RPM/DEB default application prefix is `/opt/ketupa-ai-fabric`. The compatibility DEB still identifies as `ketupa-ai-fabric` version `1.0.2`; a same-version installation can replace the standard build. Review package-manager actions before continuing. Use the package manager for packages it owns; never unpack TAR/RUN over an RPM/DEB-owned directory. TAR/RUN support `--replace` for an intentional replacement after stopping affected jobs/services. A separate prefix and command name avoid file collisions but do not create independent entitlement or service state automatically.
+
+Host system libraries remain prerequisites. The DEB declares `libc6 (>= 2.28), libstdc++6, libcrypt1, zlib1g, libgomp1`; RPM resolves its own declared dependencies. Fully offline hosts must have those dependencies available locally. Do not replace the host glibc to install this application.
+
+After a dedicated-prefix installation, check the exact installed executable before configuring a compatible entitlement or external EDA tools:
+
+```bash
+/opt/ketupa-ai-fabric-kernel-legacy-1.0.2/ketupa --version
+/opt/ketupa-ai-fabric-kernel-legacy-1.0.2/ketupa license status
+/opt/ketupa-ai-fabric-kernel-legacy-1.0.2/ketupa license-service status
+```
+
+For RPM/DEB, substitute `/opt/ketupa-ai-fabric/ketupa`. Preserve workspaces, service configuration, entitlement files and consumption/time records when upgrading or removing an installation; do not reset or roll them back. Use the installed format's maintenance instructions for removal.
+
+The supplied acceptance records cover isolated EL8.1 TAR/RUN/RPM and Ubuntu 20.04 DEB operations. They share the host kernel and do not establish a minimum kernel version, native Rocky hardware support or successful EDA solving. See the [release evidence and limitations](../releases/openketupamk-kernel-legacy-v1.0.2.md).
+
 ## Entitlements and engineering environment
 
 The [public test LIC files](../../licenses/README.md) are supplied unchanged. Use the entitlement-import or configuration workflow documented by your installed version. Their actual signed restrictions govern use; copying a file does not activate or renew it.
@@ -65,7 +109,7 @@ Include the product version, operating system, package filename, checksum result
 
 ## 选择并下载
 
-在[下载表](../../README.zh-CN.md#downloads-zh)中选择版本和平台，点击 EXE、TAR.GZ 或 DEB 直接下载安装包。Linux 的 TAR.GZ 与 DEB 二选一。Runtime 1.0.0 为独立发行组；1.0.2、1.0.1 与 Beta 保留预发布状态。
+在[下载表](../../README.zh-CN.md#downloads-zh)中选择版本和平台，点击格式链接直接下载安装包。标准 Linux 的 TAR.GZ/DEB 与兼容 Linux 的 RPM/DEB/RUN/TAR.GZ 分别在各自发行组内任选一种。Runtime 1.0.0 为独立发行组；1.0.2、1.0.1 与 Beta 保留预发布状态。
 
 将 [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) 下载到安装包所在目录。准确文件名、大小和哈希见[发行清单](../../releases/manifest.json)。
 
@@ -101,6 +145,50 @@ ketupa --version
 ketupa license status
 ketupa license-service status
 ```
+
+<a id="legacy-linux-zh"></a>
+
+## 旧版 Linux 兼容环境 1.0.2：Rocky / RHEL 8 与 Ubuntu 20.04
+
+选择[兼容发行组](../releases/openketupamk-kernel-legacy-v1.0.2.md)，标签为 `openketupamk-kernel-legacy-v1.0.2`。四种格式均面向 **Linux x86_64、glibc 2.28 或以上**，安装应用与随包运行环境，不安装 Linux 内核。任选一种：
+
+| 格式 | 建议使用场景 | 核对 SHA-256 后安装 |
+| --- | --- | --- |
+| RPM | Rocky / RHEL 兼容 8+ | `sudo dnf install ./ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm` |
+| DEB | Ubuntu 20.04 / 兼容 Debian | `sudo apt install ./ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb` |
+| RUN | 自解压安装，内嵌 TAR 载荷 | 见下方命令 |
+| TAR.GZ | 先查看、解压再安装，明确指定前缀 | 见下方命令 |
+
+RUN 先检查内嵌归档，再安装到独立目录：
+
+```bash
+sh ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run --check
+sudo sh ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run --prefix /opt/ketupa-ai-fabric-kernel-legacy-1.0.2 --command ketupa-legacy
+```
+
+TAR.GZ：
+
+```bash
+tar -xzf ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+cd ketupa-ai-fabric-kernel-legacy-1.0.2-x64
+sudo ./ketupa-setup --prefix /opt/ketupa-ai-fabric-kernel-legacy-1.0.2 --command ketupa-legacy
+```
+
+RPM/DEB 默认应用目录为 `/opt/ketupa-ai-fabric`。兼容 DEB 的包名仍是 `ketupa-ai-fabric`、版本仍是 `1.0.2`，同版本安装可能替换标准构建，继续前先检查包管理器计划。包管理器负责的目录应继续由其维护，不要将 TAR/RUN 解压覆盖到 RPM/DEB 安装目录。TAR/RUN 的 `--replace` 用于停止相关任务/服务后的有意替换。独立目录和命令名可以避免文件冲突，但不会自动隔离授权和服务状态。
+
+宿主仍须具备基础系统库。DEB 声明 `libc6 (>= 2.28), libstdc++6, libcrypt1, zlib1g, libgomp1`，RPM 依其自身声明解析。全离线主机应事先在本地准备这些依赖，不要为安装应用替换宿主 glibc。
+
+独立目录安装后，先检查准确的已安装入口，再配置适用授权及外部 EDA 工具：
+
+```bash
+/opt/ketupa-ai-fabric-kernel-legacy-1.0.2/ketupa --version
+/opt/ketupa-ai-fabric-kernel-legacy-1.0.2/ketupa license status
+/opt/ketupa-ai-fabric-kernel-legacy-1.0.2/ketupa license-service status
+```
+
+RPM/DEB 安装则替换为 `/opt/ketupa-ai-fabric/ketupa`。升级或卸载时保留工作区、服务配置、授权文件及消耗/时间记录，不重置或回滚。卸载应使用所选格式自身的维护说明。
+
+提供的验收记录覆盖隔离 EL8.1 TAR/RUN/RPM 与 Ubuntu 20.04 DEB 操作，共用宿主内核，不能据此确定最低内核版本、Rocky 真机硬件支持或 EDA 求解成功。详见[发行验收依据与限制](../releases/openketupamk-kernel-legacy-v1.0.2.md)。
 
 ## 授权与工程环境
 

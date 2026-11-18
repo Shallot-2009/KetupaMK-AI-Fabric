@@ -15,7 +15,7 @@ Include the affected product/tag, package name and hash, platform, a minimal des
 
 ## Version status
 
-1.0.2 is the current published preview. 1.0.1, product/Runtime 1.0.0, Beta, and v0.0.3 remain available as historical distributions or records. Their availability does not establish an active security maintenance window. Support and update obligations follow applicable agreements; the maintainer should assess each report's affected versions.
+1.0.2 is the current published preview, including the separate [Legacy Linux compatibility distribution](docs/releases/openketupamk-kernel-legacy-v1.0.2.md). Distinguish standard and compatibility tags when reporting a problem; a lower ABI baseline does not establish operating-system security maintenance or guaranteed support for old kernels. 1.0.1, product/Runtime 1.0.0, Beta, and v0.0.3 remain available as historical distributions or records. Their availability does not establish an active security maintenance window. Support and update obligations follow applicable agreements; the maintainer should assess each report's affected versions.
 
 ## Publication handling
 
@@ -36,7 +36,7 @@ GitHub secret scanning and push protection supplement review. Hashes and these c
 
 ## 版本状态
 
-1.0.2 为当前公开预览版。1.0.1、产品/Runtime 1.0.0、Beta 和 v0.0.3 作为历史发行或记录保留，公开可下载不表示存在持续安全维护期。支持与更新义务依适用协议处理，维护者应逐项判断报告影响的版本。
+1.0.2 为当前公开预览版，包含独立的[旧版 Linux 兼容发行组](docs/releases/openketupamk-kernel-legacy-v1.0.2.md)。反馈时请区分标准版和兼容版标签；较低 ABI 基线不表示操作系统仍受安全维护，也不保证所有旧内核均受支持。1.0.1、产品/Runtime 1.0.0、Beta 和 v0.0.3 作为历史发行或记录保留，公开可下载不表示存在持续安全维护期。支持与更新义务依适用协议处理，维护者应逐项判断报告影响的版本。
 
 ## 发布处理
 

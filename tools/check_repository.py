@@ -174,7 +174,13 @@ def verify_releases():
     for row in mapping['tags']:
         if row['tag'] in ORIGINAL_TAGS:
             require(row['commit'] == ORIGINAL_TAGS[row['tag']], 'Original tag baseline changed: ' + row['tag'])
-        require(git('rev-parse', row['tag'] + '^{commit}').decode().strip() == row['commit'],
+        # A publication snapshot cannot embed its own commit hash. Only that
+        # snapshot may use "self"; the next main commit records its concrete ID.
+        expected = row['commit']
+        if expected == 'self':
+            expected = git('rev-parse', 'HEAD').decode().strip()
+        require(bool(re.fullmatch(r'[0-9a-f]{40}', expected)), 'Invalid tag commit: ' + row['tag'])
+        require(git('rev-parse', row['tag'] + '^{commit}').decode().strip() == expected,
                 'Published tag target changed: ' + row['tag'])
     return len(assets)
 

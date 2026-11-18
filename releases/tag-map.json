@@ -33,6 +33,11 @@
       "tag": "legacy-v0.0.3",
       "commit": "b5f44c111fef3d32b5cdeb3c18d4af40e5c81306",
       "kind": "foundation"
+    },
+    {
+      "tag": "openketupamk-kernel-legacy-v1.0.2",
+      "commit": "self",
+      "kind": "linux-compatibility"
     }
   ]
 }

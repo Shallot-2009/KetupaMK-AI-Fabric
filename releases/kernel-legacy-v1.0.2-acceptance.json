@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "distribution_tag": "openketupamk-kernel-legacy-v1.0.2",
+  "version": "1.0.2",
+  "publication_review_date": "2026-11-18",
+  "evidence_type": "maintainer-supplied prior acceptance; not a fresh hardware or EDA test",
+  "source_records": [
+    {
+      "filename": "ACCEPTANCE.md",
+      "sha256": "780be47ba8344e96d89e5f6d7b0b37e878457532ed2ca58795dea7e276d5afa7"
+    },
+    {
+      "filename": "acceptance.json",
+      "sha256": "343f2feddc81966e7802f5497d188f80ba821f88b70b2de4cbe522fbd835c31b"
+    },
+    {
+      "filename": "artifacts.json",
+      "sha256": "ab267306c61d91671c3bcc7e4265f04105f9d32ca2cac51cf66ed209aa7f6a3f"
+    },
+    {
+      "filename": "SHA256SUMS.txt",
+      "sha256": "41a50f4fbf19d85e81106eb7d04102c528552e7af7f6ff404dcf83601c98fe19"
+    }
+  ],
+  "prior_acceptance_date": "2026-11-17",
+  "target": {
+    "architecture": "x86_64",
+    "build_userspace": "CentOS Linux 8.1.1911",
+    "glibc_minimum": "2.28",
+    "maximum_required_symbols": {
+      "GLIBC": "2.28",
+      "GLIBCXX": "3.4.25",
+      "CXXABI": "1.3.11"
+    },
+    "minimum_kernel_version": null
+  },
+  "reported_prior_tests": [
+    {
+      "scope": "EL8.1 TAR/RUN/RPM",
+      "passed": 22
+    },
+    {
+      "scope": "DEB structure",
+      "passed": 6
+    },
+    {
+      "scope": "Ubuntu 20.04 DEB install/reinstall/removal",
+      "passed": 8
+    }
+  ],
+  "reported_elf_files_checked": 791,
+  "reported_signed_payload_files_verified": 9351,
+  "test_isolation": "bubblewrap isolated userspaces sharing the host kernel",
+  "publication_checks": [
+    "four original installer sizes and SHA-256 digests checked",
+    "DEB dependency metadata and TAR member metadata inspected without executing installers"
+  ],
+  "not_established_by_this_publication": [
+    "independent signature re-verification",
+    "native Rocky hardware/kernel installation",
+    "minimum supported Linux kernel version",
+    "vendor EDA integration",
+    "licensed engineering modeling or solver acceptance",
+    "complete dependency license and corresponding-source coverage"
+  ],
+  "privacy": "Raw acceptance reports are not republished; this summary omits private host addresses and workstation paths."
+}

@@ -15,11 +15,12 @@
 | `legacy-v0.0.3` | Original foundational project root | Preserve target `b5f44c111fef3d32b5cdeb3c18d4af40e5c81306` |
 | `openketupamk-v*` | Product release snapshots | Published targets remain fixed |
 | `openketupamk-runtime-v*` | Runtime release snapshots | Published targets remain fixed |
+| `openketupamk-kernel-legacy-v*` | Legacy Linux application/runtime compatibility snapshots | Published targets remain fixed |
 | `openketupamk-beta` | Historical Beta | Preserve its existing target |
 
 Only `main` is the published working branch at this review. Tags are fixed references, not working branches. Historical tags may show the original distribution layout rather than today's `main` layout. The [tag map](../../releases/tag-map.json) is the preservation baseline. Do not move old tags to improve their appearance.
 
-Repository rules protect `main` against deletion and force pushes, and the foundation/product/runtime/Beta tag namespace against updates and deletion. These safeguards do not require every change to use a pull request or imply a mandatory external review. Automated integrity checks run for pushes and pull requests.
+Repository rules protect `main` against deletion and force pushes, and the foundation/product/runtime/compatibility/Beta tag namespace against updates and deletion. These safeguards do not require every change to use a pull request or imply a mandatory external review. Automated integrity checks run for pushes and pull requests.
 
 ## Preserve the foundation
 
@@ -27,14 +28,14 @@ Repository rules protect `main` against deletion and force pushes, and the found
 
 ## Publish a product version
 
-1. Identify the version, supported platforms, feature scope, legal licensor, and entitlement scope. New product tags use `openketupamk-vX.Y.Z`; preview candidates may use `-rc.N`. Runtime uses `openketupamk-runtime-vX.Y.Z`.
+1. Identify the version, supported platforms, feature scope, legal licensor, and entitlement scope. New product tags use `openketupamk-vX.Y.Z`; preview candidates may use `-rc.N`. Runtime uses `openketupamk-runtime-vX.Y.Z`; legacy Linux compatibility builds use `openketupamk-kernel-legacy-vX.Y.Z`. A compatibility flavour has its own release, assets and test scope.
 2. Build and validate the actual installers, recording build inputs, dependency inventory, applicable notices/source, platform compatibility, and acceptance evidence. Complete the [commercial delivery requirements](REVIEW.md) before making production claims.
 3. Record filenames, sizes, SHA-256 values, and immutable tag targets in the release manifests. Provide English and Chinese notes on the same page and exact direct-download URLs.
 4. Run `python3 tools/check_repository.py` from the repository root. Review entitlement publication separately; only explicitly designated public test files belong under `licenses/`.
 5. Publish assets to GitHub Releases. Keep previews marked as pre-releases. Never overwrite an already published asset or retarget its tag to silently correct a build; publish a new version and describe the correction.
 6. Verify every download URL and asset digest after upload. Update the current README and documentation index. A documentation-only commit does not create a product release or change a historical tag.
 
-The original five release groups and their fifteen assets remain preserved. Original publication times are recorded separately from migration timestamps. A release tag, installer signature, SHA-256 digest, and legal acceptance record establish different facts; keep their evidence separate.
+The original five release groups and their fifteen assets remain preserved. The added [Legacy Linux 1.0.2](../releases/openketupamk-kernel-legacy-v1.0.2.md) contributes four formats: six public groups / nineteen installers in total. Original publication times are recorded separately from migration timestamps. A release tag, installer signature, SHA-256 digest, and legal acceptance record establish different facts; keep their evidence separate.
 
 ## Legal and operational records
 
@@ -61,11 +62,12 @@ Platform references: [GitHub licensing](https://docs.github.com/en/repositories/
 | `legacy-v0.0.3` | 基础项目的原始根目录 | 固定指向 `b5f44c111fef3d32b5cdeb3c18d4af40e5c81306` |
 | `openketupamk-v*` | 产品发行快照 | 已发布标签固定指向原提交 |
 | `openketupamk-runtime-v*` | Runtime 发行快照 | 已发布标签固定指向原提交 |
+| `openketupamk-kernel-legacy-v*` | 旧版 Linux 应用/运行环境兼容快照 | 已发布标签固定指向原提交 |
 | `openketupamk-beta` | 历史 Beta | 保留既有指向 |
 
 本次检查时，仅 `main` 作为公开工作分支。标签是固定引用，不是工作分支；历史标签可能显示原发行目录，而非当前 `main` 布局。[标签映射](../../releases/tag-map.json)是保全基准，不为调整页面外观而重指向旧标签。
 
-仓库规则防止删除或强制推送 `main`，并防止更新或删除基础项目、产品、Runtime/Beta 标签命名空间。这些保护不强制所有变更走 PR，也不等于强制外部审核。推送与 PR 均执行自动完整性检查。
+仓库规则防止删除或强制推送 `main`，并防止更新或删除基础项目、产品、Runtime、兼容版及 Beta 标签命名空间。这些保护不强制所有变更走 PR，也不等于强制外部审核。推送与 PR 均执行自动完整性检查。
 
 ## 保全基础项目
 
@@ -73,14 +75,14 @@ Platform references: [GitHub licensing](https://docs.github.com/en/repositories/
 
 ## 发布产品版本
 
-1. 确定版本、支持平台、功能范围、法律许可主体和授权范围。新产品标签采用 `openketupamk-vX.Y.Z`，候选预览可使用 `-rc.N`；Runtime 采用 `openketupamk-runtime-vX.Y.Z`。
+1. 确定版本、支持平台、功能范围、法律许可主体和授权范围。新产品标签采用 `openketupamk-vX.Y.Z`，候选预览可使用 `-rc.N`；Runtime 采用 `openketupamk-runtime-vX.Y.Z`，旧版 Linux 兼容构建采用 `openketupamk-kernel-legacy-vX.Y.Z`，独立记录发行组、附件和测试范围。
 2. 构建并验证实际安装包，记录构建输入、组件清单、适用声明/源码、平台兼容性与验收依据。宣称生产适用前应完成[商业交付要求](REVIEW.md)。
 3. 在发行清单中记录文件名、大小、SHA-256 和固定标签指向，提供同页中英文说明与准确的直接下载 URL。
 4. 在根目录运行 `python3 tools/check_repository.py`。授权文件另行审核发布范围，`licenses/` 仅保存明确指定的公开测试文件。
 5. 将附件发布到 GitHub Releases，预览版继续标记为 pre-release。不得静默覆盖已发布附件或移动标签来修正构建，应发布新版本并说明更正。
 6. 上传后逐项验证下载 URL 与哈希，更新主页和文档索引。纯文档提交不产生产品版本，也不修改历史标签。
 
-原有 5 个发行组和 15 个附件继续保留。原始发布时间与迁移时间分别记录。发行标签、安装包签名、SHA-256 与法律接受记录证明不同事实，应分别保存依据。
+原有 5 个发行组和 15 个附件继续保留，新增[旧版 Linux 1.0.2](../releases/openketupamk-kernel-legacy-v1.0.2.md)的四种格式后，共有 6 个公开发行组、19 个安装包。原始发布时间与迁移时间分别记录。发行标签、安装包签名、SHA-256 与法律接受记录证明不同事实，应分别保存依据。
 
 ## 法律与运营记录
 

@@ -1,6 +1,6 @@
 # KetupaMK-AI-Fabric
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [Documentation](docs/README.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Documentation](docs/README.md) · [Releases](docs/releases/README.md) · [Tags](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
 KetupaMK automates PCB, package, and interconnect modeling workflows. It uses CIR configuration files to organize engineering inputs, invoke compatible EDA tools, and produce traceable results. Version 1.0.2 also provides DDR Touchstone delay/skew reports and AI-assisted preparation of network data.
 
@@ -30,7 +30,7 @@ Compatible EDA software, vendor licenses, approved engineering inputs, and a ver
 
 **Current preview: KetupaMK 1.0.2** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb)
 
-These links download the installer directly. On Linux, choose TAR.GZ or DEB. Version 1.0.2 remains a pre-release; choose and validate a version for your intended workflow.
+These links download the installer directly. For the standard Linux build, choose TAR.GZ or DEB; see the compatibility build below for Rocky/RHEL 8, Ubuntu 20.04 and similar environments. Version 1.0.2 remains a pre-release; choose and validate a version for your intended workflow.
 
 | Distribution | Status | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
@@ -40,9 +40,26 @@ These links download the installer directly. On Linux, choose TAR.GZ or DEB. Ver
 | [Runtime 1.0.0](docs/releases/openketupamk-runtime-v1.0.0.md) | Historical release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-installer_1.0.0_amd64.deb) |
 | [Beta](docs/releases/openketupamk-beta.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-amd64.deb) |
 
+<a id="legacy-linux"></a>
+
+### Legacy Linux environments · 1.0.2
+
+For older userspaces such as Rocky/RHEL 8 and Ubuntu 20.04: **x86_64, glibc ≥ 2.28**. Choose one of four Linux application/runtime installer formats.
+
+| Target / installation method | Direct download |
+| --- | --- |
+| Rocky / RHEL 8 | [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) |
+| Ubuntu 20.04 / Debian | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) |
+| Self-extracting installation | [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) |
+| Dedicated-prefix installation | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) |
+
+[Compatibility notes and tested scope](docs/releases/openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [Tags](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
+
+This distribution remains a pre-release. Recorded acceptance covers isolated EL8.1 and Ubuntu 20.04 userspaces, not native Rocky kernels or EDA solving. Keep compatibility and standard payloads out of the same installation prefix.
+
 [Installation guide](docs/installation/README.md) · [Download SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [Release notes](docs/releases/README.md)
 
-Runtime 1.0.0 is a separate distribution. Original installer names, bytes, and release status are retained. GitHub's **Source code** ZIP/TAR files contain repository snapshots; product installers are the EXE, DEB, and TAR.GZ assets listed above.
+Runtime 1.0.0 is a separate distribution. Original installer names, bytes, and release status are retained. GitHub's **Source code** ZIP/TAR files contain repository snapshots; product installers are the EXE, DEB, RPM, RUN, and TAR.GZ assets listed above.
 
 <a id="licenses"></a>
 <a id="licenses-en"></a>
@@ -74,7 +91,7 @@ KetupaMK-AI-Fabric/
 └── .github/       Automated checks and issue/PR templates
 ```
 
-`main` is the current documentation and distribution index. Tags preserve specific historical snapshots: `legacy-v0.0.3` for the original project, `openketupamk-v*` for product releases, and `openketupamk-runtime-v*` for Runtime. A tag is a fixed reference, not a branch. [Branch and release policy](docs/governance/README.md).
+`main` is the current documentation and distribution index. Tags preserve specific historical snapshots: `legacy-v0.0.3` for the original project, `openketupamk-v*` for product releases, `openketupamk-runtime-v*` for Runtime, and `openketupamk-kernel-legacy-v*` for legacy Linux environments. A tag is a fixed reference, not a branch. [Branch and release policy](docs/governance/README.md).
 
 ## Documentation and contact
 

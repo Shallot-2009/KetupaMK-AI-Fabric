@@ -30,6 +30,8 @@ Both LIC files are stored directly in this directory. They were designated for p
 
 The `.lic` files are entitlement files, separate from the repository's [copyright and contract terms](../LICENSE.md). Actual versions, modules, duration, device restrictions, and commercial rights follow the original file and effective agreements. The `12w` text is retained from the original filenames; downloading or moving a file does not start a new validity period.
 
+For [Legacy Linux 1.0.2](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md), confirm the entitlement supports that installed version, modules and service before use. Publishing a compatibility installer does not verify either test LIC against it or expand the LIC scope.
+
 Only the two designated public test files belong here. Do not upload customer/production entitlements, private signing keys, device fingerprints, API keys, or service credentials. Contact the maintainer privately for scope, compatibility, expiry, or signing questions. Publication does not issue, renew, widen, or validate an entitlement.
 
 ## Verify the files
@@ -76,6 +78,8 @@ Hash checks verify file consistency. They do not prove signature validity, activ
 ## 使用范围与发布规则
 
 `.lic` 是软件使用授权文件，与仓库的[著作权及合同条款](../LICENSE.md)分别处理。实际版本、模块、期限、设备限制及商用权利以原文件和有效协议为准。文件名中的 `12w` 为原始命名，下载或移动文件不会重新计算有效期。
+
+使用[旧版 Linux 1.0.2](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md)前，确认授权适用于实际安装版本、模块和服务。发布兼容安装包不表示已对两个测试 LIC 完成适用性验证，也不扩大授权范围。
 
 此目录仅发布这两个指定的公开测试文件。不得上传客户/生产授权、私有签发密钥、设备指纹、API key 或服务凭据。范围、兼容性、到期及签发问题请私下联系维护者。公开文件不等于签发、续期、扩大或验证授权。
 

@@ -17,6 +17,8 @@
 
 Linux TAR.GZ and DEB are alternative formats. [Installation](../installation/README.md) · [GitHub Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) · [Test entitlements](../../licenses/README.md).
 
+For Rocky/RHEL 8, Ubuntu 20.04 and similar older userspaces, select the separate [Legacy Linux 1.0.2 environment](openketupamk-kernel-legacy-v1.0.2.md). Its four Linux formats have their own tag, checksums and tested scope.
+
 ## Version scope
 
 This preview publishes CIR-based PKG/PCB/Merge workflow entries, package/interconnect configuration, mixed-unit sweeps, DDR Touchstone delay/skew reports, traceable outputs, AI network-data preparation, optional Skill/Agent/MCP integration, and local authenticated HTTPS interfaces. GDS Interposer assistance is import-only. Windows provides a Launcher; Linux provides the CLI.
@@ -51,6 +53,8 @@ First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrate
 | Linux amd64 · DEB | [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,752,932 |
 
 Linux 的 TAR.GZ 与 DEB 二选一。[安装说明](../installation/README.md) · [GitHub Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) · [测试授权](../../licenses/README.md)。
+
+Rocky/RHEL 8、Ubuntu 20.04 等较旧用户空间请选择独立的[旧版 Linux 1.0.2 兼容环境](openketupamk-kernel-legacy-v1.0.2.md)。四种 Linux 格式具有独立标签、校验值与验证范围。
 
 ## 本版范围
 

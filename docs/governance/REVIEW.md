@@ -15,7 +15,8 @@ Review date: **2026-11-18**. This review covers the public repository, publicati
 | --- | --- |
 | Foundational project | All 111 tracked files match the original blobs, sizes, SHA-256 values, relative paths, and file modes; original Git tree and `legacy-v0.0.3` target retained |
 | Distribution source records | Seventeen original files retain their bytes, including EULA, proprietary notice, test entitlement, and third-party records; relocated originals are mapped in the provenance manifest |
-| Public installers | Five release groups, fifteen assets, 4,207,538,269 bytes; manifest values checked against GitHub asset names, sizes, digests, and direct download endpoints |
+| Public installers | Six release groups, nineteen assets, 4,904,248,732 bytes; manifest values checked against GitHub asset names, sizes, digests, and direct download endpoints |
+| Legacy Linux environment | Four unchanged 1.0.2 formats; glibc 2.28 baseline; supplied prior isolated EL8.1/Ubuntu 20.04 acceptance summarized with explicit hardware/kernel/EDA limitations |
 | Public test LIC | Two maintainer-designated files; bytes and SHA-256 verified, with consolidated English/Chinese instructions and direct downloads |
 | Documentation | Language selection on the same page, local links and anchors, release/download metadata, and repository directory checks |
 | Source and legal preservation | Original EULA/notice/third-party legal texts retained, separate historical and proprietary scopes documented |
@@ -23,6 +24,8 @@ Review date: **2026-11-18**. This review covers the public repository, publicati
 | Automation | Standard-library repository validator and GitHub Actions workflow; main and published-tag safeguards are documented in the policy |
 
 Run `python3 tools/check_repository.py` to repeat the local preservation and documentation checks. Package hashes and repository checks do not establish successful installation, signature authenticity, solver correctness, or engineering signoff.
+
+The new [compatibility release](../releases/openketupamk-kernel-legacy-v1.0.2.md) has 696,710,463 bytes across four files. Its supplied 2026-11-17 records report 22 EL8.1 tests, 6 DEB structure tests and 8 Ubuntu 20.04 operations passed. They share the host kernel. This publication independently checks file consistency, not those prior signatures or native hardware/EDA execution. The original five-group/fifteen-asset migration baseline remains unchanged.
 
 ## Requirements before commercial delivery
 
@@ -56,7 +59,8 @@ Repository patterns were reviewed from [VS Code](https://github.com/microsoft/vs
 | --- | --- |
 | 基础项目 | 111 个跟踪文件的原始 blob、大小、SHA-256、相对路径和文件模式一致，原 Git tree 与 `legacy-v0.0.3` 指向保留 |
 | 发行来源记录 | EULA、专有声明、测试授权、第三方记录等 17 个原始文件保留字节，迁移项由来源清单记录现位置 |
-| 公开安装包 | 5 个发行组、15 个附件、共 4,207,538,269 字节；按 GitHub 文件名、大小、哈希与直接下载端点核对清单 |
+| 公开安装包 | 6 个发行组、19 个附件、共 4,904,248,732 字节；按 GitHub 文件名、大小、哈希与直接下载端点核对清单 |
+| 旧版 Linux 兼容环境 | 四种 1.0.2 原始格式，glibc 2.28 基线；提供此前隔离 EL8.1/Ubuntu 20.04 验收摘要，并明确硬件/内核/EDA 边界 |
 | 公开测试 LIC | 两个维护者指定文件，核对字节与 SHA-256，提供统一中英文说明和直接下载 |
 | 文档 | 同页语言切换、本地链接与锚点、下载/发行元数据及目录检查 |
 | 源码与法律文本保全 | 原始 EULA、权利声明、第三方法律文本保留，历史开源与现行专有范围分别说明 |
@@ -64,6 +68,8 @@ Repository patterns were reviewed from [VS Code](https://github.com/microsoft/vs
 | 自动化 | 标准库完整性检查脚本与 GitHub Actions；主分支及已发布标签的保护见维护规范 |
 
 运行 `python3 tools/check_repository.py` 可重复执行本地保全与文档检查。文件哈希和仓库检查不证明安装成功、签名身份、求解正确或工程签核完成。
+
+新增[兼容发行组](../releases/openketupamk-kernel-legacy-v1.0.2.md)的四个文件共 696,710,463 字节。提供的 2026-11-17 记录报告 EL8.1 测试 22 项、DEB 结构测试 6 项和 Ubuntu 20.04 操作测试 8 项通过，测试共用宿主内核。本次独立核验文件一致性，未重做此前签名验证或原生硬件/EDA 执行。原有五组十五个附件的迁移基准保持原样。
 
 ## 商业交付前应具备的依据
 

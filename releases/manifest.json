@@ -155,6 +155,41 @@
           "source_asset_id": 654914434
         }
       ]
+    },
+    {
+      "tag": "openketupamk-kernel-legacy-v1.0.2",
+      "name": "KetupaMK 1.0.2 · Legacy Linux / 旧版 Linux 兼容环境",
+      "prerelease": true,
+      "distribution_kind": "linux-compatibility",
+      "publication_date": "2026-11-18",
+      "release_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2",
+      "acceptance_summary": "releases/kernel-legacy-v1.0.2-acceptance.json",
+      "assets": [
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "size_bytes": 173741206,
+          "sha256": "c2617194b583d7c1ccabe8a83cc45c671a2ef7bdc473d9091c577a6a2bdbc2bd",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb"
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "size_bytes": 173926806,
+          "sha256": "0f547907dbe4e338dd9fb15dbb03ddd6520cef139a9bbed6c263545c981a70d6",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz"
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "size_bytes": 175114692,
+          "sha256": "39a53a70a30d156b5072308996811e48145858b1a653607806c095739ebb265d",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm"
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "size_bytes": 173927759,
+          "sha256": "565d4794094b3a0bd03441840a5432db7493177b476a35e0314dbb212420945b",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run"
+        }
+      ]
     }
   ]
 }

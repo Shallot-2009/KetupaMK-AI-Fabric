@@ -39,6 +39,8 @@ External Ansys, Cadence, MATLAB, Polar, or other vendor software requires separa
 
 KetupaMK product releases and the historical Runtime 1.0.0 distribution have separate release tags and installers. The historical Beta is a separate pre-release. Version numbers and names alone do not establish interchangeable interfaces or compatibility. Use the [release index](../releases/README.md) and [installation guide](../installation/README.md).
 
+The [Legacy Linux 1.0.2 environment](../releases/openketupamk-kernel-legacy-v1.0.2.md) is a separate compatibility build of the application and bundled runtime for x86_64/glibc ≥ 2.28, including Rocky/RHEL 8 and Ubuntu 20.04 userspaces. RPM, DEB, RUN and TAR.GZ are four alternatives, not four components. This build changes the binary compatibility baseline rather than replacing the operating system/kernel or restoring v0.0.3 algorithms; native EDA and kernel support need separate validation.
+
 ## Foundation
 
 [Ketupa_v0.0.3](../../history/README.md) is the original foundational project. It preserves research in HFSS antennas, transmission lines, MATLAB/CNN, LLM interaction, and desktop automation. It is retained as a complete historical project; its old setup instructions are not current-product installation instructions.
@@ -79,6 +81,8 @@ KetupaMK 通过 CIR 配置组织 PCB、封装与互连工程工作流，帮助�
 ## 发行类型
 
 KetupaMK 产品发行与历史 Runtime 1.0.0 具有独立标签和安装包，历史 Beta 也是单独的预发布组。版本号和名称本身不证明接口或兼容性可互换。请结合[发行索引](../releases/README.md)与[安装说明](../installation/README.md)选择。
+
+[旧版 Linux 1.0.2 兼容环境](../releases/openketupamk-kernel-legacy-v1.0.2.md)是面向 x86_64/glibc ≥ 2.28 的独立兼容构建，包括 Rocky/RHEL 8 和 Ubuntu 20.04 用户空间。RPM、DEB、RUN、TAR.GZ 是四种可选格式，不是四个组件。它调整二进制兼容基线，不替换操作系统/内核，也不恢复 v0.0.3 业务算法；实际 EDA 与内核支持需另行核验。
 
 ## 基础项目
 
