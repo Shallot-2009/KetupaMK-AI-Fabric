@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-18",
+  "project": "Ketupa / KetupaMK",
+  "events": [
+    {
+      "id": "project-beginning",
+      "period": "2023",
+      "precision": "year",
+      "event": "project-research-and-development-began",
+      "source_type": "maintainer-statement",
+      "confirmed_on": "2026-11-18",
+      "git_object_verified": false
+    },
+    {
+      "id": "early-commits",
+      "period_start": "2024-05",
+      "period_end": "2024-06",
+      "precision": "month-range",
+      "event": "early-project-commit-records-existed",
+      "source_type": "maintainer-statement",
+      "confirmed_on": "2026-11-18",
+      "git_object_verified": false,
+      "commit_references": []
+    },
+    {
+      "id": "earliest-currently-retained-commit",
+      "date": "2025-06-20",
+      "event": "earliest-commit-currently-retained-in-migrated-repository",
+      "source_type": "git-object",
+      "git_object_verified": true,
+      "commit": "82251a75bb98532dcd2350d6c691ea0b7cbd7f3a"
+    },
+    {
+      "id": "legacy-initial-release",
+      "date": "2025-08-14",
+      "event": "legacy-v0.0.3-initial-release",
+      "source_type": "archived-readme",
+      "path": "history/Ketupa_v0.0.3/README.md"
+    },
+    {
+      "id": "legacy-archive-baseline",
+      "date": "2026-10-19",
+      "event": "historical-apache-2.0-notice-and-archive-baseline",
+      "source_type": "git-object",
+      "git_object_verified": true,
+      "commit": "b5f44c111fef3d32b5cdeb3c18d4af40e5c81306"
+    },
+    {
+      "id": "repository-consolidation",
+      "date": "2026-11-18",
+      "event": "repository-renamed-and-distributions-consolidated",
+      "source_type": "github-repository-identity",
+      "repository_id": 1005327414,
+      "distribution_source_repository_id": 1424671956
+    }
+  ]
+}

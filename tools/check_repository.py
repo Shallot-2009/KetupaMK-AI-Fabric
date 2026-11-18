@@ -126,7 +126,7 @@ def checksum_map(path):
 
 def verify_licenses(all_files):
     directory = ROOT / 'licenses'
-    expected = {'README.md', 'README.zh-CN.md', 'manifest.json', 'SHA256SUMS', *PUBLIC_LIC}
+    expected = {'README.md', 'manifest.json', 'SHA256SUMS', *PUBLIC_LIC}
     require({p.name for p in directory.iterdir()} == expected, 'Unexpected license files or subdirectories')
     require(all(p.is_file() for p in directory.iterdir()), 'Keep licenses/ flat')
     manifest = read_json('licenses/manifest.json')
@@ -158,13 +158,14 @@ def verify_releases():
     for release in manifest['releases']:
         tag = release['tag']
         require(bool(release['assets']), 'Release has no installers: ' + tag)
-        for suffix in ['', '.zh-CN']:
-            note = (ROOT / f'docs/releases/{tag}{suffix}.md').read_text()
-            home = (ROOT / f'README{suffix}.md').read_text()
+        notes = language_sections((ROOT / f'docs/releases/{tag}.md').read_text())
+        homes = language_sections((ROOT / 'README.md').read_text())
+        for language in ['English', '简体中文']:
+            note, home = notes[language], homes[language]
             for asset in release['assets']:
                 url = f'https://github.com/{REPOSITORY}/releases/download/{tag}/{asset["name"]}'
                 require(asset['download_url'] == url, 'Invalid installer download URL')
-                require(url in note and asset['sha256'] in note, 'Release note missing asset/digest: ' + tag + suffix)
+                require(url in note and asset['sha256'] in note, 'Release note missing asset/digest: ' + tag + language)
                 require(url in home, 'Installer missing from product home: ' + asset['name'])
     mapping = read_json('releases/tag-map.json')
     require({r['tag'] for r in mapping['tags']} == {r['tag'] for r in manifest['releases']} | {'legacy-v0.0.3'},
@@ -190,6 +191,37 @@ def verify_third_party():
     return len(manifest['files'])
 
 
+def language_sections(text):
+    pattern = r'<details name="readme-language"(?P<open> open)?>\s*<summary><strong>(?P<language>English|简体中文)</strong></summary>\s*(?P<body>.*?)\s*</details>'
+    sections = list(re.finditer(pattern, text, flags=re.S))
+    require(len(sections) == 2, 'Expected two language sections on the same page')
+    require({m['language'] for m in sections} == {'English', '简体中文'}, 'Missing language section')
+    require([m['language'] for m in sections if m['open']] == ['简体中文'], 'Expected one default language in the shared disclosure group')
+    return {m['language']: m['body'] for m in sections}
+
+
+def verify_origin_records():
+    history = read_json('history/origin-records.json')
+    events = {e['id']: e for e in history['events']}
+    require(len(events) == len(history['events']), 'Duplicate origin event')
+    beginning = events['project-beginning']
+    early = events['early-commits']
+    require(beginning['period'] == '2023' and beginning['source_type'] == 'maintainer-statement', 'Project beginning/source changed without review')
+    require(early['period_start'] == '2024-05' and early['period_end'] == '2024-06', 'Early project history range changed')
+    require(early['source_type'] == 'maintainer-statement', 'Keep the original maintainer history statement')
+    for event in history['events']:
+        if event.get('git_object_verified'):
+            commit = event.get('commit', '')
+            require(bool(re.fullmatch(r'[0-9a-f]{40}', commit)), 'Invalid origin Git evidence reference')
+            require(git('cat-file', '-t', commit).decode().strip() == 'commit', 'Missing origin Git evidence')
+            require(git('show', '-s', '--format=%as', commit).decode().strip() == event['date'], 'Origin Git evidence date mismatch')
+        if event['source_type'] == 'maintainer-statement':
+            require(event.get('git_object_verified') is False, 'A maintainer statement must not be relabeled as verified Git evidence')
+    retained = events['earliest-currently-retained-commit']
+    require(retained['commit'] == '82251a75bb98532dcd2350d6c691ea0b7cbd7f3a', 'Current retained history baseline changed')
+    return len(events)
+
+
 def markdown_anchors(text):
     anchors = set(re.findall(r'<a\s+(?:id|name)=["\']([^"\']+)["\']', text))
     seen = Counter()
@@ -204,18 +236,16 @@ def markdown_anchors(text):
 
 
 def verify_markdown(all_files):
-    checked, paired = 0, 0
+    checked, bilingual = 0, 0
     for name in sorted(n for n in all_files if n.endswith('.md')):
         if name.startswith(ARCHIVE + '/') or name in FROZEN_MARKDOWN:
             continue
         file = ROOT / name
         text = file.read_text(encoding='utf-8')
         if name not in {'EULA.md', '.github/PULL_REQUEST_TEMPLATE.md'}:
-            peer = name.replace('.zh-CN.md', '.md') if name.endswith('.zh-CN.md') else name[:-3] + '.zh-CN.md'
-            require((ROOT / peer).is_file(), 'Missing language counterpart: ' + peer)
-            relative = Path(os.path.relpath(ROOT / peer, file.parent)).as_posix()
-            require(f']({relative})' in '\n'.join(text.splitlines()[:6]), 'Missing language switch: ' + name)
-            paired += 1
+            require(not name.endswith('.zh-CN.md'), 'Keep maintained languages on one page: ' + name)
+            language_sections(text)
+            bilingual += 1
         for target in re.findall(r'!?\[[^\]\n]*\]\(([^)\n]+)\)', text):
             target = target.strip()
             target = target[1:target.index('>')] if target.startswith('<') and '>' in target else target.split(' "', 1)[0].split(" '", 1)[0]
@@ -235,7 +265,7 @@ def verify_markdown(all_files):
             if url.fragment and local.suffix == '.md':
                 require(unquote(url.fragment) in markdown_anchors(local.read_text()), f'Broken anchor in {name}: {target}')
             checked += 1
-    return checked, paired // 2
+    return checked, bilingual
 
 
 def check_sensitive_patterns(all_files):
@@ -258,12 +288,13 @@ def main():
     all_files = {n for n in all_files if (ROOT / n).is_file()}
     result = {
         'foundation_files_preserved': verify_foundation(),
+        'origin_events_recorded': verify_origin_records(),
         'distribution_files_preserved': verify_distribution(),
         'public_entitlements_verified': verify_licenses(all_files),
         'installer_assets_in_manifests': verify_releases(),
         'third_party_files_verified': verify_third_party(),
     }
-    result['markdown_links_verified'], result['language_pairs_verified'] = verify_markdown(all_files)
+    result['markdown_links_verified'], result['same_page_bilingual_documents_verified'] = verify_markdown(all_files)
     check_sensitive_patterns(all_files)
     result['tracked_or_pending_files_reviewed'] = len(all_files)
     result['known_secret_patterns_found'] = 0
