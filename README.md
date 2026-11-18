@@ -28,9 +28,9 @@ Follow the [English installation guide](docs/INSTALLATION.en.md) or [中文安�
 
 Installers provide the version's packaged software/runtime; they do not grant Ansys, Cadence, MATLAB, Polar, or other vendor entitlements. Compatible external EDA tools, approved input data, and the applicable KetupaMK license remain necessary. This repository migration verifies preservation and download integrity; it does not establish successful installation, physical simulation acceptance, or engineering signoff.
 
-The existing author-published [internal-test license and instructions](licenses/internal-test/README.md) are retained unchanged. Its signed scope, version applicability, and validity govern its use; migration does not renew or broaden it.
+The existing author-published [internal-test license](licenses/README.md#internal-test) retains its original bytes, with instructions consolidated in the license index. Its signed scope, version applicability, and validity govern its use; migration does not renew or broaden it.
 
-The maintainer-published [offline test LIC](licenses/offline-test/README.md) is also available. See the [license index](licenses/README.md) for both files and their scope.
+The maintainer-published [offline test LIC](licenses/README.md#offline-test) is also available. See the [license index](licenses/README.md) for both files and their scope.
 
 ## Origins and archive
 

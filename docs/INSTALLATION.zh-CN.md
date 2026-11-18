@@ -37,7 +37,7 @@ Get-FileHash -Algorithm SHA256 .\your-selected-installer.exe
 
 既有安装包、Runtime 发行组及已发布的第三方源码/许可资料，均统一在本仓库及其 Releases。未额外公开私有第一方开发环境或核心源码。打包运行环境不表示附带外部商业 EDA 授权，也不保证与未指定的厂商版本兼容。
 
-请为所选工作流准备兼容的 Ansys/Cadence 等工具、相应厂商许可、经批准的工程输入文件和适用版本的 KetupaMK 许可证。现有[内测许可证](../licenses/internal-test/README.md)仅原样保留，不续期；有效期与模块范围依原签名文件。
+请为所选工作流准备兼容的 Ansys/Cadence 等工具、相应厂商许可、经批准的工程输入文件和适用版本的 KetupaMK 许可证。现有[内测许可证](../licenses/README.md#internal-test)仅原样保留，不续期；有效期与模块范围依原签名文件。
 
 v0.0.3 源码具有独立的历史依赖记录，见[归档指南](../history/README.md)；不要把它的旧 requirements 文件直接应用于现行专有产品。
 

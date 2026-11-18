@@ -28,9 +28,9 @@ Linux 的 TAR.GZ 和 DEB 二选一，无需重复安装。安装包位于本仓�
 
 安装包提供该版本打包的软件与运行环境，不提供 Ansys、Cadence、MATLAB、Polar 等第三方商业授权。实际工程仍需兼容的外部 EDA 工具、经批准的输入数据及适用的 KetupaMK 许可证。本次仓库迁移验证资料保留和下载一致性，不代表完成实际安装、物理仿真验收或工程签核。
 
-已有、经作者公开的[内测许可证及说明](licenses/internal-test/README.md)原样保留。其签名范围、版本适用性和有效期仍以原文件为准；迁移不会续期或扩大授权。
+已有、经作者公开的[内测许可证](licenses/README.md#internal-test)保留原始字节，说明统一汇入许可证目录。其签名范围、版本适用性和有效期仍以原文件为准；迁移不会续期或扩大授权。
 
-维护者公开的[离线测试 LIC](licenses/offline-test/README.md)现已同步；两类文件的入口与范围见[许可证目录](licenses/README.md)。
+维护者公开的[离线测试 LIC](licenses/README.md#offline-test)现已同步；两类文件的入口与范围见[许可证目录](licenses/README.md)。
 
 ## 项目起源与历史归档
 

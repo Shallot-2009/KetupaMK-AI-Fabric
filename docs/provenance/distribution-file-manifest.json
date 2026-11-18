@@ -17,18 +17,20 @@
       "sha256": "50b5e0fda885edbf3e8064aff9e79a505f1e7fa4a9330f863e55e2ec5ac7a852"
     },
     {
-      "path": "licenses/internal-test/README.md",
+      "path": "docs/provenance/internal-test-README.before-flattening.md",
       "git_blob": "c8e844ac9b4b33055f6e31f395fb31dd051269a7",
       "mode": "100644",
       "size_bytes": 385,
-      "sha256": "412e5b6212d260e031edbb15c275c3865ae0540e10473402571e467d9acd8cd4"
+      "sha256": "412e5b6212d260e031edbb15c275c3865ae0540e10473402571e467d9acd8cd4",
+      "original_path": "licenses/internal-test/README.md"
     },
     {
-      "path": "licenses/internal-test/openketupamk-internal-test-12w.lic",
+      "path": "licenses/openketupamk-internal-test-12w.lic",
       "git_blob": "b464cca71de9cb8daf4a8977c90cf8d8ca18395f",
       "mode": "100644",
       "size_bytes": 4836,
-      "sha256": "37ee8efa33d74c5197092a2678bda1daa0e6f074c3a04cc378873396c266db01"
+      "sha256": "37ee8efa33d74c5197092a2678bda1daa0e6f074c3a04cc378873396c266db01",
+      "original_path": "licenses/internal-test/openketupamk-internal-test-12w.lic"
     },
     {
       "path": "third-party/README.md",

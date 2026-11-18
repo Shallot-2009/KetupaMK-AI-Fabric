@@ -37,7 +37,7 @@ The 1.0.2 release describes Linux as a CLI distribution without the Windows Laun
 
 The installers/runtime distributions and all previously published third-party source and notice materials are hosted in this repository and its Releases. No private first-party development environment or core source is added. Packaging a runtime does not include separate commercial EDA entitlements or assert compatibility with an unspecified vendor version.
 
-Prepare the compatible Ansys/Cadence or other tools required by your selected workflow, the corresponding vendor licenses, approved engineering input files, and a valid version-appropriate KetupaMK license. The existing [internal-test license](../licenses/internal-test/README.md) is preserved, not renewed; its signed validity and module entitlements govern its use.
+Prepare the compatible Ansys/Cadence or other tools required by your selected workflow, the corresponding vendor licenses, approved engineering input files, and a valid version-appropriate KetupaMK license. The existing [internal-test license](../licenses/README.md#internal-test) is preserved, not renewed; its signed validity and module entitlements govern its use.
 
 The v0.0.3 source snapshot has a separate historical dependency record. Follow the [archive guide](../history/README.md); do not apply its old requirements file to the current proprietary product.
 
