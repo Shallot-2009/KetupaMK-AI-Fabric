@@ -36,7 +36,7 @@
     },
     {
       "tag": "openketupamk-kernel-legacy-v1.0.2",
-      "commit": "self",
+      "commit": "ccda02a3736c577a5da10b0fe76fcece6332c4ec",
       "kind": "linux-compatibility"
     }
   ]
