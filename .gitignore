@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.lic
+!/licenses/openketupamk-internal-test-12w.lic
+!/licenses/Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic

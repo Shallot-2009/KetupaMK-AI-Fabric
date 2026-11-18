@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "scope": "previously-identified-components-not-a-complete-sbom",
+  "files": [
+    {
+      "path": "sources/7z2604-src.tar.xz",
+      "component": "7-Zip 26.04",
+      "identified_in": [
+        "1.0.1"
+      ],
+      "size_bytes": 1560440,
+      "sha256": "9691944c0fe0d01bb49373a704fb983fd33bc98b1738695179dfbf99ac1734f6",
+      "upstream_url": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-src.tar.xz",
+      "download_url": "https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/7z2604-src.tar.xz"
+    },
+    {
+      "path": "sources/gcc-4.8.5-44.el7.src.rpm",
+      "component": "CentOS GCC 4.8.5-44.el7 / libquadmath",
+      "identified_in": [
+        "1.0.1",
+        "Beta"
+      ],
+      "size_bytes": 79314655,
+      "sha256": "642c4085f6af9565e39583e54a9d7a5d9e6b93dd8c8e9474aec8a892d6c7aa36",
+      "upstream_url": "https://archive.kernel.org/centos-vault/7.9.2009/os/Source/SPackages/gcc-4.8.5-44.el7.src.rpm",
+      "download_url": "https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/gcc-4.8.5-44.el7.src.rpm"
+    },
+    {
+      "path": "sources/gcc-8.5.0-26.el8_10.alma.1.src.rpm",
+      "component": "AlmaLinux GCC 8.5.0-26.el8_10.alma.1 / libquadmath",
+      "identified_in": [
+        "1.0.1"
+      ],
+      "size_bytes": 65714006,
+      "sha256": "0911864c260a75ae030f3144616e7e5e1359e04ce1c9730ab83906486e3bc79f",
+      "upstream_url": "https://vault.almalinux.org/8.10/BaseOS/Source/Packages/gcc-8.5.0-26.el8_10.alma.1.src.rpm",
+      "download_url": "https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/gcc-8.5.0-26.el8_10.alma.1.src.rpm"
+    },
+    {
+      "path": "sources/ffmpeg-5.1.6.tar.xz",
+      "component": "FFmpeg 5.1.6",
+      "identified_in": [
+        "Beta"
+      ],
+      "size_bytes": 10021428,
+      "sha256": "f4fa066278f7a47feab316fef905f4db0d5e9b589451949740f83972b30901bd",
+      "upstream_url": "https://ffmpeg.org/releases/ffmpeg-5.1.6.tar.xz",
+      "download_url": "https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/ffmpeg-5.1.6.tar.xz"
+    },
+    {
+      "path": "sources/opencv-python-headless-4.11.0.86.tar.gz",
+      "component": "OpenCV Python 4.11.0.86 build materials",
+      "identified_in": [
+        "Beta"
+      ],
+      "size_bytes": 95177929,
+      "sha256": "996eb282ca4b43ec6a3972414de0e2331f5d9cda2b41091a49739c19fb843798",
+      "upstream_url": "https://pypi.org/project/opencv-python-headless/4.11.0.86/",
+      "download_url": "https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/opencv-python-headless-4.11.0.86.tar.gz"
+    },
+    {
+      "path": "licenses/7zip-LGPL-2.1.txt",
+      "size_bytes": 27032,
+      "sha256": "1e7e6bae5a5bde32f1ae5a7c37a082d1ab03cf89354f7f936ac40be9e39a6531"
+    },
+    {
+      "path": "licenses/7zip-License.txt",
+      "size_bytes": 6341,
+      "sha256": "9ac2b4a97ab5d523965534d8b2d5868e511b39096d51fff458ab72c38b80fccc"
+    },
+    {
+      "path": "licenses/7zip-unRAR-License.txt",
+      "size_bytes": 1921,
+      "sha256": "17bd9fa4399092c777536fff045b41df76ec9d2ac4c9b8e7345d3b8b6ccc7976"
+    },
+    {
+      "path": "licenses/FFmpeg-LGPL-2.1.txt",
+      "size_bytes": 26526,
+      "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe"
+    },
+    {
+      "path": "licenses/OpenCV-Python-4.11.0.86-Third-Party.txt",
+      "size_bytes": 152360,
+      "sha256": "4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363"
+    },
+    {
+      "path": "licenses/OpenCV-Python-Packaging-License.txt",
+      "size_bytes": 1070,
+      "sha256": "09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c"
+    },
+    {
+      "path": "licenses/SciPy-1.17.1-Third-Party.txt",
+      "size_bytes": 46838,
+      "sha256": "4daf14e37432e7026165979ecb7a39930707a3e89bef4876cfaf9dad36ed364a"
+    }
+  ]
+}

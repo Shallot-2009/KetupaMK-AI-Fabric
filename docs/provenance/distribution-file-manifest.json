@@ -33,11 +33,12 @@
       "original_path": "licenses/internal-test/openketupamk-internal-test-12w.lic"
     },
     {
-      "path": "third-party/README.md",
+      "path": "docs/provenance/third-party-README.before-review.md",
       "git_blob": "0a6918f68b4dbd55d21f57e5b6c8d8898c4c8a78",
       "mode": "100644",
       "size_bytes": 5274,
-      "sha256": "6cf678e2c9fde019459022c8cb97e9c31e5deb9cef7ddfba1623e578ac5fb264"
+      "sha256": "6cf678e2c9fde019459022c8cb97e9c31e5deb9cef7ddfba1623e578ac5fb264",
+      "original_path": "third-party/README.md"
     },
     {
       "path": "third-party/licenses/7zip-LGPL-2.1.txt",

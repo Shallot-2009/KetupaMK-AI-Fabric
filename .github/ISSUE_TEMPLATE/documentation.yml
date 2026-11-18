@@ -1,0 +1,16 @@
+name: Documentation or translation / 文档或翻译
+description: Report an unclear page, broken link, or language mismatch / 反馈说明不清、链接失效或翻译差异
+title: "[Docs] "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL and language / 页面 URL 与语言
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Problem and proposed correction / 问题与建议修正
+    validations:
+      required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security and private licensing reports / 安全与私密授权问题
+    url: https://github.com/Shallot-2009/KetupaMK-AI-Fabric/security/policy
+    about: Use the private contact in the security policy / 使用安全说明中的私密联系渠道
+  - name: Documentation / 文档
+    url: https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tree/main/docs
+    about: Product scope, installation, releases, and project origin / 产品、安装、发行与项目起源

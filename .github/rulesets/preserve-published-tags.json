@@ -1,0 +1,16 @@
+{
+  "name": "Preserve published product and foundation tags",
+  "target": "tag",
+  "enforcement": "active",
+  "bypass_actors": [],
+  "conditions": {
+    "ref_name": {
+      "include": ["refs/tags/legacy-v0.0.3", "refs/tags/openketupamk-*"],
+      "exclude": []
+    }
+  },
+  "rules": [
+    {"type": "update"},
+    {"type": "deletion"}
+  ]
+}

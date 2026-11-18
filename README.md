@@ -1,59 +1,81 @@
 # KetupaMK-AI-Fabric
 
-[简体中文](README.zh-CN.md) · English · [Project history](history/README.md) · [Releases](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases)
+[简体中文](README.zh-CN.md) · English · [Documentation](docs/README.md)
 
-The continuing Ketupa project: the complete original **Ketupa_v0.0.3** project is preserved in [`history/Ketupa_v0.0.3/`](history/Ketupa_v0.0.3/), including its source code, documentation, assets, and engineering files, while the current **KetupaMK** installers, runtime distributions, licensing materials, and required third-party sources are maintained here.
+KetupaMK automates PCB, package, and interconnect modeling workflows. It uses CIR configuration files to organize engineering inputs, invoke compatible EDA tools, and produce traceable results. Version 1.0.2 also provides DDR Touchstone delay/skew reports and AI-assisted preparation of network data.
 
-This is the original `Shallot-2009/Ketupa_v0.0.3` repository renamed to `KetupaMK-AI-Fabric`, with repository identity, stars, fork relationships, and existing issues retained. The former `Ketupa-AI-Fabric` distribution repository has been integrated into this repository. Its one star is not transferred or added to the original repository's stars. See the [migration record](docs/MIGRATION.md).
+This is the public distribution and documentation repository for KetupaMK. Current proprietary core source is maintained separately. Windows and Linux installers, runtime distributions, test entitlement files, and third-party materials are published here.
 
-## Downloads
+**Project foundation — [Ketupa_v0.0.3](history/Ketupa_v0.0.3/).** The complete original project is preserved as the foundation of this work: 111 tracked files, original directory structure, author credits, LICENSE, NOTICE, and engineering artifacts. Its Git history and [`legacy-v0.0.3`](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tree/legacy-v0.0.3) tag remain intact. [Read the origin record](history/ORIGIN.md).
 
-**Five release groups, fifteen installers.** Runtime 1.0.0 and standard 1.0.0 are separate distributions. Installer names and bytes are preserved, including historical `OpenKetupa` and `Ketupa-AI-Fabric` naming. The release status labels below match the source releases.
+## What it does
 
-| Version / 版本 | Status / 状态 | Windows x64 | Linux x64 | Linux amd64 |
-| --- | --- | --- | --- | --- |
-| [KetupaMK 1.0.2](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) | Pre-release / 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) |
-| [KetupaMK 1.0.1](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.1) | Pre-release / 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/Ketupa-AI-Fabric-1.0.1-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux-1.0.1-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux_1.0.1_amd64.deb) |
-| [KetupaMK 1.0.0](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.0) | Release / 正式发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-linux-amd64.deb) |
-| [KetupaMK Runtime 1.0.0](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-runtime-v1.0.0) | Release / 正式发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-installer_1.0.0_amd64.deb) |
-| [KetupaMK Beta](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-beta) | Pre-release / 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-amd64.deb) |
-
-Choose either TAR.GZ or DEB on Linux. Installers are attached to this repository's Releases, rather than duplicated in the Git working tree. GitHub-generated Source code ZIP/TAR files are repository snapshots; they are not product installers.
-
-Use [SHA256SUMS](SHA256SUMS) to verify downloads. The [release manifest](releases/manifest.json) records original publication dates, exact filenames, byte sizes, SHA-256 digests, and current download URLs. The three 1.0.2 digests in the previous repository's README were stale; the current values match the actual release assets. An unchanged copy of that README is retained as a [provenance record](docs/provenance/Ketupa-AI-Fabric-README.before-migration.md).
-
-## Installation and engineering environment
-
-Follow the [English installation guide](docs/INSTALLATION.en.md) or [中文安装说明](docs/INSTALLATION.zh-CN.md), and the notes for your chosen version. Version 1.0.2 remains a **pre-release**. Its published capabilities include licensed CIR workflow entry points, AI preprocessing/integration materials, Windows Launcher, Linux CLI, and an import-only GDS Interposer workflow. Refer to the [1.0.2 release notes](docs/releases/openketupamk-v1.0.2.md) for exact scope and limitations.
-
-Installers provide the version's packaged software/runtime; they do not grant Ansys, Cadence, MATLAB, Polar, or other vendor entitlements. Compatible external EDA tools, approved input data, and the applicable KetupaMK license remain necessary. This repository migration verifies preservation and download integrity; it does not establish successful installation, physical simulation acceptance, or engineering signoff.
-
-The existing author-published [internal-test license](licenses/README.md#internal-test) retains its original bytes, with instructions consolidated in the license index. Its signed scope, version applicability, and validity govern its use; migration does not renew or broaden it.
-
-The maintainer-published [offline test LIC](licenses/README.md#offline-test) is also available. See the [license index](licenses/README.md) for both files and their scope.
-
-## Origins and archive
-
-Ketupa v0.0.3 is the origin of this project. Its original README records an initial-release date of **August 14, 2025**, the author name **Asenjo.HB.L.**, and work on HFSS patch antennas, transmission lines, measurement correlation, MATLAB/CNN exploration, LLM interaction, and desktop automation. These are historical descriptions, not acceptance claims for the current product. The retained Git history begins on **June 20, 2025**; that Git date and the release date recorded in the README describe different events.
-
-The archive contains all **111 tracked files** from commit `b5f44c111fef3d32b5cdeb3c18d4af40e5c81306`, with their original contents, copyright statements, license, notices, and engineering artifacts. The [`legacy-v0.0.3`](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tree/legacy-v0.0.3) tag preserves the original root layout. Both repositories' original commit histories are retained as parents of the consolidation merge.
-
-Start with the [archive guide](history/README.md). Historical setup commands, paths, and dependency names may be outdated and are not silently rewritten. See [ORIGIN.md](history/ORIGIN.md) for the chronology and provenance inventory.
-
-## License scopes
-
-| Material | Applicable terms |
+| Area | Published scope in 1.0.2 |
 | --- | --- |
-| Original first-party v0.0.3 source in `history/Ketupa_v0.0.3/` | [Archived Apache-2.0 LICENSE](history/Ketupa_v0.0.3/LICENSE) and [original NOTICE](history/Ketupa_v0.0.3/NOTICE); earlier BSD-2-Clause copies retain their original grants |
-| Current proprietary first-party product and product materials | [LICENSE.txt](LICENSE.txt), [EULA.md](EULA.md), and any applicable valid written agreement |
-| Third-party notices, source archives, and components | Their respective licenses; see [third-party/README.md](third-party/README.md) |
-| Third-party engineering files, documentation, data, and generated artifacts in the archive | Any separately applicable rights; the archive's source-code license does not automatically cover them |
+| CIR workflow control | One entry point, project includes, project queues, and network workers for existing PKG, PCB, and Merge workflows |
+| Package/interconnect setup | Bump, solderball, chip orientation, port impedance, mixed-unit frequency sweeps, and traceable output naming |
+| DDR reporting | `.tap` reads Touchstone files, explicit port maps, and specifications to report S21 delay and relative skew to Excel |
+| AI integration | Network inventory, classification mapping, Excel preprocessing, and optional Skill/Agent/MCP integration |
+| Interfaces | Windows Launcher, Linux CLI, and authenticated local HTTPS interfaces with a frontend SDK |
+| GDS Interposer | Import assistance; the published scope does not include solving or electrical signoff |
 
-Read the bilingual [scope clarification](LICENSE.md) and [NOTICE](NOTICE). Public availability and the historical open-source license do not make the current proprietary product open source. The proprietary product terms do not retroactively revoke rights already granted in v0.0.3 or third-party materials. `OpenKetupa` in an original filename is a historical product identifier, not a license grant.
+Compatible EDA software, vendor licenses, approved engineering inputs, and a version-appropriate KetupaMK entitlement are required for the workflows that use them. See [product scope](docs/product/README.md) for the version-specific boundaries.
 
-## Author and contact
+<a id="downloads"></a>
 
-Current public attribution: **Asenjo HB**. Historical attribution **Asenjo.HB.L.** is preserved in the v0.0.3 archive.
+## Download
 
-Email: [asenjoaupa@gmail.com](mailto:asenjoaupa@gmail.com) · [3405802009@qq.com](mailto:3405802009@qq.com)
-GitHub: [Shallot-2009](https://github.com/Shallot-2009/) · [asen-tech.com](https://asen-tech.com)
+**Current preview: KetupaMK 1.0.2** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb)
+
+These links download the installer directly. On Linux, choose TAR.GZ or DEB. Version 1.0.2 remains a pre-release; choose and validate a version for your intended workflow.
+
+| Distribution | Status | Windows x64 | Linux x64 | Linux amd64 |
+| --- | --- | --- | --- | --- |
+| [KetupaMK 1.0.2](docs/releases/openketupamk-v1.0.2.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) |
+| [KetupaMK 1.0.1](docs/releases/openketupamk-v1.0.1.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/Ketupa-AI-Fabric-1.0.1-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux-1.0.1-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux_1.0.1_amd64.deb) |
+| [KetupaMK 1.0.0](docs/releases/openketupamk-v1.0.0.md) | Historical release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-linux-amd64.deb) |
+| [Runtime 1.0.0](docs/releases/openketupamk-runtime-v1.0.0.md) | Historical release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-runtime-v1.0.0/ketupa-runtime-installer_1.0.0_amd64.deb) |
+| [Beta](docs/releases/openketupamk-beta.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-beta/openketupa-Beta-linux-amd64.deb) |
+
+[Installation guide](docs/installation/README.md) · [Download SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [Release notes](docs/releases/README.md)
+
+Runtime 1.0.0 is a separate distribution. Original installer names, bytes, and release status are retained. GitHub's **Source code** ZIP/TAR files contain repository snapshots; product installers are the EXE, DEB, and TAR.GZ assets listed above.
+
+<a id="licenses"></a>
+
+## Test entitlements and software terms
+
+Maintainer-published test files: [offline test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic) · [internal-test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) · [instructions and checksums](licenses/README.md).
+
+The `.lic` files are software entitlements, distinct from copyright licenses. Their version, module, device, and validity restrictions follow the original files and software validation; download does not renew them or grant commercial use.
+
+| Material | Terms |
+| --- | --- |
+| Original first-party v0.0.3 source | [Archived Apache-2.0 LICENSE](history/Ketupa_v0.0.3/LICENSE) and [NOTICE](history/Ketupa_v0.0.3/NOTICE); earlier BSD-2-Clause grants remain effective |
+| Current proprietary product | [LICENSE.txt](LICENSE.txt), [EULA.md](EULA.md#english), and applicable valid written agreements |
+| Third-party components and engineering materials | Their separate terms, notices, and source obligations; see [third-party materials](third-party/README.md) |
+
+Read the [license scope](LICENSE.md) and [commercial delivery review](docs/governance/REVIEW.md). The repository is not offered under one blanket open-source license.
+
+## Repository map
+
+```text
+KetupaMK-AI-Fabric/
+├── docs/          Product, installation, release notes, governance, provenance
+├── history/       Ketupa_v0.0.3 foundation, origin record, preservation manifest
+├── licenses/      Public test LIC files, instructions, checksums
+├── releases/      Installer manifest and immutable tag map
+├── third-party/   Component notices and corresponding source archives
+├── tools/         Repository integrity checks
+└── .github/       Automated checks and contribution templates
+```
+
+`main` is the current documentation and distribution index. Tags preserve specific historical snapshots: `legacy-v0.0.3` for the original project, `openketupamk-v*` for product releases, and `openketupamk-runtime-v*` for Runtime. A tag is a fixed reference, not a branch. [Branch and release policy](docs/governance/README.md).
+
+## Documentation and contact
+
+[Documentation index](docs/README.md) · [Project foundation](history/README.md) · [Migration record](docs/MIGRATION.md) · [Contribution guide](CONTRIBUTING.md) · [Security reporting](SECURITY.md)
+
+Current public author attribution: **Asenjo HB**. The foundational project's original attribution **Asenjo.HB.L.** is retained. The original GitHub repository continues under this name, retaining its repository identity, stars, forks, and issues.
+
+For licensing, rights, and private security reports: [asenjoaupa@gmail.com](mailto:asenjoaupa@gmail.com) · [3405802009@qq.com](mailto:3405802009@qq.com). Public issues are for reproducible product and documentation reports; remove customer data and private entitlements before posting.

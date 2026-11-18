@@ -1,0 +1,12 @@
+9691944c0fe0d01bb49373a704fb983fd33bc98b1738695179dfbf99ac1734f6  sources/7z2604-src.tar.xz
+642c4085f6af9565e39583e54a9d7a5d9e6b93dd8c8e9474aec8a892d6c7aa36  sources/gcc-4.8.5-44.el7.src.rpm
+0911864c260a75ae030f3144616e7e5e1359e04ce1c9730ab83906486e3bc79f  sources/gcc-8.5.0-26.el8_10.alma.1.src.rpm
+f4fa066278f7a47feab316fef905f4db0d5e9b589451949740f83972b30901bd  sources/ffmpeg-5.1.6.tar.xz
+996eb282ca4b43ec6a3972414de0e2331f5d9cda2b41091a49739c19fb843798  sources/opencv-python-headless-4.11.0.86.tar.gz
+1e7e6bae5a5bde32f1ae5a7c37a082d1ab03cf89354f7f936ac40be9e39a6531  licenses/7zip-LGPL-2.1.txt
+9ac2b4a97ab5d523965534d8b2d5868e511b39096d51fff458ab72c38b80fccc  licenses/7zip-License.txt
+17bd9fa4399092c777536fff045b41df76ec9d2ac4c9b8e7345d3b8b6ccc7976  licenses/7zip-unRAR-License.txt
+b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe  licenses/FFmpeg-LGPL-2.1.txt
+4fc3c113d53e95da0f3c433655a67067b7310e53af31eb6d280e94cc6927a363  licenses/OpenCV-Python-4.11.0.86-Third-Party.txt
+09d719058e782ac7bc71ba21c944e1136cde2bb957c0e888121f0218d6b5f02c  licenses/OpenCV-Python-Packaging-License.txt
+4daf14e37432e7026165979ecb7a39930707a3e89bef4876cfaf9dad36ed364a  licenses/SciPy-1.17.1-Third-Party.txt

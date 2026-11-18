@@ -8,5 +8,5 @@
 history/Ketupa_v0.0.3/** -text
 licenses/*.lic -text
 third-party/licenses/** -text
-docs/provenance/Ketupa-AI-Fabric-README.before-migration.md -text
-docs/provenance/internal-test-README.before-flattening.md -text
+# Original Markdown snapshots retain their bytes and inherited hard line breaks.
+docs/provenance/*.before-*.md -text whitespace=-blank-at-eol

@@ -1,0 +1,28 @@
+name: Repository integrity
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out full history and tags
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, verified 2026-11-18
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate archive, legal records, metadata, and documentation
+        run: python3 tools/check_repository.py

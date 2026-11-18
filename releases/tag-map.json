@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "repository": "Shallot-2009/KetupaMK-AI-Fabric",
+  "recorded_on": "2026-11-18",
+  "default_branch": "main",
+  "tags": [
+    {
+      "tag": "openketupamk-v1.0.2",
+      "commit": "c53e6494f4cec19004964d2cb7502fefc5175e09",
+      "kind": "product"
+    },
+    {
+      "tag": "openketupamk-v1.0.1",
+      "commit": "fd53347e31aeca8f7babf0ff33b270fd92ae359e",
+      "kind": "product"
+    },
+    {
+      "tag": "openketupamk-v1.0.0",
+      "commit": "f6e37747ba1c9a82bd66b8408ca2e162ffdb983f",
+      "kind": "product"
+    },
+    {
+      "tag": "openketupamk-runtime-v1.0.0",
+      "commit": "f6e37747ba1c9a82bd66b8408ca2e162ffdb983f",
+      "kind": "runtime"
+    },
+    {
+      "tag": "openketupamk-beta",
+      "commit": "f6e37747ba1c9a82bd66b8408ca2e162ffdb983f",
+      "kind": "beta"
+    },
+    {
+      "tag": "legacy-v0.0.3",
+      "commit": "b5f44c111fef3d32b5cdeb3c18d4af40e5c81306",
+      "kind": "foundation"
+    }
+  ]
+}
