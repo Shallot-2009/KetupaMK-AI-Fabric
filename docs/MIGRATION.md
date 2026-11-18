@@ -19,6 +19,8 @@ v0.0.3 基准提交 `b5f44c111fef3d32b5cdeb3c18d4af40e5c81306` 的全部 111 个
 
 只有主仓库内容、全部安装包及来源记录验证成功后，才将发行源更名为 `test` 并通过普通提交清空其默认分支文件；其原提交历史保留，避免强制改写。原发行 tag 和历史 Git 对象也保留。Release 文件迁入主仓库后，`test` 不再承担分发入口。未对私有开发源码、许可证或 EDA 环境另行扩大公开范围。
 
+原发行仓库更名为 `test` 并清理 Release 后，其旧安装包下载深链接不会自动跨仓库转入主仓库；请更新为主页与发行清单中的新链接。原历史仓库更名后的重定向与发行源旧下载路径是两个独立情况。
+
 Apache-2.0 历史授权、此前 BSD-2-Clause 授权、现行专有产品条款及第三方许可分别适用，详见 [LICENSE.md](../LICENSE.md)。
 
 ## English
@@ -32,5 +34,7 @@ Distribution baseline: `67d7ffd815fea925f0fc50ece3cb8dfc53424aae`. Both original
 Five Releases with fifteen installers are copied to the primary repository, preserving filenames, sizes, SHA-256 digests, and pre-release flags. New GitHub release timestamps reflect migration rather than fabricated original publication times; original dates are recorded in the manifest and release notes. The old README's three stale 1.0.2 hashes are corrected against actual assets, and its original bytes are retained in [provenance records](provenance/README.md). Installers are not repacked or internally renamed.
 
 Only after content, all installer files, and provenance are verified is the distribution source renamed to `test` and its default-branch file tree emptied with an ordinary commit. Original commit history, release tags, and Git objects are retained without a force push. After release-file migration, `test` is no longer a distribution entry point. Private development source, licenses, and engineering environments are not additionally published.
+
+After the distribution source is renamed to `test` and its Releases are removed, its former installer download deep links do not redirect across repository identities to the primary repository. Update them to the new URLs in the homepage and manifest. This differs from the original historical repository's in-place rename redirect.
 
 Historical Apache-2.0 rights, earlier BSD-2-Clause grants, current proprietary terms, and third-party licenses retain their separate scopes; see [LICENSE.md](../LICENSE.md).
