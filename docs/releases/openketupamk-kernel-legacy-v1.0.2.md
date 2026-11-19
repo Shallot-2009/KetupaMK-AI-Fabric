@@ -15,12 +15,17 @@ This is the 1.0.2 compatibility distribution for older Linux userspaces, includi
 
 ## Download one format
 
-| Format and use | Direct download | Bytes |
-| --- | --- | --- |
-| DEB · Ubuntu 20.04 / Debian | [ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 173,741,206 |
-| TAR.GZ · dedicated prefix | [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 173,926,806 |
-| RPM · Rocky / RHEL 8 | [ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 175,114,692 |
-| RUN · self-extracting installer | [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 173,927,759 |
+
+<!-- current-assets:start -->
+Contact-corrected downloads · 2026-11-19. Original names and tag targets retained; see the [revision record](../../releases/contact-refresh-20261119.json).
+
+| Installer | Bytes |
+| --- | --- |
+| [ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 175,131,882 |
+| [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,318,216 |
+| [ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,508,163 |
+| [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,319,169 |
+<!-- current-assets:end -->
 
 All four files deliver the same signed application/runtime environment in alternative formats. Choose one. They are separate from the [standard Windows/Linux 1.0.2 distribution](openketupamk-v1.0.2.md) and the historical Runtime 1.0.0 distribution.
 
@@ -60,17 +65,17 @@ These were isolated userspace tests using bubblewrap and the host kernel. Native
 Download [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) beside your selected installer, then run `sha256sum --ignore-missing -c SHA256SUMS`.
 
 ```text
-c2617194b583d7c1ccabe8a83cc45c671a2ef7bdc473d9091c577a6a2bdbc2bd  ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
-0f547907dbe4e338dd9fb15dbb03ddd6520cef139a9bbed6c263545c981a70d6  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
-39a53a70a30d156b5072308996811e48145858b1a653607806c095739ebb265d  ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
-565d4794094b3a0bd03441840a5432db7493177b476a35e0314dbb212420945b  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
+ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3  ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
+82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0  ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
+4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
 ## Terms, included documentation and provenance
 
-The TAR payload contains `docs/Linux_Kernel_Legacy.md`, the other product guides, `dependency-inventory.json`, `MANIFEST.json`, `package-manifest.json` and signature material, plus `notices/` and dependency license files. Some bundled general guides describe older/standard builds; use this release page and the current installation guide to choose this flavour. Original installers are published unchanged; no rebuild or re-signing was performed here.
+The TAR payload contains `docs/Linux_Kernel_Legacy.md`, the other product guides, `dependency-inventory.json`, `MANIFEST.json`, `package-manifest.json` and signature material, plus `notices/` and dependency license files. Some bundled general guides describe older/standard builds; use this release page and the current installation guide to choose this flavour. The current contact-corrected packages are synchronized from audited development releases; earlier publication records remain historical evidence.
 
-These four packages were supplied by the maintainer for publication on 2026-11-18. Their total size is **696,710,463 bytes**. They extend the distribution catalog; the original five release groups and the complete [v0.0.3 foundation](../../history/README.md) remain preserved.
+This compatibility group was first published here on 2026-11-18. The current contact-corrected four packages were synchronized on 2026-11-19 and total **702,277,430 bytes**; see the [revision record](../../releases/contact-refresh-20261119.json). Earlier acceptance records describe their dated builds and are not a new installation test of these files. The original release tag targets and complete [v0.0.3 foundation](../../history/README.md) remain preserved.
 
 [EULA](../../EULA.md#english) · [License scope](../../LICENSE.md) · [Third-party coverage](../../third-party/README.md) · [Test entitlement scope](../../licenses/README.md). A valid version/module-scoped KetupaMK entitlement and separately licensed, compatible EDA tools are required. Existing public LIC downloads do not themselves prove compatibility or grant additional rights.
 
@@ -87,12 +92,17 @@ These four packages were supplied by the maintainer for publication on 2026-11-1
 
 ## 选择一种格式下载
 
-| 格式与用途 | 直接下载 | 字节数 |
-| --- | --- | --- |
-| DEB · Ubuntu 20.04 / Debian | [ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 173,741,206 |
-| TAR.GZ · 独立目录安装 | [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 173,926,806 |
-| RPM · Rocky / RHEL 8 | [ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 175,114,692 |
-| RUN · 自解压安装 | [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 173,927,759 |
+
+<!-- current-assets:start -->
+联系方式修正版 · 2026-11-19。保留原文件名与标签指向，见[修订记录](../../releases/contact-refresh-20261119.json)。
+
+| 安装包 | 字节数 |
+| --- | --- |
+| [ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 175,131,882 |
+| [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,318,216 |
+| [ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,508,163 |
+| [ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,319,169 |
+<!-- current-assets:end -->
 
 四个文件以不同格式交付同一套签名应用与运行环境，任选一种。它们与[标准 Windows/Linux 1.0.2](openketupamk-v1.0.2.md)、历史 Runtime 1.0.0 分开发行。
 
@@ -132,17 +142,17 @@ These four packages were supplied by the maintainer for publication on 2026-11-1
 将 [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) 与所选安装包下载到同一目录，运行 `sha256sum --ignore-missing -c SHA256SUMS`。
 
 ```text
-c2617194b583d7c1ccabe8a83cc45c671a2ef7bdc473d9091c577a6a2bdbc2bd  ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
-0f547907dbe4e338dd9fb15dbb03ddd6520cef139a9bbed6c263545c981a70d6  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
-39a53a70a30d156b5072308996811e48145858b1a653607806c095739ebb265d  ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
-565d4794094b3a0bd03441840a5432db7493177b476a35e0314dbb212420945b  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
+ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3  ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
+82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0  ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
+4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff  ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
 ## 条款、包内文档与来源
 
-TAR 载荷包含 `docs/Linux_Kernel_Legacy.md`、其他产品指南、`dependency-inventory.json`、`MANIFEST.json`、`package-manifest.json` 及签名材料，以及 `notices/` 和依赖许可文件。部分通用包内指南描述旧版或标准构建；本兼容版的选包与安装以本页和当前安装指南为入口。原始安装包未改名、重建或重新签名。
+TAR 载荷包含 `docs/Linux_Kernel_Legacy.md`、其他产品指南、`dependency-inventory.json`、`MANIFEST.json`、`package-manifest.json` 及签名材料，以及 `notices/` 和依赖许可文件。部分通用包内指南描述旧版或标准构建；本兼容版的选包与安装以本页和当前安装指南为入口。当前联系方式修正版从已核对的开发发布目录同步；此前发布记录作为历史依据保留。
 
-四个安装包由维护者提供，于 2026-11-18 纳入本仓库发行目录，共 **696,710,463 字节**。这是新增的兼容发行组，原有五个发行组与完整的 [v0.0.3 基础项目](../../history/README.md)继续保留。
+本兼容发行组于 2026-11-18 首次纳入本仓库。当前四个联系方式修正版于 2026-11-19 同步，共 **702,277,430 字节**，详见[修订记录](../../releases/contact-refresh-20261119.json)。此前验收对应其注明日期的构建，不代表此次文件已重新执行安装测试。原发行标签指向与完整的 [v0.0.3 基础项目](../../history/README.md)继续保留。
 
 [EULA](../../EULA.md#中文) · [许可范围](../../LICENSE.md) · [第三方覆盖范围](../../third-party/README.md) · [测试授权范围](../../licenses/README.md)。实际运行需要适用版本/模块的有效 KetupaMK 授权，以及另行获准使用且兼容的 EDA 工具；现有公开 LIC 下载本身不证明适用，也不会扩大权利。
 

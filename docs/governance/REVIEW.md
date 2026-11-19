@@ -9,6 +9,8 @@
 
 Review date: **2026-11-18**. This review covers the public repository, publication records, and artifact consistency. Current proprietary core source and customers' installations are outside the repository reviewed here.
 
+**Historical snapshot.** The counts, bytes and acceptance statements below describe the 2026-11-18 review, not the current downloads. For the 2026-11-19 contact correction and 23 current attachments (19 unique packages), use the [current manifest](../../releases/manifest.json) and [dated revision record](../../releases/contact-refresh-20261119.json). This update does not repeat installation or EDA acceptance.
+
 ## Repository evidence
 
 | Area | Evidence maintained here |
@@ -52,6 +54,8 @@ Repository patterns were reviewed from [VS Code](https://github.com/microsoft/vs
 <summary><strong>简体中文</strong></summary>
 
 检查日期：**2026-11-18**。范围为公开仓库、发布记录与文件一致性；现行专有核心源码及客户实际安装环境不在本仓库检查范围内。
+
+**历史快照。** 下文数量、字节及验收表述对应 2026-11-18 检查，不代表当前下载。2026-11-19 联系方式修正后的 23 个附件（19 个唯一安装包）见[当前清单](../../releases/manifest.json)和[有日期的修订记录](../../releases/contact-refresh-20261119.json)。此次更新未重做安装或 EDA 验收。
 
 ## 仓库核对依据
 

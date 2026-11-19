@@ -10,3 +10,6 @@ licenses/*.lic -text
 third-party/licenses/** -text
 # Original Markdown snapshots retain their bytes and inherited hard line breaks.
 docs/provenance/*.before-*.md -text whitespace=-blank-at-eol
+# Dated publication revision is hashed as exact bytes.
+releases/contact-refresh-20261119.json -text
+docs/provenance/release-manifest.before-review.json text eol=lf

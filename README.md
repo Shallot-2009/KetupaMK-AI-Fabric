@@ -2,7 +2,9 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [Documentation](docs/README.md) · [Releases](docs/releases/README.md) · [Tags](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
-KetupaMK automates PCB, package, and interconnect modeling workflows. It uses CIR configuration files to organize engineering inputs, invoke compatible EDA tools, and produce traceable results. Version 1.0.2 also provides DDR Touchstone delay/skew reports and AI-assisted preparation of network data.
+KetupaMK is a CIR-driven engineering automation platform oriented toward **analog IC, channel algorithms, advanced packaging, Interposer, and signal/power integrity (SI/PI)**. It connects PCB/package/interconnect workflows, Touchstone channel analysis, and AI-assisted input preparation on Windows and Linux.
+
+Start with [engineering domains](docs/product/DOMAINS.md), [product capabilities](docs/product/README.md), or the [project map](docs/PROJECT_MAP.md). CIR files select global settings; include modules describe the actual project, and compatible EDA tools perform the selected engineering tasks.
 
 This is the public distribution and documentation repository for KetupaMK. Current proprietary core source is maintained separately. Windows and Linux installers, runtime distributions, test entitlement files, and third-party materials are published here.
 
@@ -59,7 +61,12 @@ This distribution remains a pre-release. Recorded acceptance covers isolated EL8
 
 [Installation guide](docs/installation/README.md) · [Download SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [Release notes](docs/releases/README.md)
 
-Runtime 1.0.0 is a separate distribution. Original installer names, bytes, and release status are retained. GitHub's **Source code** ZIP/TAR files contain repository snapshots; product installers are the EXE, DEB, RPM, RUN, and TAR.GZ assets listed above.
+Runtime 1.0.0 is a separate distribution. Download filenames, tags and release status are retained; installer bytes and checksums follow the dated [contact revision record](releases/contact-refresh-20261119.json). GitHub's **Source code** ZIP/TAR files contain repository snapshots; product installers are the EXE, DEB, RPM, RUN, and TAR.GZ assets listed above.
+
+
+<!-- legacy-mirrors:start -->
+The same corrected Legacy packages are also available in the primary 1.0.2 release: [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) · [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) · [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) · [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run)
+<!-- legacy-mirrors:end -->
 
 <a id="licenses"></a>
 <a id="licenses-en"></a>

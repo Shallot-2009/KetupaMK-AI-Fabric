@@ -20,6 +20,9 @@ DISTRIBUTION_COMMIT = '67d7ffd815fea925f0fc50ece3cb8dfc53424aae'
 ARCHIVE = 'history/Ketupa_v0.0.3'
 REPOSITORY = 'Shallot-2009/KetupaMK-AI-Fabric'
 PRESERVED_RELEASE_MANIFEST = '16807b04bf08ad0f45e9488b71ee1265669d9943e98335cae95e2fae205e7469'
+CONTACT_SOURCE_COMMIT = 'cf968d04f40db391946faabe7826974f3f84fd1c'
+CONTACT_SOURCE_MANIFEST = '98e2518ac8bad3cb94bca70dd2d83961a54f05a8286278f62db2f8dae574f9f6'
+CONTACT_REVISION_DIGEST = '15129137772819ebf98474d852ec00e85888cc3ee148af5aa19f9900c2fc209e'
 ORIGINAL_TAGS = {
     'legacy-v0.0.3': FOUNDATION_COMMIT,
     'openketupamk-v1.0.2': 'c53e6494f4cec19004964d2cb7502fefc5175e09',
@@ -116,7 +119,7 @@ def verify_distribution():
 
 def checksum_map(path):
     result = {}
-    for line in (ROOT / path).read_text().splitlines():
+    for line in (ROOT / path).read_text(encoding='utf-8').splitlines():
         digest, name = line.split('  ', 1)
         require(bool(re.fullmatch(r'[0-9a-f]{64}', digest)), 'Invalid digest in ' + path)
         require(name not in result, 'Duplicate checksum entry in ' + path)
@@ -150,17 +153,55 @@ def verify_releases():
     baseline = json.loads(baseline_bytes)
     by_tag = {r['tag']: r for r in manifest['releases']}
     require(len(by_tag) == len(manifest['releases']), 'Duplicate release tag')
+    source_bytes = git('show', CONTACT_SOURCE_COMMIT + ':releases/manifest.json')
+    require(hashlib.sha256(source_bytes).hexdigest() == CONTACT_SOURCE_MANIFEST,
+            'Pre-contact release snapshot changed')
+    source = json.loads(source_bytes)
+    source_by_tag = {r['tag']: r for r in source['releases']}
     for release in baseline['releases']:
-        require(by_tag.get(release['tag']) == release, 'Preserved release metadata changed: ' + release['tag'])
+        require(source_by_tag.get(release['tag']) == release,
+                'Original release metadata missing from preserved snapshot: ' + release['tag'])
+    revision_bytes = (ROOT / 'releases/contact-refresh-20261119.json').read_bytes()
+    require(hashlib.sha256(revision_bytes).hexdigest() == CONTACT_REVISION_DIGEST,
+            'Reviewed contact revision record changed')
+    revision = json.loads(revision_bytes)
+    require(revision['source_commit'] == CONTACT_SOURCE_COMMIT and
+            revision['source_manifest_sha256'] == CONTACT_SOURCE_MANIFEST,
+            'Contact revision source mismatch')
+    require(revision['recorded_on'] == manifest.get('synchronized_on') == '2026-11-19' and
+            revision['author'] == 'Asenjo HB' and
+            revision['contacts'] == ['asenjoaupa@gmail.com', '3405802009@qq.com'],
+            'Contact revision attribution mismatch')
+    revisions = {r['tag']: r for r in revision['releases']}
+    require(len(revisions) == len(revision['releases']) == len(by_tag) == 6 and
+            set(revisions) == set(by_tag) == set(source_by_tag), 'Contact release group mismatch')
+    require({k: v for k, v in manifest.items() if k not in {'releases', 'synchronized_on'}} ==
+            {k: v for k, v in source.items() if k != 'releases'}, 'Release provenance changed')
+    for tag, release in by_tag.items():
+        old, change = source_by_tag[tag], revisions[tag]
+        require(change['before_assets'] == old['assets'] and change['after_assets'] == release['assets'],
+                'Installer revision mismatch: ' + tag)
+        require(change['before_name'] == old['name'] and change['after_name'] == release['name'],
+                'Release display title revision mismatch: ' + tag)
+        require({k: v for k, v in release.items() if k not in {'assets', 'name'}} ==
+                {k: v for k, v in old.items() if k not in {'assets', 'name'}},
+                'Release identity, status or publication provenance changed: ' + tag)
+        require({a['name'] for a in old['assets']} <= {a['name'] for a in release['assets']},
+                'Historical installer download name removed: ' + tag)
     assets = [a for release in manifest['releases'] for a in release['assets']]
+    require(len(assets) == 23 and len({a['sha256'] for a in assets}) == 19,
+            'Expected 23 attachments containing 19 unique packages')
+    for asset in assets:
+        require(bool(re.fullmatch(r'[0-9a-f]{64}', asset['sha256'])) and asset['size_bytes'] > 0,
+                'Invalid installer size/digest')
     require(len({a['name'] for a in assets}) == len(assets), 'Installer filenames must be unique in SHA256SUMS')
     require(checksum_map('SHA256SUMS') == {a['name']: a['sha256'] for a in assets}, 'Installer checksum lists disagree')
     for release in manifest['releases']:
         tag = release['tag']
         require(bool(release['assets']), 'Release has no installers: ' + tag)
-        notes = language_sections((ROOT / f'docs/releases/{tag}.md').read_text())
-        homes = {'English': (ROOT / 'README.md').read_text(),
-                 '简体中文': (ROOT / 'README.zh-CN.md').read_text()}
+        notes = language_sections((ROOT / f'docs/releases/{tag}.md').read_text(encoding='utf-8'))
+        homes = {'English': (ROOT / 'README.md').read_text(encoding='utf-8'),
+                 '简体中文': (ROOT / 'README.zh-CN.md').read_text(encoding='utf-8')}
         for language in ['English', '简体中文']:
             note, home = notes[language], homes[language]
             for asset in release['assets']:
@@ -275,7 +316,7 @@ def verify_markdown(all_files):
                 local = file.parent / unquote(url.path) if url.path else file
             require(local.exists(), f'Broken link in {name}: {target}')
             if url.fragment and local.suffix == '.md':
-                require(unquote(url.fragment) in markdown_anchors(local.read_text()), f'Broken anchor in {name}: {target}')
+                require(unquote(url.fragment) in markdown_anchors(local.read_text(encoding='utf-8')), f'Broken anchor in {name}: {target}')
             checked += 1
     return checked, bilingual
 

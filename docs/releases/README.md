@@ -34,7 +34,7 @@ For older userspaces such as Rocky/RHEL 8 and Ubuntu 20.04: **x86_64, glibc ≥ 
 
 This distribution remains a pre-release. Recorded acceptance covers isolated EL8.1 and Ubuntu 20.04 userspaces, not native Rocky kernels or EDA solving. Keep compatibility and standard payloads out of the same installation prefix.
 
-There are six public release groups with nineteen installer assets. Runtime 1.0.0 and product 1.0.0 are separate distributions. Names and installer bytes are preserved. Download an installer for your platform, then follow the [installation guide](../installation/README.md) and verify [SHA256SUMS](../../SHA256SUMS).
+There are six public release groups with twenty-three attachments (nineteen unique packages). Runtime 1.0.0 and product 1.0.0 are separate distributions. Download names and tag targets are retained; current installer bytes follow the [dated contact revision](../../releases/contact-refresh-20261119.json). Download an installer for your platform, then follow the [installation guide](../installation/README.md) and verify [SHA256SUMS](../../SHA256SUMS).
 
 | Reference | Meaning |
 | --- | --- |
@@ -81,7 +81,7 @@ GitHub-generated Source code archives contain the tagged repository snapshot, no
 
 本组保持预发布状态。已有验收为 EL8.1 与 Ubuntu 20.04 隔离用户空间测试，未覆盖 Rocky 真机内核或 EDA 求解。兼容构建与标准构建不要混装到同一目录。
 
-当前有 6 个公开发行组、19 个安装包。Runtime 1.0.0 与产品 1.0.0 为独立发行组，安装包名称和字节保持原样。选择适合平台的安装包后，参阅[安装说明](../installation/README.md)，并用 [SHA256SUMS](../../SHA256SUMS) 核对。
+当前有 6 个公开发行组、23 个安装附件（19 个唯一安装包）。Runtime 1.0.0 与产品 1.0.0 为独立发行组，保留下载名与标签指向；当前安装包字节以[有日期的联系方式修订](../../releases/contact-refresh-20261119.json)为准。选择适合平台的安装包后，参阅[安装说明](../installation/README.md)，并用 [SHA256SUMS](../../SHA256SUMS) 核对。
 
 | 引用 | 含义 |
 | --- | --- |

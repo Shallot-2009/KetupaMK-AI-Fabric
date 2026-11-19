@@ -9,11 +9,20 @@
 
 **Pre-release** · Windows / Linux x64 · Tag: `openketupamk-v1.0.2`
 
-| Platform | Direct download | Bytes |
-| --- | --- | --- |
-| Windows x64 · EXE | [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 290,649,649 |
-| Linux x64 · TAR.GZ | [openketupa-ai-fabric-linux-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | 174,854,026 |
-| Linux amd64 · DEB | [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,752,932 |
+
+<!-- current-assets:start -->
+Contact-corrected downloads · 2026-11-19. Original names and tag targets retained; see the [revision record](../../releases/contact-refresh-20261119.json).
+
+| Installer | Bytes |
+| --- | --- |
+| [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 283,267,771 |
+| [openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 175,131,882 |
+| [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,845,486 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,318,216 |
+| [openketupa-ai-fabric-linux-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | 174,930,640 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,508,163 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,319,169 |
+<!-- current-assets:end -->
 
 Linux TAR.GZ and DEB are alternative formats. [Installation](../installation/README.md) · [GitHub Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) · [Test entitlements](../../licenses/README.md).
 
@@ -28,14 +37,18 @@ The [product guide](../product/README.md) gives the detailed published scope and
 ## SHA-256
 
 ```text
-b97ce055bf5390b2f63a4eb6200bc121f6144b081ea944e151e953b1a2412258  openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe
-f37a9a68af7b97fcdc6c1488b61bd6aad43d96d11ed1a702936a0bbff6f19567  openketupa-ai-fabric-linux-1.0.2-x64.tar.gz
-3afda8a1882d9a23d69f1c3a6927f6beeebe8c498304ed2ad04f0e968a872901  openketupa-ai-fabric-linux_1.0.2_amd64.deb
+84c279a66ba9d5a2a8fdd86927a8753e689f4bac13b1274298340eadf1de4b4c  openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe
+ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3  openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
+eb3a0a3458ee923095524599f2ac474626e69fd2730335d16e783cf0e920ee06  openketupa-ai-fabric-linux_1.0.2_amd64.deb
+82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+2a58be86b30ceacf2541318338fc247824dd269251fcfd2e1980b2484a164a56  openketupa-ai-fabric-linux-1.0.2-x64.tar.gz
+d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0  openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
+4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
 ## Provenance and terms
 
-First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrated to the continuing repository ID `1005327414` on 2026-11-18. Original filenames, bytes, tags, and release flags are retained. [Migration record](../MIGRATION.md).
+First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrated to the continuing repository ID `1005327414` on 2026-11-18. Original download names, tag targets and release flags are retained; installer bytes follow the dated contact revision record. [Migration record](../MIGRATION.md).
 
 [EULA](../../EULA.md#english) · [License scope](../../LICENSE.md) · [Third-party materials](../../third-party/README.md). Hashes verify download consistency; installation, license activation, engineering results, and production suitability require separate validation. Source code ZIP/TAR files are repository snapshots.
 
@@ -46,11 +59,20 @@ First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrate
 
 **预发布** · Windows / Linux x64 · 标签：`openketupamk-v1.0.2`
 
-| 平台 | 直接下载 | 字节数 |
-| --- | --- | --- |
-| Windows x64 · EXE | [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 290,649,649 |
-| Linux x64 · TAR.GZ | [openketupa-ai-fabric-linux-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | 174,854,026 |
-| Linux amd64 · DEB | [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,752,932 |
+
+<!-- current-assets:start -->
+联系方式修正版 · 2026-11-19。保留原文件名与标签指向，见[修订记录](../../releases/contact-refresh-20261119.json)。
+
+| 安装包 | 字节数 |
+| --- | --- |
+| [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 283,267,771 |
+| [openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 175,131,882 |
+| [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,845,486 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,318,216 |
+| [openketupa-ai-fabric-linux-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | 174,930,640 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,508,163 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,319,169 |
+<!-- current-assets:end -->
 
 Linux 的 TAR.GZ 与 DEB 二选一。[安装说明](../installation/README.md) · [GitHub Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) · [测试授权](../../licenses/README.md)。
 
@@ -65,14 +87,18 @@ Rocky/RHEL 8、Ubuntu 20.04 等较旧用户空间请选择独立的[旧版 Linux
 ## SHA-256
 
 ```text
-b97ce055bf5390b2f63a4eb6200bc121f6144b081ea944e151e953b1a2412258  openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe
-f37a9a68af7b97fcdc6c1488b61bd6aad43d96d11ed1a702936a0bbff6f19567  openketupa-ai-fabric-linux-1.0.2-x64.tar.gz
-3afda8a1882d9a23d69f1c3a6927f6beeebe8c498304ed2ad04f0e968a872901  openketupa-ai-fabric-linux_1.0.2_amd64.deb
+84c279a66ba9d5a2a8fdd86927a8753e689f4bac13b1274298340eadf1de4b4c  openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe
+ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3  openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
+eb3a0a3458ee923095524599f2ac474626e69fd2730335d16e783cf0e920ee06  openketupa-ai-fabric-linux_1.0.2_amd64.deb
+82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+2a58be86b30ceacf2541318338fc247824dd269251fcfd2e1980b2484a164a56  openketupa-ai-fabric-linux-1.0.2-x64.tar.gz
+d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0  openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
+4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
 ## 来源与条款
 
-原始发布时间为 `2026-11-12T06:10:33Z`，来源仓库 ID 为 `1424671956`；2026-11-18 迁至延续原身份的主仓库 ID `1005327414`。原文件名、字节、标签指向与发布标记保留。详见[迁移记录](../MIGRATION.md)。
+原始发布时间为 `2026-11-12T06:10:33Z`，来源仓库 ID 为 `1424671956`；2026-11-18 迁至延续原身份的主仓库 ID `1005327414`。原下载文件名、标签指向与发布标记保留；安装包字节以有日期的联系方式修订记录为准。详见[迁移记录](../MIGRATION.md)。
 
 [EULA](../../EULA.md#中文) · [许可范围](../../LICENSE.md) · [第三方材料](../../third-party/README.md)。哈希验证下载一致性；安装、授权激活、工程结果和生产适用性需另外验证。Source code ZIP/TAR 为仓库快照。
 

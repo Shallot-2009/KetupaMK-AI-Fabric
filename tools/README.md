@@ -19,6 +19,8 @@ Tag-map commits must be full commit hashes. A tagged publication snapshot may us
 
 GitHub Actions runs the same command. A shallow clone must fetch the original history and tags before validation. Changes to published artifact baselines require explicit review; editing a manifest alone must not redefine the preserved foundation.
 
+`refresh_releases.py --inventory PATH` mechanically refreshes current release tables and checksums from a separately verified six-release public inventory. It does not upload packages or move tags. The [contact revision](../releases/contact-refresh-20261119.json) records exact before/after metadata; the checker pins its digest and historical source manifest while preserving the original foundation, legal records, entitlements and tag checks. Run the checker after refreshing; a new revision requires explicit review, not an automatic baseline reset.
+
 </details>
 
 <details name="readme-language" open>
@@ -35,5 +37,7 @@ python3 tools/check_repository.py
 标签映射应记录完整提交哈希；已打标签的发布快照可使用 `self` 表示自身 HEAD，后续 `main` 提交改记具体哈希。检查器仍要求本地标签解析一致，不放宽六个原有标签基准。兼容版脱敏验收记录区分提供的既往测试与本次发布核验。
 
 GitHub Actions 执行相同命令。浅克隆需先取得原始历史和标签。已发布文件基准的变更需要明确审核，不应只修改清单就重新定义基础项目的保全依据。
+
+`refresh_releases.py --inventory 路径` 从另行核验的六组公开发行清单机械更新当前下载表及校验值，不上传安装包、不移动标签。[联系方式修订](../releases/contact-refresh-20261119.json)记录精确前后元数据；检查器固定其摘要及历史来源清单，同时保留基础项目、法律文本、授权与标签检查。刷新后必须运行检查器；后续修订需要明确审核，不能自动重置基准。
 
 </details>

@@ -2,7 +2,9 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [文档](docs/README.md) · [版本](docs/releases/README.md) · [标签](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
-KetupaMK 面向 PCB、封装与互连建模，使用 CIR 配置文件组织工程输入、调用兼容的 EDA 工具并归集可追溯结果。1.0.2 同时提供 DDR Touchstone 延迟与偏斜报告，以及 AI 辅助的网络数据准备功能。
+KetupaMK 是面向**模拟 IC、信道算法、先进封装、Interposer 中介层，以及信号完整性与电源完整性（SI/PI）**的 CIR 工程自动化平台，连接 PCB/封装/互连工作流、Touchstone 信道分析与 AI 辅助输入准备，提供 Windows 和 Linux 发行环境。
+
+按需查看[技术方向](docs/product/DOMAINS.md)、[产品功能](docs/product/README.md)或[项目结构导航](docs/PROJECT_MAP.md)。CIR 配置全局变量，include 模块描述具体工程，兼容的 EDA 工具负责执行相应工程任务。
 
 本仓库是 KetupaMK 的公开发行与文档仓库。现行产品的专有核心源码单独维护；Windows/Linux 安装包、运行环境发行版、测试授权文件和第三方材料在此发布。
 
@@ -59,7 +61,12 @@ KetupaMK 面向 PCB、封装与互连建模，使用 CIR 配置文件组织工�
 
 [安装说明](docs/installation/README.md) · [下载 SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [发行说明](docs/releases/README.md)
 
-Runtime 1.0.0 是独立发行组。安装包保留原始名称、字节与发行状态。GitHub 自动生成的 **Source code** ZIP/TAR 是仓库快照；产品安装包为上表中的 EXE、DEB、RPM、RUN 和 TAR.GZ 附件。
+Runtime 1.0.0 是独立发行组。保留下载文件名、标签和发行状态；安装包字节及摘要以有日期的[联系方式修订记录](releases/contact-refresh-20261119.json)为准。GitHub 自动生成的 **Source code** ZIP/TAR 是仓库快照；产品安装包为上表中的 EXE、DEB、RPM、RUN 和 TAR.GZ 附件。
+
+
+<!-- legacy-mirrors:start -->
+同一套 Legacy 修正版也保留在主 1.0.2 发布页：[DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) · [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) · [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) · [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run)
+<!-- legacy-mirrors:end -->
 
 <a id="licenses"></a>
 <a id="licenses-zh"></a>

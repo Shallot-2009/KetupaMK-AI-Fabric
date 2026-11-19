@@ -12,6 +12,8 @@ Choose a topic below. Guides in this documentation index contain English and Sim
 | Topic | Start here |
 | --- | --- |
 | Product purpose and features | [Product scope](product/README.md) |
+| Analog IC, channel algorithms, advanced packaging, Interposer and SI/PI | [Engineering domains](product/DOMAINS.md) |
+| Folder responsibilities and the complete usage path | [Project map](PROJECT_MAP.md) |
 | Download and install | [Installation](installation/README.md) |
 | Version selection | [Release notes](releases/README.md) |
 | Rocky/RHEL 8 and Ubuntu 20.04 | [Legacy Linux 1.0.2 environment](releases/openketupamk-kernel-legacy-v1.0.2.md) |
@@ -36,6 +38,8 @@ The root README is the product entry point. `docs/` explains use and maintenance
 | 主题 | 阅读入口 |
 | --- | --- |
 | 产品用途与功能 | [产品说明](product/README.md) |
+| 模拟 IC、信道算法、先进封装、Interposer 与 SI/PI | [技术方向](product/DOMAINS.md) |
+| 文件夹职责与完整使用路径 | [项目结构导航](PROJECT_MAP.md) |
 | 下载与安装 | [安装说明](installation/README.md) |
 | 版本选择 | [发行说明](releases/README.md) |
 | Rocky/RHEL 8 与 Ubuntu 20.04 | [旧版 Linux 1.0.2 兼容环境](releases/openketupamk-kernel-legacy-v1.0.2.md) |

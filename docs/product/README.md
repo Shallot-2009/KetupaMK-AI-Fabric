@@ -9,7 +9,7 @@
 
 ## Purpose
 
-KetupaMK organizes PCB, package, and interconnect engineering workflows through CIR configuration. It helps engineers prepare inputs, configure modeling tasks, coordinate external tools, and review traceable outputs. The public repository distributes packaged products and documentation; it does not expose current proprietary core source.
+KetupaMK is oriented toward analog IC, channel algorithms, advanced packaging, Interposer and SI/PI engineering. CIR configuration organizes PCB, package and interconnect workflows, input preparation, compatible external tools and traceable outputs. See [engineering domains](DOMAINS.md) for the application directions and their current boundaries. This public repository distributes packaged products and documentation; current proprietary core source is maintained separately.
 
 ## Published 1.0.2 capabilities
 
@@ -52,7 +52,7 @@ The [Legacy Linux 1.0.2 environment](../releases/openketupamk-kernel-legacy-v1.0
 
 ## 产品用途
 
-KetupaMK 通过 CIR 配置组织 PCB、封装与互连工程工作流，帮助工程师准备输入、配置建模任务、协调外部工具并查看可追溯结果。本公开仓库提供产品发行与文档，不公开现行专有核心源码。
+KetupaMK 面向模拟 IC、信道算法、先进封装、Interposer 与 SI/PI 工程，通过 CIR 配置组织 PCB、封装和互连工作流，衔接输入准备、兼容的外部工具与可追溯输出。各技术方向及当前范围见[技术方向](DOMAINS.md)。本公开仓库提供产品发行与文档，现行专有核心源码单独维护。
 
 ## 1.0.2 已发布功能
 
