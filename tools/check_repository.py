@@ -23,6 +23,9 @@ PRESERVED_RELEASE_MANIFEST = '16807b04bf08ad0f45e9488b71ee1265669d9943e98335cae9
 CONTACT_SOURCE_COMMIT = 'cf968d04f40db391946faabe7826974f3f84fd1c'
 CONTACT_SOURCE_MANIFEST = '98e2518ac8bad3cb94bca70dd2d83961a54f05a8286278f62db2f8dae574f9f6'
 CONTACT_REVISION_DIGEST = '15129137772819ebf98474d852ec00e85888cc3ee148af5aa19f9900c2fc209e'
+ROCKY_SOURCE_COMMIT = '6ec5bbba4da41de4288132a621894c930cf75192'
+ROCKY_SOURCE_MANIFEST = '646e32b30912b431645372283758365cb5a4eb07f947a50960f6b235770369ad'
+ROCKY_REVISION_DIGEST = '6a08a4c9582bef6fe4bcfe19b1b16cbcfaa33087a7b90abeff09f2c1986bcf70'
 ORIGINAL_TAGS = {
     'legacy-v0.0.3': FOUNDATION_COMMIT,
     'openketupamk-v1.0.2': 'c53e6494f4cec19004964d2cb7502fefc5175e09',
@@ -161,6 +164,11 @@ def verify_releases():
     for release in baseline['releases']:
         require(source_by_tag.get(release['tag']) == release,
                 'Original release metadata missing from preserved snapshot: ' + release['tag'])
+    contact_bytes = git('show', ROCKY_SOURCE_COMMIT + ':releases/manifest.json')
+    require(hashlib.sha256(contact_bytes).hexdigest() == ROCKY_SOURCE_MANIFEST,
+            'Pre-Rocky release snapshot changed')
+    contact = json.loads(contact_bytes)
+    contact_by_tag = {r['tag']: r for r in contact['releases']}
     revision_bytes = (ROOT / 'releases/contact-refresh-20261119.json').read_bytes()
     require(hashlib.sha256(revision_bytes).hexdigest() == CONTACT_REVISION_DIGEST,
             'Reviewed contact revision record changed')
@@ -168,16 +176,16 @@ def verify_releases():
     require(revision['source_commit'] == CONTACT_SOURCE_COMMIT and
             revision['source_manifest_sha256'] == CONTACT_SOURCE_MANIFEST,
             'Contact revision source mismatch')
-    require(revision['recorded_on'] == manifest.get('synchronized_on') == '2026-11-19' and
+    require(revision['recorded_on'] == contact.get('synchronized_on') == '2026-11-19' and
             revision['author'] == 'Asenjo HB' and
             revision['contacts'] == ['asenjoaupa@gmail.com', '3405802009@qq.com'],
             'Contact revision attribution mismatch')
     revisions = {r['tag']: r for r in revision['releases']}
-    require(len(revisions) == len(revision['releases']) == len(by_tag) == 6 and
-            set(revisions) == set(by_tag) == set(source_by_tag), 'Contact release group mismatch')
-    require({k: v for k, v in manifest.items() if k not in {'releases', 'synchronized_on'}} ==
+    require(len(revisions) == len(revision['releases']) == len(contact_by_tag) == 6 and
+            set(revisions) == set(contact_by_tag) == set(source_by_tag), 'Contact release group mismatch')
+    require({k: v for k, v in contact.items() if k not in {'releases', 'synchronized_on'}} ==
             {k: v for k, v in source.items() if k != 'releases'}, 'Release provenance changed')
-    for tag, release in by_tag.items():
+    for tag, release in contact_by_tag.items():
         old, change = source_by_tag[tag], revisions[tag]
         require(change['before_assets'] == old['assets'] and change['after_assets'] == release['assets'],
                 'Installer revision mismatch: ' + tag)
@@ -188,6 +196,49 @@ def verify_releases():
                 'Release identity, status or publication provenance changed: ' + tag)
         require({a['name'] for a in old['assets']} <= {a['name'] for a in release['assets']},
                 'Historical installer download name removed: ' + tag)
+    rocky_bytes = (ROOT / 'releases/legacy-rocky8-20261120.json').read_bytes()
+    require(hashlib.sha256(rocky_bytes).hexdigest() == ROCKY_REVISION_DIGEST,
+            'Rocky rebuild revision record changed')
+    rocky = json.loads(rocky_bytes)
+    require(rocky['source_commit'] == ROCKY_SOURCE_COMMIT and
+            rocky['source_manifest_sha256'] == ROCKY_SOURCE_MANIFEST and
+            rocky['recorded_on'] == manifest.get('synchronized_on') == '2026-11-20',
+            'Rocky rebuild provenance mismatch')
+    acceptance = (ROOT / 'releases/legacy-rocky8-20261120-acceptance.json').read_bytes()
+    require(hashlib.sha256(acceptance).hexdigest() == rocky['acceptance_summary_sha256'],
+            'Rocky acceptance summary changed')
+    acceptance_record = json.loads(acceptance)
+    legacy_assets = by_tag['openketupamk-kernel-legacy-v1.0.2']['assets']
+    require(acceptance_record['distribution_tag'] == 'openketupamk-kernel-legacy-v1.0.2' and
+            acceptance_record['build_date'] == '2026-11-20' and
+            acceptance_record['installer_assets'] == [
+                {k: asset[k] for k in ('name', 'size_bytes', 'sha256')}
+                for asset in legacy_assets
+            ],
+            'Rocky acceptance summary does not match current installers')
+    changes = {r['tag']: r for r in rocky['releases']}
+    require(len(changes) == len(rocky['releases']) == 2 and
+            set(changes) == {'openketupamk-v1.0.2', 'openketupamk-kernel-legacy-v1.0.2'} and
+            set(by_tag) == set(contact_by_tag),
+            'Rocky rebuild release group mismatch')
+    require({k: v for k, v in manifest.items() if k not in {'releases', 'synchronized_on'}} ==
+            {k: v for k, v in contact.items() if k not in {'releases', 'synchronized_on'}},
+            'Release provenance changed after contact revision')
+    for tag, release in by_tag.items():
+        previous = contact_by_tag[tag]
+        if tag in changes:
+            change = changes[tag]
+            require(change['before_assets'] == previous['assets'] and
+                    change['after_assets'] == release['assets'] and
+                    change['before_acceptance_summary'] == previous.get('acceptance_summary') and
+                    change['after_acceptance_summary'] == release.get('acceptance_summary'),
+                    'Rocky installer revision mismatch: ' + tag)
+            expected = {**previous, 'assets': change['after_assets']}
+            if change['after_acceptance_summary'] is not None:
+                expected['acceptance_summary'] = change['after_acceptance_summary']
+            require(release == expected, 'Unrelated release metadata changed: ' + tag)
+        else:
+            require(release == previous, 'Unrelated release changed: ' + tag)
     assets = [a for release in manifest['releases'] for a in release['assets']]
     require(len(assets) == 23 and len({a['sha256'] for a in assets}) == 19,
             'Expected 23 attachments containing 19 unique packages')

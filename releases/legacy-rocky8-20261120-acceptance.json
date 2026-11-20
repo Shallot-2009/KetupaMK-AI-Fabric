@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "distribution_tag": "openketupamk-kernel-legacy-v1.0.2",
+  "version": "1.0.2",
+  "build_date": "2026-11-20",
+  "source_document": "KetupaMK-1.0.2-Legacy-Rocky8-README.md",
+  "source_document_sha256": "da3718653a21aa3392a1c78686586a916b0c1c0d56813617ce0d94aa1fd94fef",
+  "target": {
+    "architecture": "x86_64",
+    "build_userspace": "Rocky Linux 8.10",
+    "compiler": "GCC 8.5",
+    "minimum_glibc": "2.28",
+    "minimum_kernel_version": null
+  },
+  "recorded_checks": [
+    "528 native modules compiled",
+    "9,354 signed payload files verified",
+    "RUN --check and RPM/DEB structural checks passed",
+    "RUN replacement installation preserved the valid license service"
+  ],
+  "not_established_for_these_exact_files": [
+    "AEDT 2026R1 complete modeling",
+    "AEDT 2025R2 modeling without the temporary compatibility switch",
+    "Mode 1 solve or physical signoff",
+    "fresh-system RPM/DEB installation",
+    "minimum supported Linux kernel version"
+  ],
+  "installer_assets": [
+    {
+      "name": "ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+      "size_bytes": 176315356,
+      "sha256": "e0ecf61d1544d5aacaaf8ea14e34eb54914b55bed9cf5be84867e17d0da98bdc"
+    },
+    {
+      "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+      "size_bytes": 175341549,
+      "sha256": "de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511"
+    },
+    {
+      "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+      "size_bytes": 176280667,
+      "sha256": "4c69b3dcb13fe9c7162d321adc50bcb30731e71cc78b6027e4e687bc6d8d91af"
+    },
+    {
+      "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+      "size_bytes": 175342502,
+      "sha256": "c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc"
+    }
+  ],
+  "privacy": "This public summary omits private workstation paths, license data, and raw EDA reports."
+}

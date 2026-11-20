@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-20",
+  "reason": "Replace only the four Legacy Linux installer bytes in both existing release groups with the Rocky Linux 8.10 rebuild",
+  "source_commit": "6ec5bbba4da41de4288132a621894c930cf75192",
+  "source_manifest_sha256": "646e32b30912b431645372283758365cb5a4eb07f947a50960f6b235770369ad",
+  "build_userspace": "Rocky Linux 8.10, GCC 8.5, glibc 2.28",
+  "releases": [
+    {
+      "tag": "openketupamk-v1.0.2",
+      "before_assets": [
+        {
+          "name": "openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe",
+          "size_bytes": 283267771,
+          "sha256": "84c279a66ba9d5a2a8fdd86927a8753e689f4bac13b1274298340eadf1de4b4c",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe",
+          "github_asset_id": 764126669
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "size_bytes": 175131882,
+          "sha256": "ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "github_asset_id": 764080483
+        },
+        {
+          "name": "openketupa-ai-fabric-linux_1.0.2_amd64.deb",
+          "size_bytes": 174845486,
+          "sha256": "eb3a0a3458ee923095524599f2ac474626e69fd2730335d16e783cf0e920ee06",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb",
+          "github_asset_id": 764069043
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "size_bytes": 175318216,
+          "sha256": "82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "github_asset_id": 764091272
+        },
+        {
+          "name": "openketupa-ai-fabric-linux-1.0.2-x64.tar.gz",
+          "size_bytes": 174930640,
+          "sha256": "2a58be86b30ceacf2541318338fc247824dd269251fcfd2e1980b2484a164a56",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz",
+          "github_asset_id": 764060506
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "size_bytes": 176508163,
+          "sha256": "d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "github_asset_id": 764102156
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "size_bytes": 175319169,
+          "sha256": "4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "github_asset_id": 764113370
+        }
+      ],
+      "after_assets": [
+        {
+          "name": "openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe",
+          "size_bytes": 283267771,
+          "sha256": "84c279a66ba9d5a2a8fdd86927a8753e689f4bac13b1274298340eadf1de4b4c",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe",
+          "github_asset_id": 764126669
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "size_bytes": 176315356,
+          "sha256": "e0ecf61d1544d5aacaaf8ea14e34eb54914b55bed9cf5be84867e17d0da98bdc",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "github_asset_id": 771997441
+        },
+        {
+          "name": "openketupa-ai-fabric-linux_1.0.2_amd64.deb",
+          "size_bytes": 174845486,
+          "sha256": "eb3a0a3458ee923095524599f2ac474626e69fd2730335d16e783cf0e920ee06",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb",
+          "github_asset_id": 764069043
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "size_bytes": 175341549,
+          "sha256": "de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "github_asset_id": 772016181
+        },
+        {
+          "name": "openketupa-ai-fabric-linux-1.0.2-x64.tar.gz",
+          "size_bytes": 174930640,
+          "sha256": "2a58be86b30ceacf2541318338fc247824dd269251fcfd2e1980b2484a164a56",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz",
+          "github_asset_id": 764060506
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "size_bytes": 176280667,
+          "sha256": "4c69b3dcb13fe9c7162d321adc50bcb30731e71cc78b6027e4e687bc6d8d91af",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "github_asset_id": 771988771
+        },
+        {
+          "name": "openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "size_bytes": 175342502,
+          "sha256": "c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "github_asset_id": 772006109
+        }
+      ],
+      "before_acceptance_summary": null,
+      "after_acceptance_summary": null
+    },
+    {
+      "tag": "openketupamk-kernel-legacy-v1.0.2",
+      "before_assets": [
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "size_bytes": 175131882,
+          "sha256": "ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "github_asset_id": 766501935
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "size_bytes": 175318216,
+          "sha256": "82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "github_asset_id": 766510408
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "size_bytes": 176508163,
+          "sha256": "d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "github_asset_id": 766517353
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "size_bytes": 175319169,
+          "sha256": "4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "github_asset_id": 766526777
+        }
+      ],
+      "after_assets": [
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "size_bytes": 176315356,
+          "sha256": "e0ecf61d1544d5aacaaf8ea14e34eb54914b55bed9cf5be84867e17d0da98bdc",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb",
+          "github_asset_id": 771963158
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "size_bytes": 175341549,
+          "sha256": "de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz",
+          "github_asset_id": 771979446
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "size_bytes": 176280667,
+          "sha256": "4c69b3dcb13fe9c7162d321adc50bcb30731e71cc78b6027e4e687bc6d8d91af",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm",
+          "github_asset_id": 771955357
+        },
+        {
+          "name": "ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "size_bytes": 175342502,
+          "sha256": "c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc",
+          "download_url": "https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run",
+          "github_asset_id": 771971082
+        }
+      ],
+      "before_acceptance_summary": "releases/kernel-legacy-v1.0.2-acceptance.json",
+      "after_acceptance_summary": "releases/legacy-rocky8-20261120-acceptance.json"
+    }
+  ],
+  "acceptance_summary_sha256": "d8f936b3ccae16f53b247fcdf12eafeb535c8c6ed956ea84ab2b270f0b05f8d3"
+}

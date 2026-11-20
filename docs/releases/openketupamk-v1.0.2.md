@@ -11,22 +11,22 @@
 
 
 <!-- current-assets:start -->
-Contact-corrected downloads · 2026-11-19. Original names and tag targets retained; see the [revision record](../../releases/contact-refresh-20261119.json).
+Windows/standard Linux contact update · 2026-11-19; Legacy Linux Rocky 8.10 rebuild · 2026-11-20. Original names and tag targets retained; see the [contact revision](../../releases/contact-refresh-20261119.json) and [Rocky rebuild revision](../../releases/legacy-rocky8-20261120.json).
 
 | Installer | Bytes |
 | --- | --- |
 | [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 283,267,771 |
-| [openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 175,131,882 |
+| [openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 176,315,356 |
 | [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,845,486 |
-| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,318,216 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,341,549 |
 | [openketupa-ai-fabric-linux-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | 174,930,640 |
-| [openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,508,163 |
-| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,319,169 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,280,667 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,342,502 |
 <!-- current-assets:end -->
 
 Linux TAR.GZ and DEB are alternative formats. [Installation](../installation/README.md) · [GitHub Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) · [Test entitlements](../../licenses/README.md).
 
-For Rocky/RHEL 8, Ubuntu 20.04 and similar older userspaces, select the separate [Legacy Linux 1.0.2 environment](openketupamk-kernel-legacy-v1.0.2.md). Its four Linux formats have their own tag, checksums and tested scope.
+For Rocky/RHEL 8, Ubuntu 20.04 and similar older userspaces, select the separate [Legacy Linux 1.0.2 environment](openketupamk-kernel-legacy-v1.0.2.md). Its four Linux formats have their own tag, checksums and tested scope. Rocky/RHEL/AlmaLinux 8+ → RPM; Ubuntu/Debian → DEB (verify on target host); custom prefix → RUN; manual/offline → TAR.GZ.
 
 ## Version scope
 
@@ -38,17 +38,17 @@ The [product guide](../product/README.md) gives the detailed published scope and
 
 ```text
 84c279a66ba9d5a2a8fdd86927a8753e689f4bac13b1274298340eadf1de4b4c  openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe
-ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3  openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
+e0ecf61d1544d5aacaaf8ea14e34eb54914b55bed9cf5be84867e17d0da98bdc  openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
 eb3a0a3458ee923095524599f2ac474626e69fd2730335d16e783cf0e920ee06  openketupa-ai-fabric-linux_1.0.2_amd64.deb
-82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
 2a58be86b30ceacf2541318338fc247824dd269251fcfd2e1980b2484a164a56  openketupa-ai-fabric-linux-1.0.2-x64.tar.gz
-d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0  openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
-4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
+4c69b3dcb13fe9c7162d321adc50bcb30731e71cc78b6027e4e687bc6d8d91af  openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
+c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
 ## Provenance and terms
 
-First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrated to the continuing repository ID `1005327414` on 2026-11-18. Original download names, tag targets and release flags are retained; installer bytes follow the dated contact revision record. [Migration record](../MIGRATION.md).
+First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrated to the continuing repository ID `1005327414` on 2026-11-18. Original download names, tag targets and release flags are retained; Windows and standard Linux installer bytes follow the contact revision; Legacy Linux bytes follow the 2026-11-20 Rocky 8.10 revision. [Migration record](../MIGRATION.md).
 
 [EULA](../../EULA.md#english) · [License scope](../../LICENSE.md) · [Third-party materials](../../third-party/README.md). Hashes verify download consistency; installation, license activation, engineering results, and production suitability require separate validation. Source code ZIP/TAR files are repository snapshots.
 
@@ -61,22 +61,22 @@ First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrate
 
 
 <!-- current-assets:start -->
-联系方式修正版 · 2026-11-19。保留原文件名与标签指向，见[修订记录](../../releases/contact-refresh-20261119.json)。
+Windows/标准 Linux 联系方式修正版 · 2026-11-19；Legacy Linux Rocky 8.10 重编译版 · 2026-11-20。保留原文件名与标签指向，见[联系方式修订](../../releases/contact-refresh-20261119.json)和[Rocky 重编译修订](../../releases/legacy-rocky8-20261120.json)。
 
 | 安装包 | 字节数 |
 | --- | --- |
 | [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 283,267,771 |
-| [openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 175,131,882 |
+| [openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) | 176,315,356 |
 | [openketupa-ai-fabric-linux_1.0.2_amd64.deb](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) | 174,845,486 |
-| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,318,216 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) | 175,341,549 |
 | [openketupa-ai-fabric-linux-1.0.2-x64.tar.gz](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | 174,930,640 |
-| [openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,508,163 |
-| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,319,169 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) | 176,280,667 |
+| [openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) | 175,342,502 |
 <!-- current-assets:end -->
 
 Linux 的 TAR.GZ 与 DEB 二选一。[安装说明](../installation/README.md) · [GitHub Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.2) · [测试授权](../../licenses/README.md)。
 
-Rocky/RHEL 8、Ubuntu 20.04 等较旧用户空间请选择独立的[旧版 Linux 1.0.2 兼容环境](openketupamk-kernel-legacy-v1.0.2.md)。四种 Linux 格式具有独立标签、校验值与验证范围。
+Rocky/RHEL 8、Ubuntu 20.04 等较旧用户空间请选择独立的[旧版 Linux 1.0.2 兼容环境](openketupamk-kernel-legacy-v1.0.2.md)。四种 Linux 格式具有独立标签、校验值与验证范围。 Rocky/RHEL/AlmaLinux 8+ 推荐 RPM；Ubuntu/Debian 选 DEB（目标机验证）；独立安装目录选 RUN；手动离线解压选 TAR.GZ。
 
 ## 本版范围
 
@@ -88,17 +88,17 @@ Rocky/RHEL 8、Ubuntu 20.04 等较旧用户空间请选择独立的[旧版 Linux
 
 ```text
 84c279a66ba9d5a2a8fdd86927a8753e689f4bac13b1274298340eadf1de4b4c  openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe
-ba520b8ca83e55520dee86be51eb058972692c73391e25efe332c1574a9093c3  openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
+e0ecf61d1544d5aacaaf8ea14e34eb54914b55bed9cf5be84867e17d0da98bdc  openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb
 eb3a0a3458ee923095524599f2ac474626e69fd2730335d16e783cf0e920ee06  openketupa-ai-fabric-linux_1.0.2_amd64.deb
-82598b072f679e1321ccf38f9524e7db30ca39973183ad7a44d3412663e2ccff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
+de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz
 2a58be86b30ceacf2541318338fc247824dd269251fcfd2e1980b2484a164a56  openketupa-ai-fabric-linux-1.0.2-x64.tar.gz
-d19942305b4ece379e1eab7e9d2d452e30c90a61eaaa7d104b539f3b1c0040f0  openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
-4f287fb78e79ba7edc04356c2cfb20e7dcdaf0fa2020cb5782fc4f2881bd58ff  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
+4c69b3dcb13fe9c7162d321adc50bcb30731e71cc78b6027e4e687bc6d8d91af  openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm
+c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
 ## 来源与条款
 
-原始发布时间为 `2026-11-12T06:10:33Z`，来源仓库 ID 为 `1424671956`；2026-11-18 迁至延续原身份的主仓库 ID `1005327414`。原下载文件名、标签指向与发布标记保留；安装包字节以有日期的联系方式修订记录为准。详见[迁移记录](../MIGRATION.md)。
+原始发布时间为 `2026-11-12T06:10:33Z`，来源仓库 ID 为 `1424671956`；2026-11-18 迁至延续原身份的主仓库 ID `1005327414`。原下载文件名、标签指向与发布标记保留；Windows 和标准 Linux 安装包字节以联系方式修订记录为准；Legacy Linux 字节以 2026-11-20 Rocky 8.10 修订记录为准。详见[迁移记录](../MIGRATION.md)。
 
 [EULA](../../EULA.md#中文) · [许可范围](../../LICENSE.md) · [第三方材料](../../third-party/README.md)。哈希验证下载一致性；安装、授权激活、工程结果和生产适用性需另外验证。Source code ZIP/TAR 为仓库快照。
 
