@@ -37,7 +37,7 @@ FROZEN_MARKDOWN = {
     'docs/provenance/third-party-README.before-review.md',
 }
 PUBLIC_LIC = {
-    'Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic':
+    'openketupamk-offline-test-12w.lic':
         '2d1c5e8ae2e09ada57ffe6aa434d8016f4c9393c3eb08fb447c022778eb60031',
     'openketupamk-internal-test-12w.lic':
         '37ee8efa33d74c5197092a2678bda1daa0e6f074c3a04cc378873396c266db01',
