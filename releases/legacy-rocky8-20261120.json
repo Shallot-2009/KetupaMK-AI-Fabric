@@ -179,5 +179,5 @@
       "after_acceptance_summary": "releases/legacy-rocky8-20261120-acceptance.json"
     }
   ],
-  "acceptance_summary_sha256": "d8f936b3ccae16f53b247fcdf12eafeb535c8c6ed956ea84ab2b270f0b05f8d3"
+  "acceptance_summary_sha256": "4e0722112ee4e14ae22ad9dade99bd910c2bc676263762933514fb324da2f303"
 }

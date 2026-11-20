@@ -12,4 +12,6 @@ third-party/licenses/** -text
 docs/provenance/*.before-*.md -text whitespace=-blank-at-eol
 # Dated publication revision is hashed as exact bytes.
 releases/contact-refresh-20261119.json -text
+releases/legacy-rocky8-20261120.json text eol=lf
+releases/legacy-rocky8-20261120-acceptance.json text eol=lf
 docs/provenance/release-manifest.before-review.json text eol=lf
