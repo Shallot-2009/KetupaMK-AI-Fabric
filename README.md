@@ -73,7 +73,7 @@ The same corrected Legacy packages are also available in the primary 1.0.2 relea
 
 ## Test entitlements and software terms
 
-Maintainer-published test files: [offline test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic) · [internal-test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) · [instructions and checksums](licenses/README.md).
+Maintainer-published test files: [offline test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-offline-test-12w.lic) · [internal-test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) · [instructions and checksums](licenses/README.md).
 
 The `.lic` files are software entitlements, distinct from copyright licenses. Their version, module, device, and validity restrictions follow the original files and software validation; download does not renew them or grant commercial use.
 

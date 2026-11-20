@@ -11,14 +11,14 @@ Both LIC files are stored directly in this directory. They were designated for p
 
 | File | Bytes | Direct download |
 | --- | --- | --- |
-| [Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic](Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic) | 4,781 | [LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic) |
+| [openketupamk-offline-test-12w.lic](openketupamk-offline-test-12w.lic) | 4,781 | [LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-offline-test-12w.lic) |
 | [openketupamk-internal-test-12w.lic](openketupamk-internal-test-12w.lic) | 4,836 | [LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) |
 
 <a id="offline-test-en"></a>
 
 ## Offline test
 
-`Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic` was synchronized from the maintainer-supplied `package` directory on 2026-11-18. Import or configure it through the workflow supported by the installed product version.
+`openketupamk-offline-test-12w.lic` was synchronized from the maintainer-supplied `package` directory on 2026-11-18. Import or configure it through the workflow supported by the installed product version.
 
 <a id="internal-test-en"></a>
 
@@ -43,7 +43,7 @@ sha256sum -c SHA256SUMS
 ```
 
 ```text
-2d1c5e8ae2e09ada57ffe6aa434d8016f4c9393c3eb08fb447c022778eb60031  Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic
+2d1c5e8ae2e09ada57ffe6aa434d8016f4c9393c3eb08fb447c022778eb60031  openketupamk-offline-test-12w.lic
 37ee8efa33d74c5197092a2678bda1daa0e6f074c3a04cc378873396c266db01  openketupamk-internal-test-12w.lic
 ```
 
@@ -60,14 +60,14 @@ Hash checks verify file consistency. They do not prove signature validity, activ
 
 | 文件 | 字节数 | 直接下载 |
 | --- | --- | --- |
-| [Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic](Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic) | 4,781 | [LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic) |
+| [openketupamk-offline-test-12w.lic](openketupamk-offline-test-12w.lic) | 4,781 | [LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-offline-test-12w.lic) |
 | [openketupamk-internal-test-12w.lic](openketupamk-internal-test-12w.lic) | 4,836 | [LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) |
 
 <a id="offline-test-zh"></a>
 
 ## 离线测试
 
-`Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic` 于 2026-11-18 从维护者提供的 `package` 目录同步。请使用所安装产品版本支持的流程导入或配置。
+`openketupamk-offline-test-12w.lic` 于 2026-11-18 从维护者提供的 `package` 目录同步。请使用所安装产品版本支持的流程导入或配置。
 
 <a id="internal-test-zh"></a>
 
@@ -92,7 +92,7 @@ sha256sum -c SHA256SUMS
 ```
 
 ```text
-2d1c5e8ae2e09ada57ffe6aa434d8016f4c9393c3eb08fb447c022778eb60031  Ketupa-ketupamk_offline_test_12w-20261116-232329-233.lic
+2d1c5e8ae2e09ada57ffe6aa434d8016f4c9393c3eb08fb447c022778eb60031  openketupamk-offline-test-12w.lic
 37ee8efa33d74c5197092a2678bda1daa0e6f074c3a04cc378873396c266db01  openketupamk-internal-test-12w.lic
 ```
 
