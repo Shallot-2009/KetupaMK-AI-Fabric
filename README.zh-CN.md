@@ -30,9 +30,9 @@ KetupaMK 是面向**模拟 IC、信道算法、先进封装、Interposer 中介�
 
 ## 下载安装包
 
-**当前预览版：KetupaMK 1.0.2** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb)
+**当前预览版 KetupaMK 1.0.3** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb)
 
-点击上述链接直接下载安装包。标准 Linux 的 TAR.GZ 与 DEB 二选一；Rocky/RHEL 8、Ubuntu 20.04 等环境见下方兼容版。1.0.2 仍为预发布版，请按实际工作流选择版本并验证。
+Linux 安装包二选一。2026-11-26 更新修复了 Linux 工程子进程的授权导入错误，并兼容两份原始 1.0.2 测试授权。Rocky/RHEL 8、Ubuntu 20.04 等环境见下方 1.0.2 兼容版。[1.0.3 发布说明](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.3)
 
 | 发行版本 | 状态 | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |

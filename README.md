@@ -30,9 +30,9 @@ Compatible EDA software, vendor licenses, approved engineering inputs, and a ver
 
 ## Download
 
-**Current preview: KetupaMK 1.0.2** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb)
+**Current preview: KetupaMK 1.0.3** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb)
 
-These links download the installer directly. For the standard Linux build, choose TAR.GZ or DEB; see the compatibility build below for Rocky/RHEL 8, Ubuntu 20.04 and similar environments. Version 1.0.2 remains a pre-release; choose and validate a version for your intended workflow.
+Choose one Linux format. The 2026-11-26 1.0.3 refresh fixes Linux engineering subprocess license imports and accepts the two original published 1.0.2 trials. For Rocky/RHEL 8, Ubuntu 20.04 and similar environments, see the 1.0.2 compatibility build below. [1.0.3 release notes](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.3)
 
 | Distribution | Status | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |

@@ -9,6 +9,8 @@
 
 ## Choose a license
 
+The 2026-11-26 Windows and Linux 1.0.3 installers also accept the exact two previously published 1.0.2 test files below. Their signed limits still apply. Newly issued licenses for 1.0.3 must have explicit 1.0.3 module scope.
+
 ### 1. Internal test for 1.0.3 — latest
 
 [Open the GitHub download page](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic)
@@ -61,6 +63,8 @@ For an optional file consistency check, download `SHA256SUMS` with the three `.l
 <summary><strong>简体中文</strong></summary>
 
 ## 按版本选择许可证
+
+2026-11-26 更新的 Windows 和 Linux 1.0.3 安装包也兼容下列两份原始 1.0.2 测试 LIC，仍按原文件限制使用。新签发给 1.0.3 的许可证需明确选择 1.0.3 模块。
 
 ### 1. 1.0.3 内部测试 — 最新版
 
