@@ -73,7 +73,13 @@ Runtime 1.0.0 是独立发行组。保留下载文件名、标签和发行状态
 
 ## 测试授权与软件条款
 
-维护者公开的测试文件：[离线测试 LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-offline-test-12w.lic) · [内测 LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) · [使用说明与校验值](licenses/README.md)。
+共三份维护者指定的公开测试许可证，最新版本在前。下列链接打开对应 GitHub 文件页，在页面点击 **Download raw file** 保存 `.lic`。
+
+1. [1.0.3 内部测试 · 2026-11-25](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 周、3 并发，包含 1.0.3 模块授权。
+2. [离线测试 · 2026-11-16](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2，12 周、3 并发。
+3. [内部测试 · 2026-11-13](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2，12 周、3 并发。
+
+[选用与激活步骤](licenses/README.md)。
 
 `.lic` 是软件使用授权文件，与著作权许可文件含义不同。适用版本、模块、设备和有效期依原文件及软件验证执行；下载不会续期，也不直接授予商用权利。
 

@@ -73,7 +73,13 @@ The same corrected Legacy packages are also available in the primary 1.0.2 relea
 
 ## Test entitlements and software terms
 
-Maintainer-published test files: [offline test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-offline-test-12w.lic) · [internal-test LIC](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/licenses/openketupamk-internal-test-12w.lic) · [instructions and checksums](licenses/README.md).
+Three maintainer-published test licenses, newest first. Each link opens its GitHub file page; use **Download raw file** there to save the `.lic`.
+
+1. [1.0.3 internal test · 2026-11-25](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 weeks, 3 concurrent instances; includes the 1.0.3 module scope.
+2. [Offline test · 2026-11-16](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
+3. [Internal test · 2026-11-13](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
+
+[Selection and activation instructions](licenses/README.md).
 
 The `.lic` files are software entitlements, distinct from copyright licenses. Their version, module, device, and validity restrictions follow the original files and software validation; download does not renew them or grant commercial use.
 
