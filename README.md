@@ -4,17 +4,11 @@
 
 KetupaMK is a CIR-driven engineering automation platform oriented toward **analog IC, channel algorithms, advanced packaging, Interposer, and signal/power integrity (SI/PI)**. It connects PCB/package/interconnect workflows, Touchstone channel analysis, and AI-assisted input preparation on Windows and Linux.
 
-Start with [engineering domains](docs/product/DOMAINS.md), [product capabilities](docs/product/README.md), or the [project map](docs/PROJECT_MAP.md). CIR files select global settings; include modules describe the actual project, and compatible EDA tools perform the selected engineering tasks.
-
 This is the public distribution and documentation repository for KetupaMK. Current proprietary core source is maintained separately. Windows and Linux installers, runtime distributions, test entitlement files, and third-party materials are published here.
-
-**Project foundation — [Ketupa_v0.0.3](history/Ketupa_v0.0.3/).** The complete original project is preserved as the foundation of this work: 111 tracked files, original directory structure, author credits, LICENSE, NOTICE, and engineering artifacts. Its Git history and [`legacy-v0.0.3`](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tree/legacy-v0.0.3) tag remain intact. [Read the origin record](history/ORIGIN.md).
-
-The project began in **2023**, and the maintainer confirms early project commits in **May–June 2024**. The earliest Git evidence currently retained here is dated 2025-06-20; that date is not the project beginning. See the [project timeline](history/ORIGIN.md) for dates and source labels.
 
 ## What it does
 
-| Area | Published scope in 1.0.2 |
+| Area | Available workflow |
 | --- | --- |
 | CIR workflow control | One entry point, project includes, project queues, and network workers for existing PKG, PCB, and Merge workflows |
 | Package/interconnect setup | Bump, solderball, chip orientation, port impedance, mixed-unit frequency sweeps, and traceable output naming |
@@ -25,17 +19,22 @@ The project began in **2023**, and the maintainer confirms early project commits
 
 Compatible EDA software, vendor licenses, approved engineering inputs, and a version-appropriate KetupaMK entitlement are required for the workflows that use them. See [product scope](docs/product/README.md) for the version-specific boundaries.
 
+## How to use
+
+1. Choose a [Windows or Linux installer](#downloads) and follow the [installation guide](docs/installation/README.md). Linux 1.0.3 requires x86_64 and glibc 2.34 or later; older Linux userspaces can use the 1.0.2 compatibility build.
+2. Configure a [valid entitlement](licenses/README.md) and any EDA tools required by your workflow. Check the installed version and license with `ketupa --version` and `ketupa license status`.
+3. Prepare the actual project inputs, put global workflow settings in `main.cir`, and put project-specific inputs in its included module. Run `ketupa run -sh main.cir check` before executing a build or analysis. See [product scope](docs/product/README.md) for the required inputs and [project map](docs/PROJECT_MAP.md) for the document layout.
+
 <a id="downloads"></a>
 <a id="downloads-en"></a>
 
 ## Download
 
-**Current preview: KetupaMK 1.0.3** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb)
-
-Choose EXE for Windows or one Linux format, DEB or TAR.GZ. For Rocky/RHEL 8 and Ubuntu 20.04, see the Legacy Linux environment below. [1.0.3 installation and downloads](docs/releases/openketupamk-v1.0.3.md)
+Choose EXE for Windows or one Linux format, DEB or TAR.GZ. For Rocky/RHEL 8 and Ubuntu 20.04, see the Legacy Linux environment below. [1.0.3 installation and checksums](docs/releases/openketupamk-v1.0.3.md)
 
 | Distribution | Status | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
+| [KetupaMK 1.0.3](docs/releases/openketupamk-v1.0.3.md) | Preview | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb) |
 | [KetupaMK 1.0.2](docs/releases/openketupamk-v1.0.2.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) |
 | [KetupaMK 1.0.1](docs/releases/openketupamk-v1.0.1.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/Ketupa-AI-Fabric-1.0.1-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux-1.0.1-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux_1.0.1_amd64.deb) |
 | [KetupaMK 1.0.0](docs/releases/openketupamk-v1.0.0.md) | Historical release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-linux-amd64.deb) |
@@ -107,8 +106,8 @@ KetupaMK-AI-Fabric/
 
 ## Documentation and contact
 
-[Documentation index](docs/README.md) · [Project foundation](history/README.md) · [Migration record](docs/MIGRATION.md) · [Security reporting](SECURITY.md)
+[Documentation index](docs/README.md) · [Project foundation](history/README.md) · [Security reporting](SECURITY.md)
 
-Current public author attribution: **Asenjo HB**. The foundational project's original attribution **Asenjo.HB.L.** is retained. The original GitHub repository continues under this name, retaining its repository identity, stars, forks, and issues.
+Current public author attribution: **Asenjo HB**. The [Ketupa_v0.0.3 foundation](history/README.md) retains its original author attribution and files.
 
 For licensing, rights, and private security reports: [asenjoaupa@gmail.com](mailto:asenjoaupa@gmail.com) · [3405802009@qq.com](mailto:3405802009@qq.com). Public issues are for reproducible product and documentation reports; remove customer data and private entitlements before posting.

@@ -4,17 +4,11 @@
 
 KetupaMK 是面向**模拟 IC、信道算法、先进封装、Interposer 中介层，以及信号完整性与电源完整性（SI/PI）**的 CIR 工程自动化平台，连接 PCB/封装/互连工作流、Touchstone 信道分析与 AI 辅助输入准备，提供 Windows 和 Linux 发行环境。
 
-按需查看[技术方向](docs/product/DOMAINS.md)、[产品功能](docs/product/README.md)或[项目结构导航](docs/PROJECT_MAP.md)。CIR 配置全局变量，include 模块描述具体工程，兼容的 EDA 工具负责执行相应工程任务。
-
 本仓库是 KetupaMK 的公开发行与文档仓库。现行产品的专有核心源码单独维护；Windows/Linux 安装包、运行环境发行版、测试授权文件和第三方材料在此发布。
-
-**项目起源与基础：[Ketupa_v0.0.3](history/Ketupa_v0.0.3/)。** 原项目整体保留，是本项目演进的基础：111 个跟踪文件、原始目录结构、作者署名、LICENSE、NOTICE 及工程资料均原样归档。原 Git 提交历史与 [`legacy-v0.0.3` 标签](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tree/legacy-v0.0.3)继续保留。详见[项目起源记录](history/ORIGIN.md)。
-
-项目始于 **2023 年**，维护者确认 **2024 年 5—6 月**已有早期项目提交。当前仓库可核对的最早 Git 留存日期为 2025-06-20，不能将其当作项目起点。完整时间线与来源标注见[项目沿革](history/ORIGIN.md)。
 
 ## 主要功能
 
-| 领域 | 1.0.2 已发布的功能范围 |
+| 领域 | 可用工作流 |
 | --- | --- |
 | CIR 工作流管理 | 统一入口、工程 include、工程队列与网络 worker，组织既有 PKG、PCB 和 Merge 工作流 |
 | 封装与互连配置 | bump、solderball、芯片朝向、端口阻抗、混合单位扫频及可追溯输出命名 |
@@ -25,17 +19,22 @@ KetupaMK 是面向**模拟 IC、信道算法、先进封装、Interposer 中介�
 
 涉及外部工程工具的工作流需要兼容的 EDA 软件、厂商许可、获准使用的工程输入，以及适用版本的 KetupaMK 授权。各功能的版本范围见[产品说明](docs/product/README.md)。
 
+## 怎么使用
+
+1. 选择 [Windows 或 Linux 安装包](#downloads)，按[安装说明](docs/installation/README.md)安装。Linux 1.0.3 要求 x86_64、glibc 2.34 或以上；较旧 Linux 用户空间可选择 1.0.2 兼容版。
+2. 配置[有效授权](licenses/README.md)和工作流所需的 EDA 工具。使用 `ketupa --version` 和 `ketupa license status` 查看已安装版本及授权。
+3. 准备真实工程输入，在 `main.cir` 写全局工作流设置，在 include 模块写具体工程输入。先执行 `ketupa run -sh main.cir check` 检查配置，再按工程需要执行建模或分析。输入要求见[产品说明](docs/product/README.md)，文档位置见[项目结构](docs/PROJECT_MAP.md)。
+
 <a id="downloads"></a>
 <a id="downloads-zh"></a>
 
 ## 下载安装包
 
-**当前预览版 KetupaMK 1.0.3** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb)
-
-Windows 选择 EXE。Linux 在 DEB 和 TAR.GZ 中任选一种。Rocky/RHEL 8 和 Ubuntu 20.04 可选下方的旧版 Linux 兼容环境。[1.0.3 下载与安装](docs/releases/openketupamk-v1.0.3.md)
+Windows 选择 EXE，Linux 在 DEB 和 TAR.GZ 中任选一种。Rocky/RHEL 8 和 Ubuntu 20.04 可选下方的旧版 Linux 兼容环境。[1.0.3 安装与校验](docs/releases/openketupamk-v1.0.3.md)
 
 | 发行版本 | 状态 | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
+| [KetupaMK 1.0.3](docs/releases/openketupamk-v1.0.3.md) | 预览版 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb) |
 | [KetupaMK 1.0.2](docs/releases/openketupamk-v1.0.2.md) | 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) |
 | [KetupaMK 1.0.1](docs/releases/openketupamk-v1.0.1.md) | 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/Ketupa-AI-Fabric-1.0.1-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux-1.0.1-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux_1.0.1_amd64.deb) |
 | [KetupaMK 1.0.0](docs/releases/openketupamk-v1.0.0.md) | 历史正式发行 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-linux-amd64.deb) |
@@ -107,8 +106,8 @@ KetupaMK-AI-Fabric/
 
 ## 文档与联系
 
-[文档索引](docs/README.md) · [基础项目归档](history/README.md) · [迁移记录](docs/MIGRATION.md) · [安全报告](SECURITY.md)
+[文档索引](docs/README.md) · [基础项目归档](history/README.md) · [安全报告](SECURITY.md)
 
-当前公开作者署名为 **Asenjo HB**；基础项目的原始署名 **Asenjo.HB.L.** 完整保留。本仓库由原 GitHub 仓库延续更名，保留仓库身份、star、fork 关系及 Issues。
+当前公开作者署名为 **Asenjo HB**；[Ketupa_v0.0.3 基础项目](history/README.md)保留原始署名与文件。
 
 授权、权利与私密安全报告联系：[asenjoaupa@gmail.com](mailto:asenjoaupa@gmail.com) · [3405802009@qq.com](mailto:3405802009@qq.com)。公开 Issue 用于可复现的产品和文档问题；提交前请移除客户资料和私有授权文件。
