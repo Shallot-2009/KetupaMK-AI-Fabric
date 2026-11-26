@@ -73,11 +73,10 @@ The same Legacy Linux packages are also available in the primary 1.0.2 release: 
 
 ## Test entitlements and software terms
 
-Three maintainer-published test licenses, newest first. Each link opens its GitHub file page; use **Download raw file** there to save the `.lic`.
+Available test licenses are listed below. Each link opens its GitHub file page; use **Download raw file** there to save the `.lic`.
 
-1. [1.0.3 internal test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 weeks, 3 concurrent instances; includes the 1.0.3 module scope.
-2. [Offline test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
-3. [Internal test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
+1. [Offline test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic)
+2. [Internal test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic)
 
 [Selection and activation instructions](licenses/README.md).
 

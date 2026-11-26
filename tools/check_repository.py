@@ -40,8 +40,6 @@ FROZEN_MARKDOWN = {
     'docs/provenance/third-party-README.before-review.md',
 }
 PUBLIC_LIC = {
-    'openketupamk-1.0.3-internal-test-12w.lic':
-        'cdd73ecc64179446f2bd9645a6c2f40feadda0673b937fcae953d25f10c9bf14',
     'openketupamk-offline-test-12w.lic':
         '2d1c5e8ae2e09ada57ffe6aa434d8016f4c9393c3eb08fb447c022778eb60031',
     'openketupamk-internal-test-12w.lic':
@@ -139,7 +137,7 @@ def verify_licenses(all_files):
     require(all(p.is_file() for p in directory.iterdir()), 'Keep licenses/ flat')
     manifest = read_json('licenses/manifest.json')
     require({r['file'] for r in manifest['files']} == set(PUBLIC_LIC), 'Public entitlement manifest changed')
-    require(len(manifest['files']) == len(PUBLIC_LIC) == 3, 'Expected exactly three designated test licenses')
+    require(len(manifest['files']) == len(PUBLIC_LIC), 'Duplicate designated test licenses')
     require([r['issued_beijing'] for r in manifest['files']] ==
             sorted((r['issued_beijing'] for r in manifest['files']), reverse=True),
             'List test licenses newest first')

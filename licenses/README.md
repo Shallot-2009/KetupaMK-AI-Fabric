@@ -9,11 +9,10 @@
 
 | Test license | Version scope |
 | --- | --- |
-| [1.0.3 internal test](openketupamk-1.0.3-internal-test-12w.lic) | Includes 1.0.3 modules. Recommended for a 1.0.3 installation. |
 | [Offline test](openketupamk-offline-test-12w.lic) | Signed for Beta and 1.0.0–1.0.2. |
 | [Internal test](openketupamk-internal-test-12w.lic) | Signed for Beta and 1.0.0–1.0.2. |
 
-Each file has a 12-week term and allows up to three concurrent instances under its signed terms. KetupaMK 1.0.3 for Windows and Linux also accepts the two listed 1.0.2 test files. A newly issued 1.0.3 license must include the 1.0.3 modules required by your workflow. Available activation methods depend on the signed policy and the installed client.
+KetupaMK 1.0.3 for Windows and Linux accepts the two listed test licenses within their existing signed terms. A newly issued 1.0.3 license must include the 1.0.3 modules required by your workflow. Available activation methods depend on the signed policy and the installed client.
 
 ## Download and activate
 
@@ -33,11 +32,10 @@ Downloading or copying a file does not restart its validity period. For optional
 
 | 测试许可证 | 适用版本 |
 | --- | --- |
-| [1.0.3 内部测试](openketupamk-1.0.3-internal-test-12w.lic) | 包含 1.0.3 模块，安装 1.0.3 时优先选择。 |
 | [离线测试](openketupamk-offline-test-12w.lic) | 签名范围为 Beta 和 1.0.0–1.0.2。 |
 | [内部测试](openketupamk-internal-test-12w.lic) | 签名范围为 Beta 和 1.0.0–1.0.2。 |
 
-每份文件的授权期限为 12 周，最多 3 并发，具体使用范围以签名条款为准。Windows 和 Linux 的 KetupaMK 1.0.3 也兼容上表两份指定的 1.0.2 测试文件。新签发的 1.0.3 授权需包含工作流所需的 1.0.3 模块。可用的激活方式取决于签名策略和已安装的客户端。
+Windows 和 Linux 的 KetupaMK 1.0.3 可按原签名条款使用上表两份测试许可证。新签发的 1.0.3 授权需包含工作流所需的 1.0.3 模块。可用的激活方式取决于签名策略和已安装的客户端。
 
 ## 下载和激活
 
