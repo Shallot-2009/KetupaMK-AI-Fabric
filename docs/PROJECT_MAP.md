@@ -5,7 +5,7 @@
 <details name="readme-language">
 <summary><strong>English</strong></summary>
 
-This repository is the public product/distribution index. Current protected implementation and customer projects are not stored here.
+This repository holds public installers, guides, license materials, and the original project archive. The current product implementation is distributed in release installers.
 
 | Location | Responsibility | Start here |
 | --- | --- | --- |
@@ -17,6 +17,7 @@ This repository is the public product/distribution index. Current protected impl
 | `licenses/` | Maintainer-published test entitlements and usage instructions | [Test LIC guide](../licenses/README.md) |
 | `history/` | Preserved v0.0.3 foundation and original project records | [Foundation](../history/README.md) |
 | `third-party/` | Component notices, licenses and corresponding source archives | [Third-party guide](../third-party/README.md) |
+| `docs/governance/`, `docs/provenance/` | Publishing rules and source records | [Policy](governance/README.md), [records](provenance/README.md) |
 | `tools/` and `.github/` | Repository validation and contribution checks | [Tools](../tools/README.md), [governance](governance/README.md) |
 
 Use the product in this order:
@@ -25,7 +26,7 @@ Use the product in this order:
 2. Download one suitable installer and verify its current SHA-256.
 3. Follow the [installation guide](installation/README.md) and validate your version-scoped entitlement.
 4. Prepare the actual layout/stackup/network or Touchstone/specification inputs for the selected workflow.
-5. Keep global selection in CIR, project details in includes, and execute through `ketupa run -sh main.cir`.
+5. Keep global selection in CIR and project details in includes. Run `ketupa run -sh main.cir check`, then execute the approved workflow through the installed client.
 6. Review results and retain source versions, mappings, specifications and reports together.
 
 Do not move customer projects, private entitlements, activation records, signing material or build caches into this public repository. Published tags and original foundation files remain unchanged when the current documentation index is updated.
@@ -35,7 +36,7 @@ Do not move customer projects, private entitlements, activation records, signing
 <details name="readme-language" open>
 <summary><strong>简体中文</strong></summary>
 
-本仓库负责公开产品与发行导航，不存放现行受保护实现和客户工程。
+本仓库提供公开安装包、使用指南、许可资料及原始项目归档。现行产品实现随 Release 安装包分发。
 
 | 位置 | 职责 | 阅读入口 |
 | --- | --- | --- |
@@ -47,6 +48,7 @@ Do not move customer projects, private entitlements, activation records, signing
 | `licenses/` | 维护者公开的测试授权及使用说明 | [测试 LIC 说明](../licenses/README.md) |
 | `history/` | 保全的 v0.0.3 基础项目与历史依据 | [基础项目](../history/README.md) |
 | `third-party/` | 第三方声明、许可与对应源码 | [第三方说明](../third-party/README.md) |
+| `docs/governance/`、`docs/provenance/` | 发布规范与来源记录 | [维护规范](governance/README.md)、[来源记录](provenance/README.md) |
 | `tools/`、`.github/` | 仓库检查与协作规范 | [检查工具](../tools/README.md)、[维护规范](governance/README.md) |
 
 按以下顺序使用产品：
@@ -55,7 +57,7 @@ Do not move customer projects, private entitlements, activation records, signing
 2. 下载适合本机的一种安装包，核对当前 SHA-256。
 3. 按[安装说明](installation/README.md)完成安装并确认适用版本授权。
 4. 为选定工作流准备真实版图、层叠、网络，或 Touchstone、规范文件。
-5. CIR 写全局选择，include 写具体项目，通过 `ketupa run -sh main.cir` 执行。
+5. CIR 写全局选择，include 写具体项目。先运行 `ketupa run -sh main.cir check`，再通过已安装客户端执行获准的工作流。
 6. 审核结果，将输入版本、映射、规范与报告一同归档。
 
 客户工程、私有授权、激活记录、签名材料和构建缓存不得放入公开仓库。当前文档索引更新不移动既有标签，也不改写基础项目原件。
