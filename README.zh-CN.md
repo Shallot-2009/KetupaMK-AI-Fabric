@@ -32,7 +32,7 @@ KetupaMK 是面向**模拟 IC、信道算法、先进封装、Interposer 中介�
 
 **当前预览版 KetupaMK 1.0.3** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb)
 
-Linux 安装包二选一。2026-11-26 更新修复了 Linux 工程子进程的授权导入错误，并兼容两份原始 1.0.2 测试授权。Rocky/RHEL 8、Ubuntu 20.04 等环境见下方 1.0.2 兼容版。[1.0.3 发布说明](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.3)
+Windows 选择 EXE。Linux 在 DEB 和 TAR.GZ 中任选一种。Rocky/RHEL 8 和 Ubuntu 20.04 可选下方的旧版 Linux 兼容环境。[1.0.3 下载与安装](docs/releases/openketupamk-v1.0.3.md)
 
 | 发行版本 | 状态 | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
@@ -57,15 +57,15 @@ Linux 安装包二选一。2026-11-26 更新修复了 Linux 工程子进程的�
 
 [兼容版说明与验证范围](docs/releases/openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [标签页](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
-本组保持预发布状态。已有验收为 EL8.1 与 Ubuntu 20.04 隔离用户空间测试，未覆盖 Rocky 真机内核或 EDA 求解。兼容构建与标准构建不要混装到同一目录。
+每个安装目录使用一种格式。运行工程前，请确认目标系统依赖和 EDA 工具兼容性。
 
 [安装说明](docs/installation/README.md) · [下载 SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [发行说明](docs/releases/README.md)
 
-Runtime 1.0.0 是独立发行组。保留下载文件名、标签和发行状态；安装包字节及摘要以有日期的[联系方式修订记录](releases/contact-refresh-20261119.json)为准。GitHub 自动生成的 **Source code** ZIP/TAR 是仓库快照；产品安装包为上表中的 EXE、DEB、RPM、RUN 和 TAR.GZ 附件。
+Runtime 1.0.0 为独立发行组。请在发行附件中选择适合系统的安装包。
 
 
 <!-- legacy-mirrors:start -->
-同一套 Legacy 修正版也保留在主 1.0.2 发布页：[DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) · [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) · [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) · [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run)
+同一套旧版 Linux 兼容安装包也保留在主 1.0.2 发布页：[DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) · [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) · [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) · [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run)
 <!-- legacy-mirrors:end -->
 
 <a id="licenses"></a>
@@ -75,9 +75,9 @@ Runtime 1.0.0 是独立发行组。保留下载文件名、标签和发行状态
 
 共三份维护者指定的公开测试许可证，最新版本在前。下列链接打开对应 GitHub 文件页，在页面点击 **Download raw file** 保存 `.lic`。
 
-1. [1.0.3 内部测试 · 2026-11-25](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 周、3 并发，包含 1.0.3 模块授权。
-2. [离线测试 · 2026-11-16](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2，12 周、3 并发。
-3. [内部测试 · 2026-11-13](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2，12 周、3 并发。
+1. [1.0.3 内部测试](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 周、3 并发，包含 1.0.3 模块授权。
+2. [离线测试](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2，12 周、3 并发。
+3. [内部测试](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2，12 周、3 并发。
 
 [选用与激活步骤](licenses/README.md)。
 

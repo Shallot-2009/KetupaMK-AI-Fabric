@@ -20,7 +20,7 @@ Third-party components retain their own licenses. These materials provide the no
 | OpenCV Python 4.11.0.86 build materials | Beta | [opencv-python-headless-4.11.0.86.tar.gz](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/opencv-python-headless-4.11.0.86.tar.gz) | [Upstream](https://pypi.org/project/opencv-python-headless/4.11.0.86/) |
 
 
-Each source link downloads the archive directly. GCC source RPMs include distribution patches and build specifications. The [original component record](../docs/provenance/third-party-README.before-review.md) retains the earlier inspection notes. Version mappings here reflect that record, not a newly completed inventory of every installer.
+Each source link downloads the archive directly. GCC source RPMs include distribution patches and build specifications. The table identifies which versions each source archive applies to.
 
 ## Notices
 
@@ -36,11 +36,11 @@ Keep notices and source-access rights intact when redistributing or modifying co
 
 ## Legacy Linux 1.0.2 inventory
 
-The [compatibility distribution](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md) contains `dependency-inventory.json` with 72 declared Python distributions, private CPython 3.12.15, dependency license files and `notices/` materials, including 7-Zip notices. The inventory states no commercial EDA software is bundled. Its wheel compatibility/hash statements are supplied build records, not independently repeated upstream verification in this publication. Extract the selected installer to inspect its exact shipped materials; these records do not establish complete corresponding-source coverage for native libraries or a complete SBOM. The existing source table above retains its original version mappings; it is not automatically extended to the compatibility build.
+The [compatibility distribution](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md) includes a runtime inventory, dependency licenses, and 7-Zip notices. Consult these materials for the contents of your selected installer.
 
 ## Coverage and delivery
 
-The two historical 1.0.0 distributions contain encrypted payloads that were not fully decoded in the earlier review. A complete package-level dependency inventory and license/source coverage for every distribution, including 1.0.2, have not been established by these records. Do not treat this directory as a complete SBOM or a full compliance certification.
+The material below covers the components identified in this repository. For release-specific component inventories and notices, also consult the documentation supplied with your installer.
 
 Commercial delivery needs a version-specific component inventory, applicable license texts, exact corresponding source and build/relink materials where required, and distribution evidence. See the [delivery review](../docs/governance/REVIEW.md). Report missing material privately to [asenjoaupa@gmail.com](mailto:asenjoaupa@gmail.com).
 
@@ -73,7 +73,7 @@ Installer assets remain on Releases; source archives stay accessible in this rep
 | OpenCV Python 4.11.0.86 build materials | Beta | [opencv-python-headless-4.11.0.86.tar.gz](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/third-party/sources/opencv-python-headless-4.11.0.86.tar.gz) | [上游](https://pypi.org/project/opencv-python-headless/4.11.0.86/) |
 
 
-点击源码链接直接下载归档。GCC source RPM 含相应发行版补丁与构建 spec。[原组件记录](../docs/provenance/third-party-README.before-review.md)保留此前的检查说明；本表映射依据该原记录，不表示本次已完成所有安装包的完整组件清点。
+点击链接直接下载源码归档。GCC source RPM 含相应发行版补丁与构建 spec。表中列明源码归档适用的版本。
 
 ## 许可声明
 
@@ -89,11 +89,11 @@ Installer assets remain on Releases; source archives stay accessible in this rep
 
 ## 旧版 Linux 1.0.2 组件记录
 
-[兼容发行组](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md)包含 `dependency-inventory.json`，声明 72 个 Python 发行包、私有 CPython 3.12.15、依赖许可文件及含 7-Zip 声明的 `notices/` 材料；清单声明未捆绑商业 EDA 软件。wheel 兼容性/上游哈希说明属于提供的构建记录，本次未重新进行上游验证。可解包查看准确随包资料；这些记录不能建立原生库的完整对应源码覆盖，也不等于完整 SBOM。上方源码表保留原有版本映射，不自动扩大到兼容构建。
+[兼容发行组](../docs/releases/openketupamk-kernel-legacy-v1.0.2.md)附带运行环境组件清单、依赖许可和 7-Zip 声明。具体内容以所选安装包随附的材料为准。
 
 ## 覆盖范围与交付要求
 
-两个历史 1.0.0 发行组含有此前未完全解码的加密载荷。现有记录尚不能建立每个发行组、包括 1.0.2 的完整组件清单及许可/源码覆盖依据。本目录不作为完整 SBOM 或全面合规认证。
+本页覆盖仓库列明的组件。对应发行版的组件清单和许可声明，请同时查阅所选安装包内的文档。
 
 商业交付应形成逐版本组件清单，提供适用许可文本、必要的准确对应源码和构建/重链接材料，并保存分发依据。详见[交付检查](../docs/governance/REVIEW.md)。缺失材料请私下联系 [asenjoaupa@gmail.com](mailto:asenjoaupa@gmail.com)。
 

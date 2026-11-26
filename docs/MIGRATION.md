@@ -22,7 +22,7 @@ The original project is archived as a whole, preserving its complete relative di
 
 Distribution baseline: `67d7ffd815fea925f0fc50ece3cb8dfc53424aae`. Both original Git histories are retained through a merge, and all five original release tags keep their commit targets. Distribution documents, the EULA, proprietary notice, author-approved public test license, and complete third-party materials are integrated at the root. Navigation, scope explanations, and Git text handling receive necessary updates; operative legal texts, third-party materials, and the test file retain their bytes.
 
-Five Releases with fifteen installers are copied to the primary repository, preserving filenames, sizes, SHA-256 digests, and pre-release flags. New GitHub release timestamps reflect migration rather than fabricated original publication times; original dates are recorded in the manifest and release notes. The old README's three stale 1.0.2 hashes are corrected against actual assets, and its original bytes are retained in [provenance records](provenance/README.md). Installers are not repacked or internally renamed.
+Five Releases with fifteen installers are copied to the primary repository, preserving filenames, sizes, SHA-256 digests, and pre-release flags. New GitHub release timestamps reflect migration rather than fabricated original publication times; original dates are recorded in the manifest and release notes. Earlier documentation is available in the [source archive](provenance/README.md). Installers are not repacked or internally renamed.
 
 Only after content, all installer files, and provenance are verified is the distribution source renamed to `test` and its default-branch file tree emptied with an ordinary commit. Original commit history, release tags, and Git objects are retained without a force push. After release-file migration, `test` is no longer a distribution entry point. Private development source, licenses, and engineering environments are not additionally published.
 
@@ -50,7 +50,7 @@ v0.0.3 基准提交 `b5f44c111fef3d32b5cdeb3c18d4af40e5c81306` 的全部 111 个
 
 发行仓库基准提交为 `67d7ffd815fea925f0fc50ece3cb8dfc53424aae`。两套原有 Git 提交历史通过 merge 保留；原 5 个发行 tag 保持原提交指向。现行根目录整合发行文档、EULA、专有声明、作者批准公开的内测文件及全部第三方材料。仅导航说明、许可范围说明及 Git 文本处理规则作必要更新；原 EULA、专有 LICENSE、第三方材料和内测文件保留字节。
 
-5 个 Release 的 15 个安装包复制至主仓库 Releases；文件名、大小、SHA-256 和预发布状态保留。创建新 Release 的平台时间反映迁移时间，不伪造为历史发布时间；原始发布时间记录在发行清单及各版本说明中。原 README 中 1.0.2 的三个哈希已过时，现行清单改为实际附件的哈希。迁移前说明见 [`provenance/`](provenance/README.md)。安装包不重新打包、不修改签名或内部产品名。
+5 个 Release 的 15 个安装包复制至主仓库 Releases；文件名、大小、SHA-256 和预发布状态保留。创建新 Release 的平台时间反映迁移时间，不伪造为历史发布时间；原始发布时间记录在发行清单及各版本说明中。迁移前说明见 [`provenance/`](provenance/README.md)。安装包不重新打包、不修改签名或内部产品名。
 
 只有主仓库内容、全部安装包及来源记录验证成功后，才将发行源更名为 `test` 并通过普通提交清空其默认分支文件；其原提交历史保留，避免强制改写。原发行 tag 和历史 Git 对象也保留。Release 文件迁入主仓库后，`test` 不再承担分发入口。未对私有开发源码、许可证或 EDA 环境另行扩大公开范围。
 

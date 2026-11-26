@@ -9,10 +9,7 @@
 
 **Pre-release** · Windows / Linux x64 · Tag: `openketupamk-v1.0.2`
 
-
 <!-- current-assets:start -->
-Windows/standard Linux contact update · 2026-11-19; Legacy Linux Rocky 8.10 rebuild · 2026-11-20. Original names and tag targets retained; see the [contact revision](../../releases/contact-refresh-20261119.json) and [Rocky rebuild revision](../../releases/legacy-rocky8-20261120.json).
-
 | Installer | Bytes |
 | --- | --- |
 | [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 283,267,771 |
@@ -46,9 +43,7 @@ de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511  openketupa-ai-
 c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
-## Provenance and terms
-
-First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrated to the continuing repository ID `1005327414` on 2026-11-18. Original download names, tag targets and release flags are retained; Windows and standard Linux installer bytes follow the contact revision; Legacy Linux bytes follow the 2026-11-20 Rocky 8.10 revision. [Migration record](../MIGRATION.md).
+## Software terms
 
 [EULA](../../EULA.md#english) · [License scope](../../LICENSE.md) · [Third-party materials](../../third-party/README.md). Hashes verify download consistency; installation, license activation, engineering results, and production suitability require separate validation. Source code ZIP/TAR files are repository snapshots.
 
@@ -59,10 +54,7 @@ First published at `2026-11-12T06:10:33Z` in repository ID `1424671956`; migrate
 
 **预发布** · Windows / Linux x64 · 标签：`openketupamk-v1.0.2`
 
-
 <!-- current-assets:start -->
-Windows/标准 Linux 联系方式修正版 · 2026-11-19；Legacy Linux Rocky 8.10 重编译版 · 2026-11-20。保留原文件名与标签指向，见[联系方式修订](../../releases/contact-refresh-20261119.json)和[Rocky 重编译修订](../../releases/legacy-rocky8-20261120.json)。
-
 | 安装包 | 字节数 |
 | --- | --- |
 | [openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | 283,267,771 |
@@ -96,9 +88,7 @@ de0c8d083e6a3568b07bca81ba4ceafa3bd58d943949a740968c6c134cb96511  openketupa-ai-
 c4c8d178cda9fb3156b2c122312e753c9f2215fc4a8211d0d7aeec53a7486adc  openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run
 ```
 
-## 来源与条款
-
-原始发布时间为 `2026-11-12T06:10:33Z`，来源仓库 ID 为 `1424671956`；2026-11-18 迁至延续原身份的主仓库 ID `1005327414`。原下载文件名、标签指向与发布标记保留；Windows 和标准 Linux 安装包字节以联系方式修订记录为准；Legacy Linux 字节以 2026-11-20 Rocky 8.10 修订记录为准。详见[迁移记录](../MIGRATION.md)。
+## 软件条款
 
 [EULA](../../EULA.md#中文) · [许可范围](../../LICENSE.md) · [第三方材料](../../third-party/README.md)。哈希验证下载一致性；安装、授权激活、工程结果和生产适用性需另外验证。Source code ZIP/TAR 为仓库快照。
 

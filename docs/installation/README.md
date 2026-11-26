@@ -11,9 +11,11 @@
 
 Use the [download table](../../README.md#downloads-en) to select a version and platform. Click a format link to download the actual installer. Standard Linux TAR.GZ/DEB and compatibility Linux RPM/DEB/RUN/TAR.GZ are alternative formats within their respective distributions. Runtime 1.0.0 is a separate distribution; 1.0.2, 1.0.1, and Beta retain their pre-release status.
 
-Download [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) into the installer directory. Exact names, sizes, and digests are recorded in the [release manifest](../../releases/manifest.json).
+Use the checksums from the selected release guide. [Download and verification index](../releases/README.md)
 
 ## Verify the download
+
+For 1.0.3, use the checksums on the [1.0.3 download guide](../releases/openketupamk-v1.0.3.md).
 
 On Linux, with the downloaded installer and checksum list in the same directory:
 
@@ -31,14 +33,14 @@ Replace the example with the exact filename and compare the result with its entr
 
 ## Windows x64
 
-Run the selected EXE and follow its installer. Review the [EULA](../../EULA.md#english) and configure the external tools and entitlement required by that version. Version 1.0.2 provides a Windows Launcher. A repository rename does not rename installed products or rebuild historical installers.
+Run the selected EXE and follow its installer. Review the [EULA](../../EULA.md#english) and configure the external tools and entitlement required by that version. Select the existing installation directory when updating the same product.
 
 ## Linux x64 / amd64
 
 - DEB: on a compatible Debian/Ubuntu system, use the exact filename with `sudo apt install ./your-selected-package.deb`; review the dependencies before installation.
 - TAR.GZ: extract with `tar -xzf your-selected-package.tar.gz`, then follow the instructions included in that package. Internal paths and launchers may differ by version.
 
-Version 1.0.2 is a CLI distribution on Linux. On an installed and configured system, the documented read-only checks are:
+The standard 1.0.3 Linux package requires x86_64 and glibc 2.34 or later. For a same-version replacement, use `sudo apt install --reinstall ./your-selected-package.deb` or run the TAR installer with the existing prefix and `--replace`. Stop tasks and the relevant license service before replacement, then restart the service and check the installed version:
 
 ```bash
 ketupa --version
@@ -111,9 +113,11 @@ Include the product version, operating system, package filename, checksum result
 
 在[下载表](../../README.zh-CN.md#downloads-zh)中选择版本和平台，点击格式链接直接下载安装包。标准 Linux 的 TAR.GZ/DEB 与兼容 Linux 的 RPM/DEB/RUN/TAR.GZ 分别在各自发行组内任选一种。Runtime 1.0.0 为独立发行组；1.0.2、1.0.1 与 Beta 保留预发布状态。
 
-将 [SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) 下载到安装包所在目录。准确文件名、大小和哈希见[发行清单](../../releases/manifest.json)。
+使用所选发行说明提供的校验值。[下载与校验索引](../releases/README.md)
 
 ## 校验下载
+
+1.0.3 安装包的校验值见 [1.0.3 下载说明](../releases/openketupamk-v1.0.3.md)。
 
 Linux 下，在安装包与校验清单所在目录执行：
 
@@ -131,14 +135,14 @@ Get-FileHash -Algorithm SHA256 .\your-selected-installer.exe
 
 ## Windows x64
 
-运行所选 EXE 并遵循安装器说明。阅读 [EULA](../../EULA.md#中文)，配置该版本要求的外部工具与授权。1.0.2 提供 Windows Launcher。仓库更名不会重命名已安装产品，也不会重新构建历史安装包。
+运行所选 EXE 并遵循安装器说明。阅读 [EULA](../../EULA.md#中文)，配置该版本要求的外部工具与授权。更新同一产品时选择原安装目录。
 
 ## Linux x64 / amd64
 
 - DEB：在兼容的 Debian/Ubuntu 系统中，使用实际文件名执行 `sudo apt install ./your-selected-package.deb`，安装前检查依赖变化。
 - TAR.GZ：使用 `tar -xzf your-selected-package.tar.gz` 解压，按包内说明操作；不同版本的内部路径和启动方式可能不同。
 
-1.0.2 在 Linux 上提供 CLI。系统完成安装与配置后，可使用该版本记载的只读检查命令：
+标准 Linux 1.0.3 要求 x86_64 和 glibc 2.34 或以上。同版本覆盖时，DEB 使用 `sudo apt install --reinstall ./your-selected-package.deb`，TAR 使用原安装目录并指定 `--replace`。替换前结束正在运行的任务并停止相关授权服务，完成后重新启动服务并检查安装版本：
 
 ```bash
 ketupa --version

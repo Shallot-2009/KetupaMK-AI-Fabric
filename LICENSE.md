@@ -18,7 +18,7 @@ The original LICENSE, NOTICE, EULA, and third-party notices are preserved. This 
 
 ## Public test entitlement files
 
-The two files under `licenses/` are maintainer-published test entitlements, not open-source license texts. Their publication is limited to those designated test files; users must keep private/customer licenses, device identifiers, and signing material out of public issues and commits. See [test entitlements](licenses/README.md).
+The three files under `licenses/` are maintainer-published test entitlements, not open-source license texts. Their publication is limited to those designated test files; users must keep private/customer licenses, device identifiers, and signing material out of public issues and commits. See [test entitlements](licenses/README.md).
 
 GitHub may identify this mixed-scope repository as **Other / NOASSERTION**. Do not replace that with a blanket MIT, Apache, or other badge. Public viewing and platform forking follow GitHub's terms; product execution and commercial use follow the applicable entitlement and agreements. [GitHub licensing guidance](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository).
 
@@ -40,7 +40,7 @@ The operative `LICENSE.txt` and bilingual `EULA.md` retain their original bytes 
 
 ## 公开测试授权文件
 
-`licenses/` 下的两个文件是维护者指定公开的测试授权文件，不是开源许可文本。公开范围仅限指定测试文件；用户应避免在公开 Issue 和提交中上传私有/客户授权、设备标识或签发材料。详见[测试授权说明](licenses/README.md)。
+`licenses/` 下的三个文件是维护者指定公开的测试授权文件，不是开源许可文本。公开范围仅限指定测试文件；用户应避免在公开 Issue 和提交中上传私有/客户授权、设备标识或签发材料。详见[测试授权说明](licenses/README.md)。
 
 GitHub 可能将本仓库的混合许可范围识别为 **Other / NOASSERTION**，不应因此改贴覆盖整个仓库的 MIT、Apache 等徽标。公开阅读和站内 fork 依 GitHub 平台条款，产品运行与商用依实际授权和协议。参见 [GitHub 许可说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)。
 

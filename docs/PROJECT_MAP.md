@@ -13,7 +13,7 @@ This repository is the public product/distribution index. Current protected impl
 | `docs/product/` | Engineering domains and version-specific capability boundaries | [Domains](product/DOMAINS.md), [capabilities](product/README.md) |
 | `docs/installation/` | Platform selection, installation and verification | [Installation](installation/README.md) |
 | `docs/releases/` | Version notes, exact downloads and checksums | [Releases](releases/README.md) |
-| `releases/` | Machine-readable current asset inventory and revision records | [Metadata guide](../releases/README.md) |
+| `releases/` | Installer inventories and download checksums | [Metadata guide](../releases/README.md) |
 | `licenses/` | Maintainer-published test entitlements and usage instructions | [Test LIC guide](../licenses/README.md) |
 | `history/` | Preserved v0.0.3 foundation and original project records | [Foundation](../history/README.md) |
 | `third-party/` | Component notices, licenses and corresponding source archives | [Third-party guide](../third-party/README.md) |
@@ -43,7 +43,7 @@ Do not move customer projects, private entitlements, activation records, signing
 | `docs/product/` | 技术方向、各版本能力与范围 | [技术方向](product/DOMAINS.md)、[产品功能](product/README.md) |
 | `docs/installation/` | 平台选择、安装和检查 | [安装说明](installation/README.md) |
 | `docs/releases/` | 版本说明、准确下载链接和校验值 | [发行索引](releases/README.md) |
-| `releases/` | 当前附件清单和修订记录 | [元数据说明](../releases/README.md) |
+| `releases/` | 安装包清单与下载校验值 | [元数据说明](../releases/README.md) |
 | `licenses/` | 维护者公开的测试授权及使用说明 | [测试 LIC 说明](../licenses/README.md) |
 | `history/` | 保全的 v0.0.3 基础项目与历史依据 | [基础项目](../history/README.md) |
 | `third-party/` | 第三方声明、许可与对应源码 | [第三方说明](../third-party/README.md) |

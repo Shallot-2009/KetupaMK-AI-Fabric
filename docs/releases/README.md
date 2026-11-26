@@ -7,10 +7,11 @@
 <details name="readme-language">
 <summary><strong>English</strong></summary>
 
-Select a distribution below. **1.0.2 is the current preview**, not a promoted production release. The original pre-release flags are retained.
+Select **KetupaMK 1.0.3** for the current preview or choose a package for an existing environment.
 
 | Distribution | Status | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
+| [KetupaMK 1.0.3](openketupamk-v1.0.3.md) | Preview | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb) |
 | [KetupaMK 1.0.2](openketupamk-v1.0.2.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) |
 | [KetupaMK 1.0.1](openketupamk-v1.0.1.md) | Pre-release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/Ketupa-AI-Fabric-1.0.1-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux-1.0.1-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux_1.0.1_amd64.deb) |
 | [KetupaMK 1.0.0](openketupamk-v1.0.0.md) | Historical release | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-linux-amd64.deb) |
@@ -30,11 +31,11 @@ For older userspaces such as Rocky/RHEL 8 and Ubuntu 20.04: **x86_64, glibc ≥ 
 | Self-extracting installation | [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) |
 | Dedicated-prefix installation | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) |
 
-[Compatibility notes and tested scope](openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [Tags](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
+[Compatibility and installation](openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [Tags](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
-This distribution remains a pre-release. Recorded acceptance covers isolated EL8.1 and Ubuntu 20.04 userspaces, not native Rocky kernels or EDA solving. Keep compatibility and standard payloads out of the same installation prefix.
+Choose one package format per installation directory and confirm the required libraries on your system.
 
-There are six public release groups with twenty-three attachments (nineteen unique packages). Runtime 1.0.0 and product 1.0.0 are separate distributions. Download names and tag targets are retained; current installer bytes follow the [dated contact revision](../../releases/contact-refresh-20261119.json). Download an installer for your platform, then follow the [installation guide](../installation/README.md) and verify [SHA256SUMS](../../SHA256SUMS).
+Select the appropriate installer and follow the [installation guide](../installation/README.md). File checksums are listed on each release guide.
 
 | Reference | Meaning |
 | --- | --- |
@@ -54,10 +55,11 @@ GitHub-generated Source code archives contain the tagged repository snapshot, no
 <details name="readme-language" open>
 <summary><strong>简体中文</strong></summary>
 
-在下表选择发行组。**1.0.2 是当前预览版**，未被提升为生产正式版；原有预发布标记继续保留。
+当前预览版为 **KetupaMK 1.0.3**。已有工程环境可选择对应版本。
 
 | 发行版本 | 状态 | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
+| [KetupaMK 1.0.3](openketupamk-v1.0.3.md) | 预览版 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb) |
 | [KetupaMK 1.0.2](openketupamk-v1.0.2.md) | 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-1.0.2-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux-1.0.2-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-linux_1.0.2_amd64.deb) |
 | [KetupaMK 1.0.1](openketupamk-v1.0.1.md) | 预发布 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/Ketupa-AI-Fabric-1.0.1-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux-1.0.1-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.1/ketupa-ai-fabric-linux_1.0.1_amd64.deb) |
 | [KetupaMK 1.0.0](openketupamk-v1.0.0.md) | 历史正式发行 | [EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Windows-x64-Setup.exe) | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-Linux-x64.tar.gz) | [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.0/openketupa-1.0.0-linux-amd64.deb) |
@@ -77,11 +79,11 @@ GitHub-generated Source code archives contain the tagged repository snapshot, no
 | 自解压安装 | [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.run) |
 | 独立目录安装 | [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-kernel-legacy-v1.0.2/ketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) |
 
-[兼容版说明与验证范围](openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [标签页](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
+[兼容版系统与安装说明](openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [标签页](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
-本组保持预发布状态。已有验收为 EL8.1 与 Ubuntu 20.04 隔离用户空间测试，未覆盖 Rocky 真机内核或 EDA 求解。兼容构建与标准构建不要混装到同一目录。
+每个安装目录使用一种格式，并确认目标系统已具备所需依赖。
 
-当前有 6 个公开发行组、23 个安装附件（19 个唯一安装包）。Runtime 1.0.0 与产品 1.0.0 为独立发行组，保留下载名与标签指向；当前安装包字节以[有日期的联系方式修订](../../releases/contact-refresh-20261119.json)为准。选择适合平台的安装包后，参阅[安装说明](../installation/README.md)，并用 [SHA256SUMS](../../SHA256SUMS) 核对。
+选择适合系统的安装包后，参阅[安装说明](../installation/README.md)。对应发行说明提供文件校验值。
 
 | 引用 | 含义 |
 | --- | --- |

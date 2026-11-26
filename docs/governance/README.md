@@ -32,10 +32,10 @@ Repository rules protect `main` against deletion and force pushes, and the found
 2. Build and validate the actual installers, recording build inputs, dependency inventory, applicable notices/source, platform compatibility, and acceptance evidence. Complete the [commercial delivery requirements](REVIEW.md) before making production claims.
 3. Record filenames, sizes, SHA-256 values, and immutable tag targets in the release manifests. Provide English and Chinese notes on the same page and exact direct-download URLs.
 4. Run `python3 tools/check_repository.py` from the repository root. Review entitlement publication separately; only explicitly designated public test files belong under `licenses/`.
-5. Publish assets to GitHub Releases. Keep previews marked as pre-releases. Use a new version for functional changes. An explicitly authorized contact-only correction may replace an asset in place only with an auditable before/after record, matching current checksums and verified mirrors. Never silently replace assets or retarget published tags.
+5. Publish assets to GitHub Releases. Keep previews marked as pre-releases. Use a new version for functional changes. Never silently replace assets or retarget published tags.
 6. Verify every download URL and asset digest after upload. Update the current README and documentation index. A documentation-only commit does not create a product release or change a historical tag.
 
-The original five release groups retain their download names and tag targets. The [Legacy Linux 1.0.2](../releases/openketupamk-kernel-legacy-v1.0.2.md) four formats also appear in the primary 1.0.2 release: six public groups / twenty-three attachments (nineteen unique packages) in total. The [2026-11-19 contact revision](../../releases/contact-refresh-20261119.json) records old and current assets against a fixed historical commit. The validator preserves the original migration baseline and requires the reviewed revision digest; changing the current manifest alone cannot pass. Original publication times remain separate from synchronization dates. A release tag, installer signature, SHA-256 digest, and legal acceptance record establish different facts; keep their evidence separate.
+Public release guides describe downloads, supported systems, features, and how to install. Keep engineering logs and test records in the private maintenance workspace.
 
 ## Legal and operational records
 
@@ -79,10 +79,10 @@ Platform references: [GitHub licensing](https://docs.github.com/en/repositories/
 2. 构建并验证实际安装包，记录构建输入、组件清单、适用声明/源码、平台兼容性与验收依据。宣称生产适用前应完成[商业交付要求](REVIEW.md)。
 3. 在发行清单中记录文件名、大小、SHA-256 和固定标签指向，提供同页中英文说明与准确的直接下载 URL。
 4. 在根目录运行 `python3 tools/check_repository.py`。授权文件另行审核发布范围，`licenses/` 仅保存明确指定的公开测试文件。
-5. 将附件发布到 GitHub Releases，预览版继续标记为 pre-release。功能修改使用新版本。经明确授权的仅联系方式修正可原位替换，但必须保存可审核的前后记录、同步当前校验值并验证镜像；不得静默替换附件或移动已发布标签。
+5. 将附件发布到 GitHub Releases，预览版继续标记为 pre-release。功能修改使用新版本。不得静默替换附件或移动已发布标签。
 6. 上传后逐项验证下载 URL 与哈希，更新主页和文档索引。纯文档提交不产生产品版本，也不修改历史标签。
 
-原有 5 个发行组保留下载名与标签指向。[旧版 Linux 1.0.2](../releases/openketupamk-kernel-legacy-v1.0.2.md)四种格式也在主 1.0.2 发布页提供，共有 6 个公开发行组、23 个安装附件（19 个唯一安装包）。[2026-11-19 联系方式修订](../../releases/contact-refresh-20261119.json)以固定历史提交记录旧附件与当前附件。检查器保留原迁移基准，并要求已审核修订记录的摘要一致；仅修改当前清单不能通过。原始发布时间与同步日期分别记录。发行标签、安装包签名、SHA-256 与法律接受记录证明不同事实，应分别保存依据。
+公开发行说明提供下载入口、适用系统、功能范围和安装方法。工程日志和测试记录保存在内部维护工作区。
 
 ## 法律与运营记录
 

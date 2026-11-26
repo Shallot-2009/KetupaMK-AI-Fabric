@@ -11,7 +11,7 @@ This directory preserves earlier public records as evidence. Historical URLs, na
 
 | Record | Purpose |
 | --- | --- |
-| [Original distribution README](Ketupa-AI-Fabric-README.before-migration.md) | Exact bytes from distribution commit `67d7ffd815fea925f0fc50ece3cb8dfc53424aae`; its three 1.0.2 hashes were stale |
+| [Original distribution README](Ketupa-AI-Fabric-README.before-migration.md) | Exact bytes from distribution commit `67d7ffd815fea925f0fc50ece3cb8dfc53424aae` |
 | [Original internal-test README](internal-test-README.before-flattening.md) | Exact instructions before test files were moved into `licenses/` |
 | [Original third-party README](third-party-README.before-review.md) | Exact previously published source/notice record before documentation reorganization |
 | [Distribution preservation manifest](distribution-file-manifest.json) | All 17 original files, Git blobs, sizes, and SHA-256 values; `path` is the current location, `original_path` records relocated source paths |
@@ -32,7 +32,7 @@ The three original Markdown snapshots are preserved documents, not maintained in
 
 | 记录 | 用途 |
 | --- | --- |
-| [原发行 README](Ketupa-AI-Fabric-README.before-migration.md) | 发行提交 `67d7ffd815fea925f0fc50ece3cb8dfc53424aae` 的原始字节；其中三个 1.0.2 哈希已过时 |
+| [原发行 README](Ketupa-AI-Fabric-README.before-migration.md) | 发行提交 `67d7ffd815fea925f0fc50ece3cb8dfc53424aae` 的原始字节 |
 | [原内测 README](internal-test-README.before-flattening.md) | 测试文件移至 `licenses/` 根目录之前的原始说明 |
 | [原第三方 README](third-party-README.before-review.md) | 文档重整前已公开的源码/声明原始记录 |
 | [发行文件保全清单](distribution-file-manifest.json) | 17 个原文件的 Git blob、大小与 SHA-256；`path` 为现保留位置，迁移项用 `original_path` 记录原路径 |

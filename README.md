@@ -32,7 +32,7 @@ Compatible EDA software, vendor licenses, approved engineering inputs, and a ver
 
 **Current preview: KetupaMK 1.0.3** — [Windows EXE](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/Ketupa-AI-Fabric-1.0.3-Windows-x64-Setup.exe) · [Linux TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux-1.0.3-x64.tar.gz) · [Linux DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.3/ketupa-ai-fabric-linux_1.0.3_amd64.deb)
 
-Choose one Linux format. The 2026-11-26 1.0.3 refresh fixes Linux engineering subprocess license imports and accepts the two original published 1.0.2 trials. For Rocky/RHEL 8, Ubuntu 20.04 and similar environments, see the 1.0.2 compatibility build below. [1.0.3 release notes](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-v1.0.3)
+Choose EXE for Windows or one Linux format, DEB or TAR.GZ. For Rocky/RHEL 8 and Ubuntu 20.04, see the Legacy Linux environment below. [1.0.3 installation and downloads](docs/releases/openketupamk-v1.0.3.md)
 
 | Distribution | Status | Windows x64 | Linux x64 | Linux amd64 |
 | --- | --- | --- | --- | --- |
@@ -57,15 +57,15 @@ For older userspaces such as Rocky/RHEL 8 and Ubuntu 20.04: **x86_64, glibc ≥ 
 
 [Compatibility notes and tested scope](docs/releases/openketupamk-kernel-legacy-v1.0.2.md) · [Release](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/tag/openketupamk-kernel-legacy-v1.0.2) · [Tags](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/tags)
 
-This distribution remains a pre-release. Recorded acceptance covers isolated EL8.1 and Ubuntu 20.04 userspaces, not native Rocky kernels or EDA solving. Keep compatibility and standard payloads out of the same installation prefix.
+Choose one package format per installation directory. Check host dependencies and EDA compatibility before running a project.
 
 [Installation guide](docs/installation/README.md) · [Download SHA256SUMS](https://raw.githubusercontent.com/Shallot-2009/KetupaMK-AI-Fabric/main/SHA256SUMS) · [Release notes](docs/releases/README.md)
 
-Runtime 1.0.0 is a separate distribution. Download filenames, tags and release status are retained; installer bytes and checksums follow the dated [contact revision record](releases/contact-refresh-20261119.json). GitHub's **Source code** ZIP/TAR files contain repository snapshots; product installers are the EXE, DEB, RPM, RUN, and TAR.GZ assets listed above.
+Runtime 1.0.0 is listed as a separate distribution. Choose the installer for your system from the release assets.
 
 
 <!-- legacy-mirrors:start -->
-The same corrected Legacy packages are also available in the primary 1.0.2 release: [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) · [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) · [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) · [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run)
+The same Legacy Linux packages are also available in the primary 1.0.2 release: [DEB](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy_1.0.2_amd64.deb) · [TAR.GZ](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.tar.gz) · [RPM](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-1.x86_64.rpm) · [RUN](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/releases/download/openketupamk-v1.0.2/openketupa-ai-fabric-kernel-legacy-1.0.2-x64.run)
 <!-- legacy-mirrors:end -->
 
 <a id="licenses"></a>
@@ -75,9 +75,9 @@ The same corrected Legacy packages are also available in the primary 1.0.2 relea
 
 Three maintainer-published test licenses, newest first. Each link opens its GitHub file page; use **Download raw file** there to save the `.lic`.
 
-1. [1.0.3 internal test · 2026-11-25](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 weeks, 3 concurrent instances; includes the 1.0.3 module scope.
-2. [Offline test · 2026-11-16](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
-3. [Internal test · 2026-11-13](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
+1. [1.0.3 internal test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-1.0.3-internal-test-12w.lic) — 12 weeks, 3 concurrent instances; includes the 1.0.3 module scope.
+2. [Offline test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-offline-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
+3. [Internal test](https://github.com/Shallot-2009/KetupaMK-AI-Fabric/blob/main/licenses/openketupamk-internal-test-12w.lic) — Beta / 1.0.0–1.0.2, 12 weeks, 3 concurrent instances.
 
 [Selection and activation instructions](licenses/README.md).
 

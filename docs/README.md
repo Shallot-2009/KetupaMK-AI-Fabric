@@ -15,7 +15,8 @@ Choose a topic below. Guides in this documentation index contain English and Sim
 | Analog IC, channel algorithms, advanced packaging, Interposer and SI/PI | [Engineering domains](product/DOMAINS.md) |
 | Folder responsibilities and the complete usage path | [Project map](PROJECT_MAP.md) |
 | Download and install | [Installation](installation/README.md) |
-| Version selection | [Release notes](releases/README.md) |
+| Current preview | [KetupaMK 1.0.3](releases/openketupamk-v1.0.3.md) |
+| Other versions | [Release and download index](releases/README.md) |
 | Rocky/RHEL 8 and Ubuntu 20.04 | [Legacy Linux 1.0.2 environment](releases/openketupamk-kernel-legacy-v1.0.2.md) |
 | Test entitlement files | [LIC downloads and scope](../licenses/README.md) |
 | Software terms | [License scope](../LICENSE.md), [original EULA](../EULA.md#english) |
@@ -41,7 +42,8 @@ The root README is the product entry point. `docs/` explains use and maintenance
 | 模拟 IC、信道算法、先进封装、Interposer 与 SI/PI | [技术方向](product/DOMAINS.md) |
 | 文件夹职责与完整使用路径 | [项目结构导航](PROJECT_MAP.md) |
 | 下载与安装 | [安装说明](installation/README.md) |
-| 版本选择 | [发行说明](releases/README.md) |
+| 当前预览版 | [KetupaMK 1.0.3](releases/openketupamk-v1.0.3.md) |
+| 其他版本 | [发行与下载索引](releases/README.md) |
 | Rocky/RHEL 8 与 Ubuntu 20.04 | [旧版 Linux 1.0.2 兼容环境](releases/openketupamk-kernel-legacy-v1.0.2.md) |
 | 测试授权文件 | [LIC 下载与范围](../licenses/README.md) |
 | 软件条款 | [许可范围](../LICENSE.md)、[原始 EULA](../EULA.md#中文) |
