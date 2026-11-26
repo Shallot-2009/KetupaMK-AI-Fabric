@@ -11,7 +11,9 @@
 
 KetupaMK is oriented toward analog IC, channel algorithms, advanced packaging, Interposer and SI/PI engineering. CIR configuration organizes PCB, package and interconnect workflows, input preparation, compatible external tools and traceable outputs. See [engineering domains](DOMAINS.md) for the application directions and their current boundaries. This public repository distributes packaged products and documentation; current proprietary core source is maintained separately.
 
-## Published 1.0.2 capabilities
+## What it can do
+
+The current 1.0.3 preview provides PCB, package, and cascade CIR workflows, Touchstone conversion, DDR reports, and Skill/Agent/MCP input preparation. The detailed capabilities below are documented for 1.0.2 and should be checked against the installed version and [1.0.3 release guide](../releases/openketupamk-v1.0.3.md).
 
 | Capability | Scope and required inputs |
 | --- | --- |
@@ -27,7 +29,18 @@ KetupaMK is oriented toward analog IC, channel algorithms, advanced packaging, I
 | GDS Interposer | Import-only assistance, without solver execution or electrical signoff |
 | Platforms | Windows Launcher and Linux CLI; valid version-scoped licensing is required |
 
-These capabilities are described in the [1.0.2 release notes](../releases/openketupamk-v1.0.2.md). They are not assumed to exist in older versions. The fifteen entries are not evidence that every scenario has completed physical acceptance.
+The detailed scope comes from the [1.0.2 release guide](../releases/openketupamk-v1.0.2.md). The fifteen entries do not establish physical acceptance for every scenario.
+
+## How to use a workflow
+
+| Workflow | Prepare | Start with |
+| --- | --- | --- |
+| PKG or PCB | Layout, matching XML stackup, network selection and project configuration | `ketupa run -sh main.cir check` |
+| Merge | Both layouts, both XML files, connection mapping and project configuration | `ketupa run -sh main.cir check` |
+| DDR report | Touchstone file, explicit port map, frequencies, reference planes and approved specification | The `.tap` workflow in the installed product |
+| GDS Interposer | GDS source and import settings | Import and inspect the resulting structure |
+
+For a connector, provide its actual `.a3dcomp` model. Confirm inputs with the [installation and environment guide](../installation/README.md) before executing modeling or analysis.
 
 ## Inputs, dependencies, and outputs
 
@@ -54,7 +67,9 @@ The [Legacy Linux 1.0.2 environment](../releases/openketupamk-kernel-legacy-v1.0
 
 KetupaMK 面向模拟 IC、信道算法、先进封装、Interposer 与 SI/PI 工程，通过 CIR 配置组织 PCB、封装和互连工作流，衔接输入准备、兼容的外部工具与可追溯输出。各技术方向及当前范围见[技术方向](DOMAINS.md)。本公开仓库提供产品发行与文档，现行专有核心源码单独维护。
 
-## 1.0.2 已发布功能
+## 能做什么
+
+当前 1.0.3 预览版提供 PCB、封装、级联 CIR 工作流，以及 Touchstone 转换、DDR 报告和 Skill/Agent/MCP 输入准备。下表详细功能依据 1.0.2 文档，使用时应与已安装版本和 [1.0.3 发行说明](../releases/openketupamk-v1.0.3.md)核对。
 
 | 功能 | 范围与输入要求 |
 | --- | --- |
@@ -70,7 +85,18 @@ KetupaMK 面向模拟 IC、信道算法、先进封装、Interposer 与 SI/PI �
 | GDS Interposer | 仅提供导入辅助，不包含求解或电气签核 |
 | 平台 | Windows Launcher、Linux CLI；执行需要适用版本的有效授权 |
 
-以上依据 [1.0.2 发行说明](../releases/openketupamk-v1.0.2.md)，不推定旧版具备相同功能。15 种入口本身不表示所有场景都已完成真实物理验收。
+详细范围依据 [1.0.2 发行说明](../releases/openketupamk-v1.0.2.md)。15 种入口本身不表示所有场景都已完成真实物理验收。
+
+## 怎么使用工作流
+
+| 工作流 | 准备输入 | 先执行 |
+| --- | --- | --- |
+| PKG 或 PCB | 版图、对应 XML 层叠、网络选择和工程配置 | `ketupa run -sh main.cir check` |
+| Merge | 两份版图、两份 XML、连接映射和工程配置 | `ketupa run -sh main.cir check` |
+| DDR 报告 | Touchstone 文件、明确端口映射、频率、参考面和获批规范 | 已安装产品的 `.tap` 工作流 |
+| GDS Interposer | GDS 源文件和导入设置 | 导入并检查所得结构 |
+
+涉及连接器时，还需提供真实 `.a3dcomp` 模型。执行建模或分析前，按[安装与环境指南](../installation/README.md)确认输入。
 
 ## 输入、依赖与输出
 

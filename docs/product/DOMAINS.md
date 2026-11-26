@@ -15,7 +15,7 @@ KetupaMK connects engineering data, CIR configuration, compatible EDA tools and 
 | Interposer | GDS-based intermediate interconnect structures | Explicit GDS Interposer import workflow; 1.0.2 scope is import-only, not solver execution or electrical signoff |
 | SI/PI | Signal and power integrity engineering workflows | DDR/PCIe/SerDes/clock/custom project preparation and interconnect modeling; reports and acceptance criteria depend on the selected workflow and supplied specifications |
 
-The application directions do not replace version-specific capability checks. See [published 1.0.2 scope](README.md) and [release notes](../releases/README.md).
+For inputs and commands, use the [product guide](README.md). Check the [release index](../releases/README.md) for the version installed on your system.
 
 Typical path: prepare inputs → configure CIR/includes → run the licensed KetupaMK entry → review model/channel results → apply approved specifications and archive reports.
 
@@ -36,7 +36,7 @@ KetupaMK 通过工程数据、CIR 配置、兼容的 EDA 工具与可追溯输�
 | Interposer 中介层 | 基于 GDS 的中介层互连结构 | 独立的 GDS Interposer 导入工作流；1.0.2 的功能范围是导入，不包含求解或电气签核 |
 | SI/PI | 信号完整性与电源完整性工程工作流 | DDR/PCIe/SerDes/时钟/自定义工程准备与互连建模；报告及验收项依具体工作流和输入规范确定 |
 
-技术方向不替代版本功能确认。具体见[1.0.2 产品功能](README.md)与[发行说明](../releases/README.md)。
+输入与命令见[产品指南](README.md)；具体版本以本机安装包和[发行索引](../releases/README.md)为准。
 
 典型流程：准备输入 → 配置 CIR/include → 通过已授权的 KetupaMK 入口执行 → 审核模型/信道结果 → 按已批准的规范判定并归档报告。
 
